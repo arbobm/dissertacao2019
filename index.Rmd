@@ -1,0 +1,71 @@
+---
+title: "Untitled"
+author: "Bruna Arbo Meneses"
+date: "September 4, 2019"
+output:
+  word_document: default
+  pdf_document:
+    keep_tex: yes
+    latex_engine: xelatex
+geometry: margin=2.5cm
+fontsize: 12pt
+bibliography: "C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- capa -->
+
+
+<!-- segunda pagina -->
+
+
+<!-- terceira pagina -->
+
+
+<!-- agradecimentos -->
+
+
+<!-- resumo -->
+```{r child = "0-resumo.Rmd"}
+```
+
+<!-- abstract -->
+```{r child = "0-abstract.Rmd"}
+```
+
+<!-- sumario, lista de figuras, lista de taberlas -->
+
+
+<!-- lista de figuras -->
+
+
+<!-- introducao -->
+```{r child = "1-introducao.Rmd"}
+```
+
+<!-- métodos -->
+```{r child = "2-metodos.Rmd"}
+```
+
+<!-- resultados -->
+```{r child = "3-resultados.Rmd"}
+```
+
+<!-- discussão -->
+```{r child = "4-discussao.Rmd"}
+```
+
+<!-- consideracoes finais -->
+```{r child = "5-consfinais.Rmd"}
+```
+
+<!-- referencias -->
+# ```{r child = "99-refs.Rmd"}
+# ```
+
+<!-- Apendices -->
+# ```{r child = "999-apendices.Rmd"}
+# ```
