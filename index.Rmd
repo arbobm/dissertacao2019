@@ -4,16 +4,19 @@ author: "Bruna Arbo Meneses"
 date: "September 4, 2019"
 output:
   word_document: default
+  html_document:
+    df_print: paged
   pdf_document:
     keep_tex: yes
     latex_engine: xelatex
 geometry: margin=2.5cm
 fontsize: 12pt
-bibliography: "C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib"
+bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+knitr::read_chunk("figuras.R")
 ```
 
 <!-- capa -->

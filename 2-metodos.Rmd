@@ -7,45 +7,20 @@ Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas b
 As análises envolveram a área do bioma Pampa !!!IBGE, 2004!!!, que se estende por 176.476 km^2^ no estado do Rio Grande do Sul, sul do Brasil (Figura 1). <!-- %arrumar aqui -->
 A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina [@Overbeck2007a]. As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária [@Cordeiro2009a]. O Rio Grande do Sul possui o 6º efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3º maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns !!!!IBGE, 2015!!!!. <!-- %rever referencia -->
 
-<!-- %aqui vai a figura 1 -->
+```{r areaestudo, fig.cap = "Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa."}
+```
 
 A expansão da agricultura, que cobre aproximadamente 40% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam [@Cordeiro2009a]; !!!!!IBGE 2015!!!!!). <!-- %ref -->
 A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Hasenack] !!!!!(Hasenack et al., dados não publicados) (tabela x).
 <!-- (Tabela \ref{table:fisonomias]). %arrumar aqui -->
 
-Como consequência, resta 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015].
+Como consequência, resta 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015]. 
 
 <!-- %aqui vai a tabela 1. ver comando para tabelas de mais de uma pagina na ajuda sobre tabelas -->
 
-<!-- como fazer tabelas? -->
-\begin{table][ht]
-    \centering
-    \caption{Fisionomias campestres localizadas no Bioma Pampa (Hasenack et al., dados não publicados). Relevo suave corresponde a declividades entre 3 e 8% e relevo ondulado corresponde a declividades entre 8 e 20%.]
-    \begin{tabular]{p{3cm] p{5cm] p{3cm] p{2cm]]
-        \hline
-        Fisionomia campestre & Características principais & Área (km^2^) & % Pampa \\
-        \hline
-        Campo Litorâneo & Terras baixas e relevo plano do litoral; Altitudes inferiores a 30 m. & 35.298,34 & 20,00 \\
-        Campo Misto com Andropogôneas e Compostas & Altitudes entre 30 e 400 m com relevo suave (declividades entre 3 e 8%). Depressão sedimentar com extensão predominante leste-oeste. & 35.221,13 & 19,96 \\
-        Campo Arbustivo & Altitudes entre 30 e 400 m com relevo ondulado (declividades entre 8 e 20%). Mosaico com floresta e campo onde o campo predomina. Contém áreas de solos rasos e áreas com solos profundos de baixa fertilidade. & 30.126,80 & 17,07 \\
-        Campo com Barba-de-Bode & Altitudes entre 30 e 1.000 m e relevo suave (declividades entre 3 e 8%). Solos predominantemente profundos e de baixa fertilidade. & 21.005,35 & 11,90 \\
-        Campo com Espinilho & Altitudes entre 30 e 400 m sobre relevo suave (declividades entre 3 e 8%). Predominam solos férteis imperfeitamente a mal drenados. & 13.927,30 & 7,89 \\
-        Campo de Solos Rasos & Altitudes entre 30 e 400 m com relevo suave (declividades entre 3 e 8%) e solos rasos. & 13.710,59 & 7,77 \\
-        Campo Graminoso & Altitudes entre 30 e 400 m com relevo suave (declividades entre 3 e 8%). & 11.522,56 & 6,53 \\
-        Floresta Estacional & Altitudes entre 30 e 400 m com relevo ondulado (declividades entre 8 e 20%). Mosaico com floresta e campo onde a floresta predomina. & 8.752,28 & 4,96 \\
-        Campo com Areais & Altitudes entre 30 e 400 m com
-        relevo suave (declividades entre 3 e 8%). Os solos são
-        predominantemente arenosos, profundos, bem drenados e com baixa fertilidade. & 4.674,69 & 2,65 \\
-        Campo Misto do Cristalino Oriental & Altitudes entre 30 e 400 m e relevo suave (declividades entre 3 e 8%). & 1.164,01 & 0,66 \\
-        \hline
-        \end{tabular]
-        \label{tab:fisonomias] 
-        \end{table]
+### Delimitação das bacias de 3ª ordem e rede de drenagem
 
-### Delimitação das bacias de 3ª ordem e rede de drenagem {.section}
-
-As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b]. Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM [@Farr2007], disponibilizado em http://earthexplorer.usgs.gov/. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 [@ESRI2014]. Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno [@Nardi2008], as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura 1Figura 1) %figura
-foram excluídas das análises.
+As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b]. Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM [@Farr2007], disponibilizado em http://earthexplorer.usgs.gov/. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 [@ESRI2014]. Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno [@Nardi2008], as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura 1).
 
 As 3359 bacias resultantes desse processo (Figura X) tem áreas entre 3,15 e 159,79 km^2^ (média = 25,94 km^2^; ±18,72 km^2^). Somadas, correspondem a uma área de 87.126,19 km^2^ (49,63% da área do bioma Pampa), das quais 71,30% das bacias (2395) tem área inferior a 30 km^2^. Para facilitar a comparação da pressão ambiental nas bacias entre as fisionomias campestres respeitando os limites biogeográficos de distribuição das espécies de peixes no Rio Grande do Sul [@Stoddard2005a], cada bacia foi classificada quanto a fisionomia campestre e ecorregião aquática [@Abell2008b] onde está localizada (Figura X).
 Como algumas fisionomias campestres podem estar parcialmente contidas em mais de uma ecorregião, cada combinação de fisionomia campestre com ecorregião aquática foi chamada de subunidade regional. As fisionomias campestres analisadas neste trabalho têm áreas entre 1.164,01 e 35.221,13 km^2^ e representam os sistemas ecológicos que foram delimitados por similaridades em altitude, declividade, solo, vegetação e uso da terra (Tabela \ref{table:fisonomias])
