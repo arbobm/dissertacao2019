@@ -3,20 +3,23 @@ title: "Untitled"
 author: "Bruna Arbo Meneses"
 date: "September 4, 2019"
 output:
-  word_document: default
+  bookdown::word_document2:
+    fig_caption: true
   html_document:
     df_print: paged
   pdf_document:
-    keep_tex: yes
-    latex_engine: xelatex
+    # keep_tex: yes
+    # latex_engine: xelatex
+    fig_caption: yes
 geometry: margin=2.5cm
 fontsize: 12pt
 bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.path = 'figuras/', echo = FALSE, warning = FALSE, message = FALSE)
 knitr::read_chunk("figuras.R")
+knitr::read_chunk("tabelas.R")
 ```
 
 <!-- capa -->
@@ -53,15 +56,15 @@ knitr::read_chunk("figuras.R")
 ```{r child = "2-metodos.Rmd"}
 ```
 
-<!-- resultados -->
+<!-- resultados 
 ```{r child = "3-resultados.Rmd"}
 ```
 
-<!-- discussão -->
+<!-- discussão
 ```{r child = "4-discussao.Rmd"}
 ```
 
-<!-- consideracoes finais -->
+<!-- consideracoes finais
 ```{r child = "5-consfinais.Rmd"}
 ```
 

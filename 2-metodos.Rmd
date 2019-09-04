@@ -4,23 +4,24 @@ Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas b
 
 ### Área de estudo e estrutura espacial 
 
-As análises envolveram a área do bioma Pampa !!!IBGE, 2004!!!, que se estende por 176.476 km^2^ no estado do Rio Grande do Sul, sul do Brasil (Figura 1). <!-- %arrumar aqui -->
+As análises envolveram a área do bioma Pampa !!!IBGE, 2004!!!, que se estende por 176.476 km^2^ no estado do Rio Grande do Sul, sul do Brasil (Figura \@ref(fig:areaestudo)).
 A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina [@Overbeck2007a]. As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária [@Cordeiro2009a]. O Rio Grande do Sul possui o 6º efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3º maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns !!!!IBGE, 2015!!!!. <!-- %rever referencia -->
 
-```{r areaestudo, fig.cap = "Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa."}
+```{r areaestudo, fig.cap = "Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa.", fig.height=12, fig.width=10}
 ```
 
 A expansão da agricultura, que cobre aproximadamente 40% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam [@Cordeiro2009a]; !!!!!IBGE 2015!!!!!). <!-- %ref -->
-A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Hasenack] !!!!!(Hasenack et al., dados não publicados) (tabela x).
+A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Hasenack] !!!!!(Hasenack et al., dados não publicados) (tabela \@ref(tab:fisiocamp)).
 <!-- (Tabela \ref{table:fisonomias]). %arrumar aqui -->
 
 Como consequência, resta 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015]. 
 
-<!-- %aqui vai a tabela 1. ver comando para tabelas de mais de uma pagina na ajuda sobre tabelas -->
+```{r fisiocamp}
+```
 
 ### Delimitação das bacias de 3ª ordem e rede de drenagem
 
-As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b]. Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM [@Farr2007], disponibilizado em http://earthexplorer.usgs.gov/. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 [@ESRI2014]. Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno [@Nardi2008], as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura 1).
+As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b]. Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM [@Farr2007], disponibilizado em http://earthexplorer.usgs.gov/. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 [@ESRI2014]. Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno [@Nardi2008], as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura \@ref(fig:areaestudo)).
 
 As 3359 bacias resultantes desse processo (Figura X) tem áreas entre 3,15 e 159,79 km^2^ (média = 25,94 km^2^; ±18,72 km^2^). Somadas, correspondem a uma área de 87.126,19 km^2^ (49,63% da área do bioma Pampa), das quais 71,30% das bacias (2395) tem área inferior a 30 km^2^. Para facilitar a comparação da pressão ambiental nas bacias entre as fisionomias campestres respeitando os limites biogeográficos de distribuição das espécies de peixes no Rio Grande do Sul [@Stoddard2005a], cada bacia foi classificada quanto a fisionomia campestre e ecorregião aquática [@Abell2008b] onde está localizada (Figura X).
 Como algumas fisionomias campestres podem estar parcialmente contidas em mais de uma ecorregião, cada combinação de fisionomia campestre com ecorregião aquática foi chamada de subunidade regional. As fisionomias campestres analisadas neste trabalho têm áreas entre 1.164,01 e 35.221,13 km^2^ e representam os sistemas ecológicos que foram delimitados por similaridades em altitude, declividade, solo, vegetação e uso da terra (Tabela \ref{table:fisonomias])
@@ -41,6 +42,7 @@ Todas as fontes de dados estão disponíveis publicamente, exceto a densidade de
 
 Os dados de áreas agrícolas e urbanas foram obtidos a partir do mapeamento da vegetação do Rio Grande do Sul realizados por @Cordeiro2009a. O mapeamento, cuja escala é de 1:50.000 e no qual somente remanescentes com um eixo maior do que 250 metros foram vetorizados, foi realizado a partir de imagens LANDSAT 5 TM e 7 ETM+ (30 m de resolução espacial), ano base 2002 e possui 32 classes de uso e cobertura de solo. Destas, cinco estão relacionadas a atividade agropecuária com potencial impacto nos ambientes aquáticos ("Agricultura sequeiro", "Agricultura irrigada", "Alagado arroz", "Misto campo/mato - Originalmente mata. Pastagem com domínio de campo nativo sobre área desmatada" e "Uso misto - cultivo em pequenas parcelas"). Estas categorias foram agrupadas em uma nova classe denominada "Agricultura". A rede viária disponível digitalmente na base cartográfica vetorial contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b] foi digitalizada sobre as cartas do exercito de 1960 e está dividida em pavimentadas e não pavimentadas de acordo com as jurisdições responsáveis por sua construção e manutenção: municipal, estadual e federal. Conta também com as categorias caminho/trilhas e rede ferroviária. Embora os dados sejam oriundos de mapas da década de 1960, a pavimentação e a duplicação das rodovias foram as principais mudanças na rede viária, não a expansão da rede [@Teixeira2015]. Todas as classes foram consideradas como igualmente impactantes.
 
+<!--
 \begin{table][ht]
     \centering
     \caption{Dados utilizados para obtenção dos indicadores de pressão ambiental em bacias de 3a ordem no bioma Pampa, Brasil.]
@@ -60,6 +62,7 @@ Os dados de áreas agrícolas e urbanas foram obtidos a partir do mapeamento da 
     \end{tabular]
     \label{tab:fatores]
 \end{table]
+-->
 
 A variável Mineração foi obtida com base nos dados de processos minerários disponibilizados pelo Departamento Nacional de Produção Mineral [@DNPM2015], que possuem caráter informativo quanto aos processos de concessão para atividade mineradora cadastrados no órgão regulador. As poligonais cadastradas estão divididas em fases de licenciamento: concessão de lavra, licenciamento, lavra garimpeira, registro de extração, requerimento de lavra, requerimento de lavra garimpeira, requerimento de licenciamento, requerimento de registro de extração, requerimento de pesquisa, autorização de pesquisa e disponibilidade. Foram incluídas nas análises as fases de concessão de lavra, licenciamento, lavra garimpeira e registro de extração. Os limites dos polígonos podem não representar precisamente os limites da extração propriamente dita por serem informados pelos próprios requerentes, e a qualidade das informações depende da metodologia técnica utilizada para o cadastro. Os limites representam a área onde o minerador pode realizar sua atividade, não a área já instalada necessariamente. Mesmo assim, as poligonais dos processos minerários nas fases consideradas representam áreas em que existe a prática da atividade de mineração ou áreas onde ela pode ser implantada em um futuro próximo. 
 
@@ -70,6 +73,7 @@ Espelhos d'água é o indicador que corresponde aos açudes e reservatórios, ut
 Cada um dos indicadores abordados pode influenciar os ambientes aquáticos de diferentes formas (Tabela \ref{tab:fatores]). A agricultura, por exemplo, usualmente ocupa a maior fração em uma bacia hidrográfica, enquanto áreas urbanas e outros usos ocupam uma área menor. Entretanto, estes usos podem exercer uma influência desproporcional nos ambientes aquáticos, estejam eles próximos ou distantes dos corpos d'água [@Allan2004a]. Os cinco cenários diferenciam-se em função dos pesos atribuídos a cada indicador de pressão (Tabela 3Tabela 3).
 No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). No cenário 2, tomamos por referência os pesos utilizados em @Stein2002a. Em cada cenário, o somatório dos pesos de cada indicador foi sempre igual a 1.  O cenário 3 representa a média dos pesos utilizados em quatro estudos: @Sanderson2002; @Heiner2011a; @Turak2011c; @Zhang2014. Os cenários 4 e 5 foram elaboradas com o objetivo de simular quais seriam os resultados se uma única variável recebesse um peso maior (0,50), enquanto as outras fossem ponderadas da mesma forma (0,10). A variável agricultura foi a que recebeu maior peso no cenário 4 e a variável área urbana foi a definida no cenário 5. Todos os pesos somam 1 dentro de cada cenário. Por fim, os valores calculados dos índices foram padronizados para que variassem entre 0 a 1, onde 0 representa a ausência de pressão ambiental (conforme os indicadores aqui empregados) e 1 representa pressão ambiental máxima.
 
+<!--
 \begin{table][h!]
     \centering
     \caption{Cenários (configurações de pesos) utilizados na ponderação dos indicadores de pressão ambiental sobre bacias de 3a ordem no bioma Pampa.]
@@ -87,7 +91,7 @@ No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). N
     \end{tabular]
     \label{tab:cenarpesos]
 \end{table]
-
+-->
 ### Determinação das bacias de referência
 
 Para identificar as bacias de referência, as bacias de 3ª ordem foram ranqueadas em ordem crescente quanto ao valor de cada indicador de pressão e ao valor do índice global. Em seguida, assumimos que as bacias nas quais todos os fatores de pressão medidos tiveram valor zero, foram classificadas como "condição de distúrbio mínimo" (MDC, abreviação para Minimum Disturbance Condition; @Stoddard2006), sendo essas bacias as que representam a condição de referência ideal, mais próxima da integridade biótica. A condição mais realística, no entanto, é aquela em que se usa como referência as bacias com a melhor condição possível, isto é, aquelas que apresentam a menor presença de fatores de pressão entre as bacias avaliadas. Estas bacias foram classificadas como "condição de menor distúrbio" (LDC, abreviação para Least disturbed condition; @Stoddard2006), descritas por um gradiente em que as bacias menos pressionadas se aproximam das bacias em condição de distúrbio mínimo em relação as bacias mais pressionadas. Neste trabalho, as bacias que estiveram entre as 10% menos pressionadas segundo o índice global de pressão ao mesmo tempo em que apresentaram os menores valores para cada indicador separadamente em cada subunidade regional foram consideradas bacias em condição de menor distúrbio (LDC). LDC e MDC foram consideradas bacias de referência. As bacias com índice global entre 0,4 e 0,6 foram consideradas com pressão intermediária e as bacias com valores maiores do que 0,6 foram consideradas como as mais pressionadas.
@@ -101,6 +105,7 @@ A composição de peixes foi determinada através de coleta com pesca elétrica 
 A diversidade e a riqueza funcionais foram obtidas através de uma matriz sítio de coleta versus atributo, que foi calculada multiplicando uma matriz de espécies versus atributos por uma matriz de sítios versus espécies. Um conjunto de 13 atributos morfológicos descrevendo a função trófica, a ocupação espacial na coluna d'água e o uso do hábitat: índice de compressão corporal, altura relativa, posição do olho, posição da boca, comprimento da cabeça, comprimento do pedúnculo, compressão do pedúnculo, posição da nadadeira peitoral, área da nadadeira peitoral, área da nadadeira ventral, área da nadadeira dorsal, área da nadadeira caudal e biomassa [@Dala-Corte2016] (Tabela 4).
 Um valor médio foi calculado para cada atributo de cada espécie, baseado nas medidas de cinco indivíduos representando diferentes classes de tamanho de cada espécie nas amostras, sempre que possível. A composição funcional foi descrita através do valor médio dos atributos de todas as espécies presentes na comunidade (Community Weighted Mean traits, CWM) [@Lavorel2007a]. O espaço funcional preenchido pelas espécies de cada sítio foi quantificado pelo índice de riqueza funcional descrito por @Villeger2008. Essa medida corresponde ao volume do mínimo polígono convexo que engloba todas as espécies em um espaço com número dimensões igual ao número de atributos medidos. Estas análises foram realizadas com o pacote FD [@Laliberte2010a] no software R (R Core Team 2016). <!-- ver ref -->
 
+<!--
 \begin{table][h!]
     \centering
     \caption{Treze atributos funcionais indicadores de uso/ocupação do habitat e comportamento alimentar. Ver Figura 3
@@ -129,6 +134,7 @@ Um valor médio foi calculado para cada atributo de cada espécie, baseado nas m
     \label{tab:atribfunc]
 \end{table]
 
+-->
 %figura 3
 
 ### Análise dos dados
