@@ -16,7 +16,7 @@ Agricultura, densidade viária e de gado são os indicadores predominantes em to
 
 <!-- como fazer a ref cruzada na legenda da figura dentro do chunk? -->
 
-```{r boxplotsfisios, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", fig.height=12, fig.width=10, out.extra = ""}
+```{r boxplotsfisios, code=readLines("figuras/05_boxplots.R"), fig.cap = "Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via =  rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=12, fig.width=10, out.extra = ""}
 ```
 
 <!-- \begin{table][h!] -->
@@ -37,7 +37,7 @@ Agricultura, densidade viária e de gado são os indicadores predominantes em to
 <!--     \label{tab:my_label] -->
 <!-- \end{table] -->
 
-De forma geral, há uma porção elevada de bacias de 3a ordem com níveis intermediários a altos de pressão no bioma Pampa (Figura \@ref(fig:resultscen2)). Pelo menos 38,02% das bacias apresentam um índice global de pressão maior que 0,4 (intermediário) em todas os cenários, exceto  no cenário 5, em que esse percentual corresponde a 98,99% (Figura \@ref(fig:hist-indpressao)).
+De forma geral, há uma porção elevada de bacias de 3ª ordem com níveis intermediários a altos de pressão no bioma Pampa (Figura \@ref(fig:resultscen2)). Pelo menos 38,02% das bacias apresentam um índice global de pressão maior que 0,4 (intermediário) em todas os cenários, exceto  no cenário 5, em que esse percentual corresponde a 98,99% (Figura \@ref(fig:hist-indpressao)).
 A distribuição da frequência das bacias ao longo do gradiente de pressão não foi muito diferente entre os cenários, mas variou entre as subunidades regionais, influenciando a identidade das bacias com índice global com valores intermediários mais do que as bacias nos extremos do gradiente. A escolha dos pesos afeta a interpretação a respeito da pressão ambiental sobre as bacias nas subunidades regionais apenas nos cenários 4 e 5, pois são determinadas basicamente pela presença de agricultura e áreas urbanas respectivamente. A distribuição da frequência de bacias no gradiente de pressão é bastante variável entre subunidades regionais (Figura \@ref(fig:hist-indpressfisios)),
 podendo chegar a 85% de bacias com nível intermediário a alto de pressão no Campo com Barba de Bode/Uruguai e na Floresta Estacional (Tabela 6).
 Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Campo Graminoso/Patos e Campo Misto com Andropogôneas e Compostas. Campo Arbustivo, Campo com Areais e Campos com Solos Rasos são as fisionomias menos pressionadas. Considerando que os cenários não tem variações significativas quanto ao diagnóstico global, apenas o cenário 2 foi utilizado para a descrição dos resultados deste ponto em diante, por ser o cenário com pesos variados que não tem agricultura com a maior penalidade. As figuras e histogramas referentes a todos os cenários estão no Apêndice. 

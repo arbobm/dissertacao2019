@@ -13,10 +13,10 @@ knitr::include_graphics("figuras/03_medidas.jpg")
 ## @knitr pressoes
 knitr::include_graphics("figuras/04_Pressoes_v2.jpg")
 #legenda Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura 1Figura 1 para identificação das fisionomias campestres.
-
-## @knitr boxplotsfisios
-readLines("figuras/05_boxplots.R")
-#Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via =  rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.
+# 
+# ## @knitr boxplotsfisios
+# readLines("figuras/05_boxplots.R")
+# #Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via =  rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.
 
 ## @knitr resultscen2
 knitr::include_graphics("figuras/06_Results_Bacias_cenario2.jpg")

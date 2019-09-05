@@ -28,7 +28,7 @@ rownames(cristorientalPatos)    <- cristorientalPatos[,"COD_B"];     cristorient
 rownames(outrosPatos)           <- outrosPatos[,"COD_B"];            outrosPatos            <- outrosPatos[,-1]
 
 
-names(cristorientalPatos)
+#names(cristorientalPatos)
 arbustivoPatos.f         <- arbustivoPatos[,c("AgricProp","UrbProp",  "AcudeProp","DNPMProp", "ViarioKk2", "DensBOS")]  
 arbustivoUruguai.f       <- arbustivoUruguai[,c("AgricProp","UrbProp",  "AcudeProp","DNPMProp", "ViarioKk2", "DensBOS")] 
 areaisPatos.f            <- areaisPatos[,c("AgricProp","UrbProp",  "AcudeProp","DNPMProp", "ViarioKk2", "DensBOS")] 
@@ -60,9 +60,9 @@ colnames(outrosPatos.f)[c(1:6)]           <- c("Agr","Urb","EA","Min","Via","Gad
 
 
 library(vegan)
-max(decostand(arbustivoPatos.f,method = "standardize"))
-decostand(arbustivoPatos.f,method = "standardize")==max(decostand(arbustivoPatos.f,method = "standardize"))
-?boxplot
+#max(decostand(arbustivoPatos.f,method = "standardize"))
+#decostand(arbustivoPatos.f,method = "standardize")==max(decostand(arbustivoPatos.f,method = "standardize"))
+# ?boxplot
 par(mfrow=c(5,3),mai=c(0.4,0.4,0.2,0.1))
 #par(mfrow=c(1,2))
 
@@ -83,9 +83,10 @@ boxplot(outrosPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "FE - Pa
 # 
 # ?png
 # png(file = "myplot.png", bg = "transparent", width=19, height = 25, units="cm" , res=500)
-# par(mfrow=c(5,3),mai=c(0.4,0.4,0.2,0.1))
-# #par(mfrow=c(1,2))
-# 
+par(mfrow=c(5,3),mai=c(0.4,0.4,0.2,0.1))
+# # #par(mfrow=c(1,2))
+# # 
+# # 
 # 
 # boxplot(arbustivoPatos.f ,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "Arbustivo - Patos")
 # boxplot(arbustivoUruguai.f ,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "Arbustivo - Uruguai")
@@ -100,6 +101,6 @@ boxplot(outrosPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "FE - Pa
 # boxplot(mistoandropcompUruguai.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "MistoAndrop - Uruguai")
 # boxplot(cristorientalPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "Cristoriental - Patos")
 # boxplot(outrosPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "Floresta estacional - Patos")
-# 
-# dev.off()
-# getwd()
+# # 
+# # dev.off()
+# # getwd()
