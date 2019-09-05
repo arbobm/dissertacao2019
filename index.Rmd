@@ -14,10 +14,11 @@ output:
 geometry: margin=2.5cm
 fontsize: 12pt
 bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
+link-citations: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.path = 'figuras/', echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 knitr::read_chunk("figuras.R")
 knitr::read_chunk("tabelas.R")
 ```
@@ -56,7 +57,7 @@ knitr::read_chunk("tabelas.R")
 ```{r child = "2-metodos.Rmd"}
 ```
 
-<!-- resultados 
+<!-- resultados-->
 ```{r child = "3-resultados.Rmd"}
 ```
 
@@ -68,10 +69,10 @@ knitr::read_chunk("tabelas.R")
 ```{r child = "5-consfinais.Rmd"}
 ```
 
-<!-- referencias -->
+<!-- referencias
 # ```{r child = "99-refs.Rmd"}
 # ```
 
-<!-- Apendices -->
+<!-- Apendices
 # ```{r child = "999-apendices.Rmd"}
 # ```

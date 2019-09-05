@@ -1,164 +1,182 @@
-#Resultados
-##Pressão ambiental sobre bacias de 3ª ordem no bioma Pampa
+##Resultados
 
-As 3359 bacias de 3ª ordem contém pelo menos um indicador de pressão ambiental, sendo essas pressões distribuídas de forma desigual no bioma Pampa (Figura X).
+###Pressão ambiental sobre bacias de 3ª ordem no bioma Pampa
+
+As 3359 bacias de 3ª ordem contém pelo menos um indicador de pressão ambiental, sendo essas pressões distribuídas de forma desigual no bioma Pampa (Figura \@ref(fig:pressoes) e Figura \@ref(fig:boxplotsfisios)).
 Bacias com agricultura estão mais concentradas em partes do sudoeste onde o relevo é ondulado ou há solos rasos. As densidades de áreas urbanas e rede viária aumentam no sentido oeste-leste, ou seja, mais aglomeradas à medida que se aproximam da região metropolitana de Porto Alegre e do litoral, mais populosos do que o interior do estado. Espelhos d'água estão associados à pecuária, para dessedentação animal, e às áreas agrícolas irrigadas, encontrando-se, portando, mais concentradas no oeste do bioma. A mineração está majoritariamente localizada na região centro-sul do estado. A proporção de áreas agrícolas e a densidade de rede viária foram os fatores de pressão em média predominantes no bioma Pampa (0,38 e 0,59 respectivamente; Tabela 5). 
 
-Aproximadamente 20\% das bacias (702) têm 70\% ou mais da sua área ocupada por agricultura, e 10,39\% (349) das bacias têm densidade viária maior do que 1 km/km$^2$, enquanto e a porcentagem de área ocupada pelas poligonais destinadas a mineração variou entre 0 e 99,48\% (média = 0,006 66 $\pm$ 0,05). A porcentagem de área ocupada por mineração foi menor a que 10\% em 98,29\% das bacias (Tabela 5).
-Não há colinearidade forte entre os indicadores de pressão ambiental, sendo agricultura e densidade de gado os indicadores mais correlacionados (r = -0,26; p $<$ 0,01). Agricultura, densidade viária e de gado são os indicadores predominantes em todas as subunidades regionais (Figura 5). 
-Campo de Barba-de-Bode e Floresta Estacional são as subunidades regionais com maior proporção média de área agrícola nas bacias. No Campo com Barba-de-Bode localizados no sistema da Laguna dos Patos, apenas 25\% das bacias tem menos de 71\% da área coberta por agricultura. Campo Misto com Andropogôneas e Compostas, Campo Arbustivo e Floresta Estacional tem as maiores densidades de rede viária.
+Aproximadamente 20% das bacias (702) têm 70% ou mais da sua área ocupada por agricultura, e 10,39% (349) das bacias têm densidade viária maior do que 1 km/km^2^, enquanto e a porcentagem de área ocupada pelas poligonais destinadas a mineração variou entre 0 e 99,48% (média = 0,006 66 ± 0,05). A porcentagem de área ocupada por mineração foi menor a que 10% em 98,29% das bacias (Tabela 5).
 
-%figura 4
+Não há colinearidade forte entre os indicadores de pressão ambiental, sendo agricultura e densidade de gado os indicadores mais correlacionados (r = -0,26; p < 0,01).
 
-%figura 5
+Agricultura, densidade viária e de gado são os indicadores predominantes em todas as subunidades regionais (Figura 5). Campo de Barba-de-Bode e Floresta Estacional são as subunidades regionais com maior proporção média de área agrícola nas bacias. No Campo com Barba-de-Bode localizados no sistema da Laguna dos Patos, apenas 25% das bacias tem menos de 71% da área coberta por agricultura. Campo Misto com Andropogôneas e Compostas, Campo Arbustivo e Floresta Estacional tem as maiores densidades de rede viária.
 
-\begin{table][h!]
-    \centering
-    \caption{Estatística descritiva das variáveis indicadoras de pressão ambiental.]
-    \begin{tabular]{c c c c c c c]
-    \hline
-    Fator & Unidade & Média & Mediana & Desvio Padrão & Mínimo & Máximo \\
-    \hline
-    Agricultura & \% área da bacia & 38,10 & 33,20 & 30,84 & 0,00 & 100,00 \\
-    Espelhos dágua & \% área da bacia & 1,06 & 0,00 & 2,36 & 0,00 & 31,57 \\
-    Mineração & \% área da bacia & 0,66 & 0,00 & 5,42 & 0,00 & 99,48 \\
-    Áreas urbanas & \% área da bacia & 0,31 & 0,00 & 2,80 & 0,00 & 83,32 \\
-    Rede viária & km/km$^2$ & 0,59 & 0,54 & 0,32 & 0,00 & 2,65 \\
-    Densidade de gado & Número de cabeças/km$^2$ & 0,35 & 0,27 & 0,30 & 0,00 & 1,92 \\
-    \hline
-    \end{tabular]
-    \label{tab:my_label]
-\end{table]
+```{r pressoes, fig.cap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura 1 para identificação das fisionomias campestres.", fig.height=12, fig.width=10, out.extra = ""}
+```
 
-De forma geral, há uma porção elevada de bacias de 3a ordem com níveis intermediários a altos de pressão no bioma Pampa (Figura 6Figura 6). Pelo menos 38,02\% das bacias apresentam um índice global de pressão maior que 0,4 (intermediário) em todas os cenários, exceto  no cenário 5, em que esse percentual corresponde a 98,99\% (Figura 7).
-A distribuição da frequência das bacias ao longo do gradiente de pressão não foi muito diferente entre os cenários, mas variou entre as subunidades regionais, influenciando a identidade das bacias com índice global com valores intermediários mais do que as bacias nos extremos do gradiente. A escolha dos pesos afeta a interpretação a respeito da pressão ambiental sobre as bacias nas subunidades regionais apenas nos cenários 4 e 5, pois são determinadas basicamente pela presença de agricultura e áreas urbanas respectivamente. A distribuição da frequência de bacias no gradiente de pressão é bastante variável entre subunidades regionais (Figura 8),
-podendo chegar a 85\% de bacias com nível intermediário a alto de pressão no Campo com Barba de Bode/Uruguai e na Floresta Estacional (Tabela 6).
+<!-- como fazer a ref cruzada na legenda da figura dentro do chunk? -->
+
+```{r boxplotsfisios, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", fig.height=12, fig.width=10, out.extra = ""}
+```
+
+<!-- \begin{table][h!] -->
+<!--     \centering -->
+<!--     \caption{Estatística descritiva das variáveis indicadoras de pressão ambiental.] -->
+<!--     \begin{tabular]{c c c c c c c] -->
+<!--     \hline -->
+<!--     Fator & Unidade & Média & Mediana & Desvio Padrão & Mínimo & Máximo \\ -->
+<!--     \hline -->
+<!--     Agricultura & % área da bacia & 38,10 & 33,20 & 30,84 & 0,00 & 100,00 \\ -->
+<!--     Espelhos dágua & % área da bacia & 1,06 & 0,00 & 2,36 & 0,00 & 31,57 \\ -->
+<!--     Mineração & % área da bacia & 0,66 & 0,00 & 5,42 & 0,00 & 99,48 \\ -->
+<!--     Áreas urbanas & % área da bacia & 0,31 & 0,00 & 2,80 & 0,00 & 83,32 \\ -->
+<!--     Rede viária & km/km^2^ & 0,59 & 0,54 & 0,32 & 0,00 & 2,65 \\ -->
+<!--     Densidade de gado & Número de cabeças/km^2^ & 0,35 & 0,27 & 0,30 & 0,00 & 1,92 \\ -->
+<!--     \hline -->
+<!--     \end{tabular] -->
+<!--     \label{tab:my_label] -->
+<!-- \end{table] -->
+
+De forma geral, há uma porção elevada de bacias de 3a ordem com níveis intermediários a altos de pressão no bioma Pampa (Figura \@ref(fig:resultscen2)). Pelo menos 38,02% das bacias apresentam um índice global de pressão maior que 0,4 (intermediário) em todas os cenários, exceto  no cenário 5, em que esse percentual corresponde a 98,99% (Figura \@ref(fig:hist-indpressao)).
+A distribuição da frequência das bacias ao longo do gradiente de pressão não foi muito diferente entre os cenários, mas variou entre as subunidades regionais, influenciando a identidade das bacias com índice global com valores intermediários mais do que as bacias nos extremos do gradiente. A escolha dos pesos afeta a interpretação a respeito da pressão ambiental sobre as bacias nas subunidades regionais apenas nos cenários 4 e 5, pois são determinadas basicamente pela presença de agricultura e áreas urbanas respectivamente. A distribuição da frequência de bacias no gradiente de pressão é bastante variável entre subunidades regionais (Figura \@ref(fig:hist-indpressfisios)),
+podendo chegar a 85% de bacias com nível intermediário a alto de pressão no Campo com Barba de Bode/Uruguai e na Floresta Estacional (Tabela 6).
 Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Campo Graminoso/Patos e Campo Misto com Andropogôneas e Compostas. Campo Arbustivo, Campo com Areais e Campos com Solos Rasos são as fisionomias menos pressionadas. Considerando que os cenários não tem variações significativas quanto ao diagnóstico global, apenas o cenário 2 foi utilizado para a descrição dos resultados deste ponto em diante, por ser o cenário com pesos variados que não tem agricultura com a maior penalidade. As figuras e histogramas referentes a todos os cenários estão no Apêndice. 
 
-%figura 6
-%figura 7
-%figura 8
+```{r resultscen2, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", fig.height=12, fig.width=10, out.extra = ""}
+```
+
+```{r hist-indpressao, fig.cap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.", fig.height=12, fig.width=10, out.extra = ""}
+```
+
+```{r hist-indpressfisios, fig.cap = "Frequência de bacias de 3a ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.height=12, fig.width=10, out.extra = ""}
+```
 
 Somente quatro bacias foram selecionadas como bacias de referência segundo a condição de menor distúrbio (LDC) em todos os cenários, três localizadas na subunidade regional Campo Arbustivo/Patos, e uma bacia na subunidade Floresta Estacional/Patos (Tabela 6).
 
 %tabelas 6 e 7
 
-As três bacias de 3ª ordem mais pressionadas foram as mesmas nos cenários 1, 2 e 3, e estão situadas nas subunidades regionais CEsp-Uruguai, e CArb-Patos. Nessas bacias, a porcentagem de agricultura foi superior a 79\% e a densidade viária é considerada alta, entre 0,89 e 1,45 km/km$^2$ [@Forman1996a, @Ripley2005a]. No cenário 4, as três bacias mais pressionadas são compostas por um conjunto de valores altos em áreas agrícolas, gado, mineração ou rede viária, e estão localizadas nas subunidades CEsp-Uruguai e CMAC-Patos, enquanto no cenário 5 destacou as bacias dominadas por área urbana e rede viária, localizadas nas mesmas subunidades. 
+As três bacias de 3ª ordem mais pressionadas foram as mesmas nos cenários 1, 2 e 3, e estão situadas nas subunidades regionais CEsp-Uruguai, e CArb-Patos. Nessas bacias, a porcentagem de agricultura foi superior a 79% e a densidade viária é considerada alta, entre 0,89 e 1,45 km/km^2^ [@Forman1996a, @Ripley2005a]. No cenário 4, as três bacias mais pressionadas são compostas por um conjunto de valores altos em áreas agrícolas, gado, mineração ou rede viária, e estão localizadas nas subunidades CEsp-Uruguai e CMAC-Patos, enquanto no cenário 5 destacou as bacias dominadas por área urbana e rede viária, localizadas nas mesmas subunidades. 
 
 ##Relações entre pressão ambiental e peixes
 
-Foram amostradas 112 espécies pertencentes a 16 famílias, sendo as famílias mais ricas Characidae, Loricariidae e Cichlidae, com 38, 21 e 14 espécies respectivamente (65,17\% do número total de espécies). O número médio de espécies por riacho foi de 18,83 (max = 32, min = 6). As cinco espécies mais frequentes foram _Heptapterus mustelinus_ (96,15\% dos sítios), _Bryconamericus iheringii_ (88,46\%), _Characidium pterostictum_ (73,08\%), _Rineloricaria stellata_ (63,46\%) e _Astyanax laticeps_ (56,68\%).  Sessenta e cinco espécies foram consideradas raras (pouco frequentes, ocorrendo em 5 riachos ou menos; 57,52\%), enquanto 10 espécies foram consideradas comuns (ocorreram em mais da metade dos riachos; 8,85\%). Cinquenta e quatro espécies (47,79\%) foram coletadas exclusivamente na ecorregião do baixo Uruguai, 17 espécies foram coletadas exclusivamente na ecorregião da Laguna dos Patos (15,04\%) e 42 espécies foram coletadas nas duas ecorregiões (37,17\%).
+Foram amostradas 112 espécies pertencentes a 16 famílias, sendo as famílias mais ricas Characidae, Loricariidae e Cichlidae, com 38, 21 e 14 espécies respectivamente (65,17% do número total de espécies). O número médio de espécies por riacho foi de 18,83 (max = 32, min = 6). As cinco espécies mais frequentes foram _Heptapterus mustelinus_ (96,15% dos sítios), _Bryconamericus iheringii_ (88,46%), _Characidium pterostictum_ (73,08%), _Rineloricaria stellata_ (63,46%) e _Astyanax laticeps_ (56,68%).  Sessenta e cinco espécies foram consideradas raras (pouco frequentes, ocorrendo em 5 riachos ou menos; 57,52%), enquanto 10 espécies foram consideradas comuns (ocorreram em mais da metade dos riachos; 8,85%). Cinquenta e quatro espécies (47,79%) foram coletadas exclusivamente na ecorregião do baixo Uruguai, 17 espécies foram coletadas exclusivamente na ecorregião da Laguna dos Patos (15,04%) e 42 espécies foram coletadas nas duas ecorregiões (37,17%).
 
-Os resultados da pRDA mostraram que a composição taxonômica está relacionada principalmente com agricultura e espelhos d'água. A relação entre  composição taxonômica das espécies de peixes e indicadores de pressão explicou 48,77\% da variação dos dados, sendo que a maior parte dessa explicação (37,84\%) foi atribuída às bacias hidrográficas utilizadas como covariáveis. O primeiro eixo de ordenação explicou 34,37\% da variação da composição taxonômica, e o segundo eixo explicou 20\% dessa variação, os quais estão mais correlacionados com espelhos d'água (r = 0,66) e áreas agrícolas (r = -0,53) respectivamente (Figura 9; Tabela 9).
+Os resultados da pRDA mostraram que a composição taxonômica está relacionada principalmente com agricultura e espelhos d'água. A relação entre  composição taxonômica das espécies de peixes e indicadores de pressão explicou 48,77% da variação dos dados, sendo que a maior parte dessa explicação (37,84%) foi atribuída às bacias hidrográficas utilizadas como covariáveis. O primeiro eixo de ordenação explicou 34,37% da variação da composição taxonômica, e o segundo eixo explicou 20% dessa variação, os quais estão mais correlacionados com espelhos d'água (r = 0,66) e áreas agrícolas (r = -0,53) respectivamente (Figura \@ref(fig:RDAtax); Tabela 9).
 Estes resultados foram considerados significativos de acordo com o teste de permutação de Monte Carlo (p = 0,018; 999 permutações) e, portanto, permitem estabelecer correlações entre os indicadores de pressão e a ictiofauna.
 
 O primeiro eixo de ordenação (RDA1) apresenta um gradiente associado a presença de espelhos d'água, enquanto o segundo eixo (RDA2) apresenta um gradiente associado principalmente a agricultura e mineração, mostrando uma relação inversa quanto a composição de espécies nos trechos amostrados cujas bacias apresentaram estes indicadores.
 
 Os resultados da pRDA para composição funcional não foram considerados significativos pelo mesmo teste de permutação mencionado anteriormente (p = 0,958; 999 permutações), não permitindo uma interpretação confiável sobre as relações entre as variáveis.
 
-%tabela 8 na dissetação
-\begin{table][h!] 
-    \centering
-    \begin{tabular]{c c c c]
-        \hline
-        Parametros & RDA1 & RDA2 & RDA3 \\
-        \hline
-        Autovalores & 0,3287 & 0,1913 & 0,1684 \\
-        Correlações espécies-habitat & 0,84 & 0,80 & 0,69 \\
-        \% variação explicada (cumulativa) & 34,39 & 54,40 & 72,01\\
-        \hline
-    \end{tabular]
-    \caption{Análise de  redundância  (pRDA)  para  relação entre composição taxonômica de  peixes e indicadores de pressão.]
-    \label{tab:pRDA_TaxPressao]
-\end{table]
+<!-- %tabela 8 na dissetação -->
+<!-- \begin{table][h!]  -->
+<!--     \centering -->
+<!--     \begin{tabular]{c c c c] -->
+<!--         \hline -->
+<!--         Parametros & RDA1 & RDA2 & RDA3 \\ -->
+<!--         \hline -->
+<!--         Autovalores & 0,3287 & 0,1913 & 0,1684 \\ -->
+<!--         Correlações espécies-habitat & 0,84 & 0,80 & 0,69 \\ -->
+<!--         % variação explicada (cumulativa) & 34,39 & 54,40 & 72,01\\ -->
+<!--         \hline -->
+<!--     \end{tabular] -->
+<!--     \caption{Análise de  redundância  (pRDA)  para  relação entre composição taxonômica de  peixes e indicadores de pressão.] -->
+<!--     \label{tab:pRDA_TaxPressao] -->
+<!-- \end{table] -->
 
-%tabela 9
-%figura nove 
+<!-- %tabela 9 -->
+
+```{r RDAtax, fig.cap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela 9.", fig.height=12, fig.width=10, out.extra = ""}
+``` 
+
+%tabela 10
 
 Três indicadores de pressão apresentaram relação com a riqueza taxonômica: áreas urbanas, espelhos d'água e agricultura (Tabela 10).
-O modelo explicou 26,90\% da variação da variável resposta, mas as estimativas para espelhos d'água e áreas urbanas foram inverossímeis devido à baixa quantidade de bacias amostradas com presença desses indicadores (sobreajuste). Assim, não consideramos estas relações interpretáveis. A agricultura está relacionada negativamente com riqueza taxonômica (Figura 10Figura 10).
+O modelo explicou 26,90% da variação da variável resposta, mas as estimativas para espelhos d'água e áreas urbanas foram inverossímeis devido à baixa quantidade de bacias amostradas com presença desses indicadores (sobreajuste). Assim, não consideramos estas relações interpretáveis. A agricultura está relacionada negativamente com riqueza taxonômica (Figura \@ref(fig:RiqRar-Agr)).
 
 Nenhum indicador de pressão ou cenário teve relação significativa com riqueza funcional (Tabela 11).
-Apesar disso, há um padrão de diminuição da riqueza funcional em relação ao índice global de pressão, isto é, a variação nos valores de riqueza funcional em bacias com baixa pressão ambiental é maior do que nas bacias com pressão elevada (Figura 11).
+Apesar disso, há um padrão de diminuição da riqueza funcional em relação ao índice global de pressão, isto é, a variação nos valores de riqueza funcional em bacias com baixa pressão ambiental é maior do que nas bacias com pressão elevada (Figura \@ref(fig:RiqFunc-Cen)).
 
-\begin{table][h!] %tabela 10 na dissertacao
-    \centering
-    \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre riqueza taxonômica de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.]
-    \begin{tabular]{c c c c||c c c c ]
-    \hline
-    Indicadores de pressão & Beta & Erro padrão & p-value & Cenários & Beta & Erro padrão & \textit{p-value] \\
-    \hline
-    Intercepto & 14,53 & 0,55 & $<$ 0,01 &  &  & \\
-    Agricultura & \textbf{-3,86] & 2,25 & \textbf{0,05] & 1 & 1,125 & 4,154 & 0,78 \\
-    Espelhos d'água & \textbf{169,48] & 70,80 & \textbf{0,02] & 2 & 1,23 & 4,103 & 0,76 \\
-    Rede viária & 0,17 & 2,55 & 0,95 & 3 & -0,41 & 3,26 & 0,90 \\
-    Gado & 1,46 & 2,13 & 0,50 & 4 & -0,91 & 2,59 & 0,73 \\
-    Mineração & -25,55 & 644,49 & 0,97 & 5 & 2,028 & 8,33 & 0,73 \\
-    Áreas urbanas & \textbf{1261,45] & 517,67 & 0,02 &  &  & \\
-    \hline 
-    \end{tabular]
-    \label{tab:my_label]
-\end{table]
+<!-- \begin{table][h!] %tabela 10 na dissertacao -->
+<!--     \centering -->
+<!--     \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre riqueza taxonômica de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.] -->
+<!--     \begin{tabular]{c c c c||c c c c ] -->
+<!--     \hline -->
+<!--     Indicadores de pressão & Beta & Erro padrão & p-value & Cenários & Beta & Erro padrão & \textit{p-value] \\ -->
+<!--     \hline -->
+<!--     Intercepto & 14,53 & 0,55 & $<$ 0,01 &  &  & \\ -->
+<!--     Agricultura & \textbf{-3,86] & 2,25 & \textbf{0,05] & 1 & 1,125 & 4,154 & 0,78 \\ -->
+<!--     Espelhos d'água & \textbf{169,48] & 70,80 & \textbf{0,02] & 2 & 1,23 & 4,103 & 0,76 \\ -->
+<!--     Rede viária & 0,17 & 2,55 & 0,95 & 3 & -0,41 & 3,26 & 0,90 \\ -->
+<!--     Gado & 1,46 & 2,13 & 0,50 & 4 & -0,91 & 2,59 & 0,73 \\ -->
+<!--     Mineração & -25,55 & 644,49 & 0,97 & 5 & 2,028 & 8,33 & 0,73 \\ -->
+<!--     Áreas urbanas & \textbf{1261,45] & 517,67 & 0,02 &  &  & \\ -->
+<!--     \hline  -->
+<!--     \end{tabular] -->
+<!--     \label{tab:my_label] -->
+<!-- \end{table] -->
 
-%figura 10
+```{r RiqRar-Agr, fig.cap = "Relação entre Agricultura (%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95%.", fig.height=12, fig.width=10, out.extra = ""}
+```
 
-\begin{table][h!] %tabela 11
-    \centering
-    \begin{tabular]{c c c c||c c c c ]
-    \hline
-    Indicadores de pressão & Beta & Erro padrão & \textit{p-value] & Cenários & Beta & Erro padrão & \textit{p-value] \\
-    Intercepto & -2,26 & 0,13 & $<$ 0,01  &  &  &  \\ 
-    Agricultura & -0,44 & 0,46 & 0,34 & 1 & -0,83 & 0,82 & 0,31 \\
-    Espelhos dágua & 43,13 & 11,39 & 0,53 & 2 & -0,80 & 0,82 & 0,98 \\
-    Rede viária & -0,10 & 0,51 & 0,83 & 3 & -0,97 & 0,81 & 0,14 \\
-    Gado & 0,21 & 0,42 & 0,61 & 4 & -0,89 & 0,58 & 0,26 \\
-    Mineração & 45,92 & 121,34 & 0,70 & 5 & -1.67 & 1,79 & 0,31 \\
-    Área Urbana & 53,46 & 48,94 & 0,27 &  &  &  \\
-    \hline
-    \end{tabular]
-    \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre riqueza funcional de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.]
-    \label{tab:my_label]
-\end{table]
+<!-- \begin{table][h!] %tabela 11 -->
+<!--     \centering -->
+<!--     \begin{tabular]{c c c c||c c c c ] -->
+<!--     \hline -->
+<!--     Indicadores de pressão & Beta & Erro padrão & \textit{p-value] & Cenários & Beta & Erro padrão & \textit{p-value] \\ -->
+<!--     Intercepto & -2,26 & 0,13 & $<$ 0,01  &  &  &  \\  -->
+<!--     Agricultura & -0,44 & 0,46 & 0,34 & 1 & -0,83 & 0,82 & 0,31 \\ -->
+<!--     Espelhos dágua & 43,13 & 11,39 & 0,53 & 2 & -0,80 & 0,82 & 0,98 \\ -->
+<!--     Rede viária & -0,10 & 0,51 & 0,83 & 3 & -0,97 & 0,81 & 0,14 \\ -->
+<!--     Gado & 0,21 & 0,42 & 0,61 & 4 & -0,89 & 0,58 & 0,26 \\ -->
+<!--     Mineração & 45,92 & 121,34 & 0,70 & 5 & -1.67 & 1,79 & 0,31 \\ -->
+<!--     Área Urbana & 53,46 & 48,94 & 0,27 &  &  &  \\ -->
+<!--     \hline -->
+<!--     \end{tabular] -->
+<!--     \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre riqueza funcional de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.] -->
+<!--     \label{tab:my_label] -->
+<!-- \end{table] -->
 
-%figura 11
+```{r RiqFunc-Cen, fig.cap = "Riqueza funcional em relação aos índices globais de pressão ambiental nos cinco cenários.", fig.height=12, fig.width=10, out.extra = ""}
+```
 
 Nenhum indicador de pressão ou cenário apresentou relação com a proporção de espécies comuns (Tabela 12)
 e raras (Tabela 13).
 
-\begin{table][h!] %tabela 12
-    \centering
-    \begin{tabular]{c c c c||c c c c ]
-    \hline
-    Indicadores de pressão & Beta & Erro padrão & p-value & Cenários & Beta & Erro padrão & p-value \\
-    \hline
-    Intercepto & -0,48 & 0,07 & $<$ 0,01 &  &  &  & \\
-    Agricultura & 0,13 & 0,30 & 0,65 & 1 & 0,26 & 0,55 & 0,63 \\
-    Espelhos d'água & -18,13 & 10,28 & 0,12 & 2 & 0,23 & 0,55 & 0,67 \\
-    Gado & -0,30 & 0,29 & 0,30 & 3 & 0,31 & 0,43 & 0,49 \\
-    Rede viária & 0,41 & 0,34 & 0,23 & 4 & 0,27 & 0,34 & 0,42 \\
-    Mineração & -8,49 & 87,54 & 0,92 & 5 & 0,52 & 1,12 & 0,64 \\
-    Áreas urbanas & -26,91 & 41,35 & 0,52 &  &  &  & \\
-    \hline
-    \end{tabular]
-    \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre porcentagem de espécies comuns de peixes em riachos do Pampa. . Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.]
-    \label{tab:my_label]
-\end{table]
+<!-- \begin{table][h!] %tabela 12 -->
+<!--     \centering -->
+<!--     \begin{tabular]{c c c c||c c c c ] -->
+<!--     \hline -->
+<!--     Indicadores de pressão & Beta & Erro padrão & p-value & Cenários & Beta & Erro padrão & p-value \\ -->
+<!--     \hline -->
+<!--     Intercepto & -0,48 & 0,07 & $<$ 0,01 &  &  &  & \\ -->
+<!--     Agricultura & 0,13 & 0,30 & 0,65 & 1 & 0,26 & 0,55 & 0,63 \\ -->
+<!--     Espelhos d'água & -18,13 & 10,28 & 0,12 & 2 & 0,23 & 0,55 & 0,67 \\ -->
+<!--     Gado & -0,30 & 0,29 & 0,30 & 3 & 0,31 & 0,43 & 0,49 \\ -->
+<!--     Rede viária & 0,41 & 0,34 & 0,23 & 4 & 0,27 & 0,34 & 0,42 \\ -->
+<!--     Mineração & -8,49 & 87,54 & 0,92 & 5 & 0,52 & 1,12 & 0,64 \\ -->
+<!--     Áreas urbanas & -26,91 & 41,35 & 0,52 &  &  &  & \\ -->
+<!--     \hline -->
+<!--     \end{tabular] -->
+<!--     \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre porcentagem de espécies comuns de peixes em riachos do Pampa. . Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.] -->
+<!--     \label{tab:my_label] -->
+<!-- \end{table] -->
 
-\begin{table][h!] %tabela 13
-    \centering
-    \begin{tabular]{c c c c||c c c c ]
-    \hline
-    Indicadores de pressão & Beta & Erro padrão & \textit{p-value] & Cenários & Beta & Erro padrão & \textit{p-value] \\
-    \hline
-    Intercepto & -1,80 & 0,12 & $<$ 0,01 &  &  &  & \\
-    Agricultura & 0,06 & 0,44 & 0,89 & 1 & -0,30 & 0,82 & 0,71 \\
-    Espelhos d'água & 39,06 & 11,95 & 0,20 & 2 & -0,29 & 0,81 & 0,72 \\
-    Gado & 0,17 & 0,42 & 0,68 & 3 & -0,56 & 0,66 & 0,39 \\
-    Rede viária & -0,45 & 0,51 & 0,38 & 4 & -0,62 & 0,52 & 0,23 \\
-    Mineração & -218,27 & 155,54 & 0,16 & 5 & -0,70 & 1,65 & 0,67 \\
-    Áreas urbanas & -27,20 & 59,66 & 0,64 &  &  &  & \\
-    \hline
-    \end{tabular]
-    \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre porcentagem de espécies raras de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.]
-    \label{tab:my_label]
-\end{table]
+<!-- \begin{table][h!] %tabela 13 -->
+<!--     \centering -->
+<!--     \begin{tabular]{c c c c||c c c c ] -->
+<!--     \hline -->
+<!--     Indicadores de pressão & Beta & Erro padrão & \textit{p-value] & Cenários & Beta & Erro padrão & \textit{p-value] \\ -->
+<!--     \hline -->
+<!--     Intercepto & -1,80 & 0,12 & $<$ 0,01 &  &  &  & \\ -->
+<!--     Agricultura & 0,06 & 0,44 & 0,89 & 1 & -0,30 & 0,82 & 0,71 \\ -->
+<!--     Espelhos d'água & 39,06 & 11,95 & 0,20 & 2 & -0,29 & 0,81 & 0,72 \\ -->
+<!--     Gado & 0,17 & 0,42 & 0,68 & 3 & -0,56 & 0,66 & 0,39 \\ -->
+<!--     Rede viária & -0,45 & 0,51 & 0,38 & 4 & -0,62 & 0,52 & 0,23 \\ -->
+<!--     Mineração & -218,27 & 155,54 & 0,16 & 5 & -0,70 & 1,65 & 0,67 \\ -->
+<!--     Áreas urbanas & -27,20 & 59,66 & 0,64 &  &  &  & \\ -->
+<!--     \hline -->
+<!--     \end{tabular] -->
+<!--     \caption{Coeficientes beta para o modelo linear generalizado do efeito de indicadores de pressão sobre porcentagem de espécies raras de peixes em riachos do Pampa. Cinco modelos diferentes foram realizados utilizando os cenários como variável explicativa, mas seus coeficientes beta estão descritos em uma única tabela para facilitar a representação.] -->
+<!--     \label{tab:my_label] -->
+<!-- \end{table] -->
