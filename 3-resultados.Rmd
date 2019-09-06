@@ -3,9 +3,9 @@
 ###Pressão ambiental sobre bacias de 3ª ordem no bioma Pampa
 
 As 3359 bacias de 3ª ordem contém pelo menos um indicador de pressão ambiental, sendo essas pressões distribuídas de forma desigual no bioma Pampa (Figura \@ref(fig:pressoes) e Figura \@ref(fig:boxplotsfisios)).
-Bacias com agricultura estão mais concentradas em partes do sudoeste onde o relevo é ondulado ou há solos rasos. As densidades de áreas urbanas e rede viária aumentam no sentido oeste-leste, ou seja, mais aglomeradas à medida que se aproximam da região metropolitana de Porto Alegre e do litoral, mais populosos do que o interior do estado. Espelhos d'água estão associados à pecuária, para dessedentação animal, e às áreas agrícolas irrigadas, encontrando-se, portando, mais concentradas no oeste do bioma. A mineração está majoritariamente localizada na região centro-sul do estado. A proporção de áreas agrícolas e a densidade de rede viária foram os fatores de pressão em média predominantes no bioma Pampa (0,38 e 0,59 respectivamente; Tabela 5). 
+Bacias com agricultura estão mais concentradas em partes do sudoeste onde o relevo é ondulado ou há solos rasos. As densidades de áreas urbanas e rede viária aumentam no sentido oeste-leste, ou seja, mais aglomeradas à medida que se aproximam da região metropolitana de Porto Alegre e do litoral, mais populosos do que o interior do estado. Espelhos d'água estão associados à pecuária, para dessedentação animal, e às áreas agrícolas irrigadas, encontrando-se, portando, mais concentradas no oeste do bioma. A mineração está majoritariamente localizada na região centro-sul do estado. A proporção de áreas agrícolas e a densidade de rede viária foram os fatores de pressão em média predominantes no bioma Pampa (0,38 e 0,59 respectivamente; Tabela \@ref(tab:variaveis-ambientais)). 
 
-Aproximadamente 20% das bacias (702) têm 70% ou mais da sua área ocupada por agricultura, e 10,39% (349) das bacias têm densidade viária maior do que 1 km/km^2^, enquanto e a porcentagem de área ocupada pelas poligonais destinadas a mineração variou entre 0 e 99,48% (média = 0,006 66 ± 0,05). A porcentagem de área ocupada por mineração foi menor a que 10% em 98,29% das bacias (Tabela 5).
+Aproximadamente 20% das bacias (702) têm 70% ou mais da sua área ocupada por agricultura, e 10,39% (349) das bacias têm densidade viária maior do que 1 km/km^2^, enquanto e a porcentagem de área ocupada pelas poligonais destinadas a mineração variou entre 0 e 99,48% (média = 0,006 66 ± 0,05). A porcentagem de área ocupada por mineração foi menor a que 10% em 98,29% das bacias (Tabela \@ref(tab:variaveis-ambientais)).
 
 Não há colinearidade forte entre os indicadores de pressão ambiental, sendo agricultura e densidade de gado os indicadores mais correlacionados (r = -0,26; p < 0,01).
 
@@ -19,23 +19,9 @@ Agricultura, densidade viária e de gado são os indicadores predominantes em to
 ```{r boxplotsfisios, code=readLines("figuras/05_boxplots.R"), fig.cap = "Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via =  rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=12, fig.width=10, out.extra = ""}
 ```
 
-<!-- \begin{table][h!] -->
-<!--     \centering -->
-<!--     \caption{Estatística descritiva das variáveis indicadoras de pressão ambiental.] -->
-<!--     \begin{tabular]{c c c c c c c] -->
-<!--     \hline -->
-<!--     Fator & Unidade & Média & Mediana & Desvio Padrão & Mínimo & Máximo \\ -->
-<!--     \hline -->
-<!--     Agricultura & % área da bacia & 38,10 & 33,20 & 30,84 & 0,00 & 100,00 \\ -->
-<!--     Espelhos dágua & % área da bacia & 1,06 & 0,00 & 2,36 & 0,00 & 31,57 \\ -->
-<!--     Mineração & % área da bacia & 0,66 & 0,00 & 5,42 & 0,00 & 99,48 \\ -->
-<!--     Áreas urbanas & % área da bacia & 0,31 & 0,00 & 2,80 & 0,00 & 83,32 \\ -->
-<!--     Rede viária & km/km^2^ & 0,59 & 0,54 & 0,32 & 0,00 & 2,65 \\ -->
-<!--     Densidade de gado & Número de cabeças/km^2^ & 0,35 & 0,27 & 0,30 & 0,00 & 1,92 \\ -->
-<!--     \hline -->
-<!--     \end{tabular] -->
-<!--     \label{tab:my_label] -->
-<!-- \end{table] -->
+<!-- tabela 5 -->
+```{r variaveis-ambientais}
+```
 
 De forma geral, há uma porção elevada de bacias de 3ª ordem com níveis intermediários a altos de pressão no bioma Pampa (Figura \@ref(fig:resultscen2)). Pelo menos 38,02% das bacias apresentam um índice global de pressão maior que 0,4 (intermediário) em todas os cenários, exceto  no cenário 5, em que esse percentual corresponde a 98,99% (Figura \@ref(fig:hist-indpressao)).
 A distribuição da frequência das bacias ao longo do gradiente de pressão não foi muito diferente entre os cenários, mas variou entre as subunidades regionais, influenciando a identidade das bacias com índice global com valores intermediários mais do que as bacias nos extremos do gradiente. A escolha dos pesos afeta a interpretação a respeito da pressão ambiental sobre as bacias nas subunidades regionais apenas nos cenários 4 e 5, pois são determinadas basicamente pela presença de agricultura e áreas urbanas respectivamente. A distribuição da frequência de bacias no gradiente de pressão é bastante variável entre subunidades regionais (Figura \@ref(fig:hist-indpressfisios)),
@@ -53,11 +39,15 @@ Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Ca
 
 Somente quatro bacias foram selecionadas como bacias de referência segundo a condição de menor distúrbio (LDC) em todos os cenários, três localizadas na subunidade regional Campo Arbustivo/Patos, e uma bacia na subunidade Floresta Estacional/Patos (Tabela 6).
 
-%tabelas 6 e 7
+%tabelas 6
+
+<!-- tabela 7. não ta referenciada no texto??? -->
+```{r caractbaciaref-cenarios}
+```
 
 As três bacias de 3ª ordem mais pressionadas foram as mesmas nos cenários 1, 2 e 3, e estão situadas nas subunidades regionais CEsp-Uruguai, e CArb-Patos. Nessas bacias, a porcentagem de agricultura foi superior a 79% e a densidade viária é considerada alta, entre 0,89 e 1,45 km/km^2^ [@Forman1996a, @Ripley2005a]. No cenário 4, as três bacias mais pressionadas são compostas por um conjunto de valores altos em áreas agrícolas, gado, mineração ou rede viária, e estão localizadas nas subunidades CEsp-Uruguai e CMAC-Patos, enquanto no cenário 5 destacou as bacias dominadas por área urbana e rede viária, localizadas nas mesmas subunidades. 
 
-##Relações entre pressão ambiental e peixes
+###Relações entre pressão ambiental e peixes
 
 Foram amostradas 112 espécies pertencentes a 16 famílias, sendo as famílias mais ricas Characidae, Loricariidae e Cichlidae, com 38, 21 e 14 espécies respectivamente (65,17% do número total de espécies). O número médio de espécies por riacho foi de 18,83 (max = 32, min = 6). As cinco espécies mais frequentes foram _Heptapterus mustelinus_ (96,15% dos sítios), _Bryconamericus iheringii_ (88,46%), _Characidium pterostictum_ (73,08%), _Rineloricaria stellata_ (63,46%) e _Astyanax laticeps_ (56,68%).  Sessenta e cinco espécies foram consideradas raras (pouco frequentes, ocorrendo em 5 riachos ou menos; 57,52%), enquanto 10 espécies foram consideradas comuns (ocorreram em mais da metade dos riachos; 8,85%). Cinquenta e quatro espécies (47,79%) foram coletadas exclusivamente na ecorregião do baixo Uruguai, 17 espécies foram coletadas exclusivamente na ecorregião da Laguna dos Patos (15,04%) e 42 espécies foram coletadas nas duas ecorregiões (37,17%).
 
@@ -68,21 +58,9 @@ O primeiro eixo de ordenação (RDA1) apresenta um gradiente associado a presen�
 
 Os resultados da pRDA para composição funcional não foram considerados significativos pelo mesmo teste de permutação mencionado anteriormente (p = 0,958; 999 permutações), não permitindo uma interpretação confiável sobre as relações entre as variáveis.
 
-<!-- %tabela 8 na dissetação -->
-<!-- \begin{table][h!]  -->
-<!--     \centering -->
-<!--     \begin{tabular]{c c c c] -->
-<!--         \hline -->
-<!--         Parametros & RDA1 & RDA2 & RDA3 \\ -->
-<!--         \hline -->
-<!--         Autovalores & 0,3287 & 0,1913 & 0,1684 \\ -->
-<!--         Correlações espécies-habitat & 0,84 & 0,80 & 0,69 \\ -->
-<!--         % variação explicada (cumulativa) & 34,39 & 54,40 & 72,01\\ -->
-<!--         \hline -->
-<!--     \end{tabular] -->
-<!--     \caption{Análise de  redundância  (pRDA)  para  relação entre composição taxonômica de  peixes e indicadores de pressão.] -->
-<!--     \label{tab:pRDA_TaxPressao] -->
-<!-- \end{table] -->
+<!-- tabela 8. não ta referenciada no texto??? -->
+```{r pRDA-comptax}
+```
 
 <!-- %tabela 9 -->
 

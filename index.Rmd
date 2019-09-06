@@ -1,17 +1,19 @@
 ---
-title: "Untitled"
+title: "Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna"
 author: "Bruna Arbo Meneses"
-date: "September 4, 2019"
+date: "Porto Alegre, outubro de 2016"
 output:
   bookdown::word_document2:
     fig_caption: true
+    toc: yes
   html_document:
     df_print: paged
+    toc: yes
   pdf_document:
     # keep_tex: yes
     # latex_engine: xelatex
     fig_caption: yes
-geometry: margin=2.5cm
+    toc: yes
 fontsize: 12pt
 bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
 link-citations: yes

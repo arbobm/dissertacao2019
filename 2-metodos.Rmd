@@ -16,7 +16,7 @@ A silvicultura também constitui atividade em expansão no Rio Grande do Sul, co
 
 Como consequência, resta 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015]. 
 
-<!-- tabela -->
+<!-- tabela 1 -->
 ```{r fisiocamp}
 ```
 
@@ -43,6 +43,8 @@ Definimos o grau de pressão sobre as bacias como um índice global composto por
 Todas as fontes de dados estão disponíveis publicamente, exceto a densidade de gado, que foi fornecida pelo Instituto Brasileiro de Geografia e Estatística (IBGE; Censo Agropecuário, 2006) <!-- %ref --> como números absolutos por setor censitário com pelo menos 10 informantes. 
 
 Os dados de áreas agrícolas e urbanas foram obtidos a partir do mapeamento da vegetação do Rio Grande do Sul realizados por @Cordeiro2009a. O mapeamento, cuja escala é de 1:50.000 e no qual somente remanescentes com um eixo maior do que 250 metros foram vetorizados, foi realizado a partir de imagens LANDSAT 5 TM e 7 ETM+ (30 m de resolução espacial), ano base 2002 e possui 32 classes de uso e cobertura de solo. Destas, cinco estão relacionadas a atividade agropecuária com potencial impacto nos ambientes aquáticos ("Agricultura sequeiro", "Agricultura irrigada", "Alagado arroz", "Misto campo/mato - Originalmente mata. Pastagem com domínio de campo nativo sobre área desmatada" e "Uso misto - cultivo em pequenas parcelas"). Estas categorias foram agrupadas em uma nova classe denominada "Agricultura". A rede viária disponível digitalmente na base cartográfica vetorial contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b] foi digitalizada sobre as cartas do exercito de 1960 e está dividida em pavimentadas e não pavimentadas de acordo com as jurisdições responsáveis por sua construção e manutenção: municipal, estadual e federal. Conta também com as categorias caminho/trilhas e rede ferroviária. Embora os dados sejam oriundos de mapas da década de 1960, a pavimentação e a duplicação das rodovias foram as principais mudanças na rede viária, não a expansão da rede [@Teixeira2015]. Todas as classes foram consideradas como igualmente impactantes.
+
+<!-- tabela 2 -->
 
 <!--
 \begin{table][ht]
@@ -72,28 +74,13 @@ Os dados dos efetivos de rebanho bovino, suíno e ovino do Rio Grande do Sul for
 
 Espelhos d'água é o indicador que corresponde aos açudes e reservatórios, utilizados para dessedentação animal ou geração de energia, por exemplo, e foi obtido a partir do Mapeamento dos Espelhos d'água do Brasil com área superficial a partir de 20 hectares [@FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a]. Originalmente, o mapeamento, que utilizou imagens dos satélites LandSAT 7 e CBERS, entre os anos 2003 e 2006, estava dividido por tipo de espelho d'água: artificial (reservatório) ou natural (lagos, lagoas, outros). Utilizamos apenas os espelhos d'água classificados com artificiais.
 
-Cada um dos indicadores abordados pode influenciar os ambientes aquáticos de diferentes formas (Tabela \ref{tab:fatores]). A agricultura, por exemplo, usualmente ocupa a maior fração em uma bacia hidrográfica, enquanto áreas urbanas e outros usos ocupam uma área menor. Entretanto, estes usos podem exercer uma influência desproporcional nos ambientes aquáticos, estejam eles próximos ou distantes dos corpos d'água [@Allan2004a]. Os cinco cenários diferenciam-se em função dos pesos atribuídos a cada indicador de pressão (Tabela 3Tabela 3).
+Cada um dos indicadores abordados pode influenciar os ambientes aquáticos de diferentes formas (Tabela x). A agricultura, por exemplo, usualmente ocupa a maior fração em uma bacia hidrográfica, enquanto áreas urbanas e outros usos ocupam uma área menor. Entretanto, estes usos podem exercer uma influência desproporcional nos ambientes aquáticos, estejam eles próximos ou distantes dos corpos d'água [@Allan2004a]. Os cinco cenários diferenciam-se em função dos pesos atribuídos a cada indicador de pressão (Tabela \@ref(tab:cenarios-pesos)).
 No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). No cenário 2, tomamos por referência os pesos utilizados em @Stein2002a. Em cada cenário, o somatório dos pesos de cada indicador foi sempre igual a 1.  O cenário 3 representa a média dos pesos utilizados em quatro estudos: @Sanderson2002; @Heiner2011a; @Turak2011c; @Zhang2014. Os cenários 4 e 5 foram elaboradas com o objetivo de simular quais seriam os resultados se uma única variável recebesse um peso maior (0,50), enquanto as outras fossem ponderadas da mesma forma (0,10). A variável agricultura foi a que recebeu maior peso no cenário 4 e a variável área urbana foi a definida no cenário 5. Todos os pesos somam 1 dentro de cada cenário. Por fim, os valores calculados dos índices foram padronizados para que variassem entre 0 a 1, onde 0 representa a ausência de pressão ambiental (conforme os indicadores aqui empregados) e 1 representa pressão ambiental máxima.
 
-<!--
-\begin{table][h!]
-    \centering
-    \caption{Cenários (configurações de pesos) utilizados na ponderação dos indicadores de pressão ambiental sobre bacias de 3a ordem no bioma Pampa.]
-    \begin{tabular]{c c c c c c]
-    \hline
-    Uso & Cenário 1 & Cenário 2 & Cenário 3 & Cenário 4 & Cenário 5 \\
-    \hline
-    Agricultura & 0,17 & 0,19 & 0,24 & 0,50 & 0,10 \\
-    Área urbana & 0,17 & 0,25 & 0,18 & 0,10 & 0,50 \\
-    Rede viária & 0,17 & 0,16 & 0,15 & 0,10 & 0,10 \\
-    Mineração & 0,17 & 0,15 & 0,13 & 0,10 & 0,10 \\
-    Espelhos d'água & 0,17 & 0,07 & 0,18 & 0,10 & 0,10 \\
-    Gado & 0,17 & 0,19 & 0,12 & 0,10 & 0,10 \\
-    \hline 
-    \end{tabular]
-    \label{tab:cenarpesos]
-\end{table]
--->
+<!-- tabela 3 -->
+```{r cenarios-pesos}
+```
+
 ### Determinação das bacias de referência
 
 Para identificar as bacias de referência, as bacias de 3ª ordem foram ranqueadas em ordem crescente quanto ao valor de cada indicador de pressão e ao valor do índice global. Em seguida, assumimos que as bacias nas quais todos os fatores de pressão medidos tiveram valor zero, foram classificadas como "condição de distúrbio mínimo" (MDC, abreviação para Minimum Disturbance Condition; @Stoddard2006), sendo essas bacias as que representam a condição de referência ideal, mais próxima da integridade biótica. A condição mais realística, no entanto, é aquela em que se usa como referência as bacias com a melhor condição possível, isto é, aquelas que apresentam a menor presença de fatores de pressão entre as bacias avaliadas. Estas bacias foram classificadas como "condição de menor distúrbio" (LDC, abreviação para Least disturbed condition; @Stoddard2006), descritas por um gradiente em que as bacias menos pressionadas se aproximam das bacias em condição de distúrbio mínimo em relação as bacias mais pressionadas. Neste trabalho, as bacias que estiveram entre as 10% menos pressionadas segundo o índice global de pressão ao mesmo tempo em que apresentaram os menores valores para cada indicador separadamente em cada subunidade regional foram consideradas bacias em condição de menor distúrbio (LDC). LDC e MDC foram consideradas bacias de referência. As bacias com índice global entre 0,4 e 0,6 foram consideradas com pressão intermediária e as bacias com valores maiores do que 0,6 foram consideradas como as mais pressionadas.
