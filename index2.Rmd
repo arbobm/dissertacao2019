@@ -1,0 +1,105 @@
+---
+title: |
+  Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna
+author: Bruna Arbo Meneses
+date: 'Porto Alegre, outubro de 2016'
+orientador: 'Fernando Gertum Becker'
+tipotrabalho: 'Dissertação de Mestrado'
+preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Ecologia, do Instituto de Biociências da Universidade Federal do Rio Grande do Sul, como parte dos requisitos para obtenção do título de Mestre em Ecologia.'
+abstractseparate: true  # include front page w/ abstract for examination schools?
+abstract: |
+  `r paste(readLines("front-and-back-matter/0-abstract.Rmd"), collapse = '\n  ')`
+keywords: 
+resumo: |
+  `r paste(readLines("front-and-back-matter/0-resumo.Rmd"), collapse = '\n  ')`
+palavraschave:
+agradecimentos: |
+  `r paste(readLines("front-and-back-matter/0-agradecimentos.Rmd"), collapse = '\n  ')`
+epigrafe: Human beings are stewards of nature, whether we like it or not. Sanderson et al. (2002), Trends in Ecology & Evolution 23
+bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
+bibliography-heading-in-pdf: Works Cited
+apendices: |
+  `r paste(readLines("front-and-back-matter/99-apendices.Rmd"), collapse = '\n  ')`
+bib-humanities: true   #set to true if you want in-text references formatted as author-year
+draft: true # add as DRAFT mark in the footer?
+page-layout: nobind #'nobind' for PDF output (equal margins), 'twoside' for two-sided binding (mirror margins and blank pages), leave blank for one-sided binding (left margin > right margin)
+toc-depth: 2 # depth of heading to include in table of contents
+lof: true # list of figures in front matter?
+lot: true # list of tables in front matter?
+params: corrections: false # set false to stop applying blue background to blocks of corrections
+output:
+  bookdown::pdf_book:
+    template: abntex.tex
+    keep_tex: true
+    citation_package: biblatex  
+  bookdown::gitbook:
+    config:
+      sharing:
+        facebook: false
+        twitter: yes
+        all: false
+  bookdown::word_document2:
+    toc: true   
+link-citations: true
+documentclass: book
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::read_chunk("figuras.R")
+knitr::read_chunk("tabelas.R")
+```
+
+<!-- capa -->
+
+
+<!-- segunda pagina -->
+
+
+<!-- terceira pagina -->
+
+
+<!-- agradecimentos -->
+
+
+<!-- <!-- resumo --> -->
+<!-- ```{r child = "0-resumo.Rmd"} -->
+<!-- ``` -->
+
+<!-- <!-- abstract --> -->
+<!-- ```{r child = "0-abstract.Rmd"} -->
+<!-- ``` -->
+
+<!-- sumario, lista de figuras, lista de taberlas -->
+
+
+<!-- lista de figuras -->
+
+
+<!-- introducao -->
+```{r child = "1-introducao.Rmd"}
+```
+
+<!-- métodos -->
+```{r child = "2-metodos.Rmd"}
+```
+
+<!-- resultados-->
+```{r child = "3-resultados.Rmd"}
+```
+
+<!-- discussão
+```{r child = "4-discussao.Rmd"}
+```
+
+<!-- consideracoes finais
+```{r child = "5-consfinais.Rmd"}
+```
+
+<!-- referencias
+# ```{r child = "99-refs.Rmd"}
+# ```
+
+<!-- Apendices
+# ```{r child = "999-apendices.Rmd"}
+# ```

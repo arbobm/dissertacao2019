@@ -1,20 +1,33 @@
 ---
-title: "Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna"
-author: "Bruna Arbo Meneses"
-date: "Porto Alegre, outubro de 2016"
+title: 'Assessing and supporting working memory in children: the role of attention and the environment'  
+subtitle: ''  
+author: 
+- 'Bruna Arbo Meneses'
+description: 
+- 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Ecologia, do Instituto de Biociências da Universidade Federal do Rio Grande do Sul, como parte dos requisitos para obtenção do título de Mestre em Ecologia.'
+- 'Prof. Dr. Demetrio Luis Guadagnin'
+- 'Prof. Dra. Fernanda Thiesen Brum'
+- 'Prof. Dr. Uwe H. Schulz'
+- 'Orientador: Prof. Dr. Fernando Gertum Becker'
+- 'Comissão Examinadora:'
+date: 'Porto Alegre, outubro de 2016'
+geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.5
 output:
+  bookdown::pdf_book:
+    fig_caption: yes
+    toc: yes
+    number_sections: false
+    includes:
+      in_header: preamble.tex
   bookdown::word_document2:
     fig_caption: true
     toc: yes
+    number_sections: false
   html_document:
     df_print: paged
     toc: yes
-  pdf_document:
-    # keep_tex: yes
-    # latex_engine: xelatex
-    fig_caption: yes
-    toc: yes
-fontsize: 12pt
 bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
 link-citations: yes
 ---
