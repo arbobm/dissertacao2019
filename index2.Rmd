@@ -26,12 +26,13 @@ page-layout: nobind #'nobind' for PDF output (equal margins), 'twoside' for two-
 toc-depth: 2 # depth of heading to include in table of contents
 lof: true # list of figures in front matter?
 lot: true # list of tables in front matter?
-params: corrections: false # set false to stop applying blue background to blocks of corrections
+params: 
+  corrections: false # set false to stop applying blue background to blocks of corrections
 output:
   bookdown::pdf_book:
-    template: abntex.tex
+    template: templates/template.tex
     keep_tex: true
-    citation_package: biblatex  
+    latex_engine: xelatex
   bookdown::gitbook:
     config:
       sharing:
@@ -48,6 +49,7 @@ documentclass: book
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 knitr::read_chunk("figuras.R")
 knitr::read_chunk("tabelas.R")
+options(tinytex.verbose = TRUE)
 ```
 
 <!-- capa -->
@@ -84,7 +86,7 @@ knitr::read_chunk("tabelas.R")
 ```{r child = "2-metodos.Rmd"}
 ```
 
-<!-- resultados-->
+<!-- resultados
 ```{r child = "3-resultados.Rmd"}
 ```
 

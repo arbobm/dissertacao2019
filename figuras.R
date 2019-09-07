@@ -27,7 +27,7 @@ knitr::include_graphics("figuras/07_histograma_indpressao.png")
 #Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.
 
 ## @knitr hist-indpressfisios
-knitr::include_graphics("figuras/08_histogramas cenario 2.png")
+knitr::include_graphics("figuras/08_histogramas_cenario2.png")
 #Frequência de bacias de 3a ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional. 
 
 ## @knitr RDAtax
@@ -43,17 +43,17 @@ knitr::include_graphics("figuras/11_plot_riquezafuncionalXcenarios.png")
 #Riqueza funcional em relação aos índices globais de pressão ambiental nos cinco cenários.
 
 ## @knitr ImplicPior
-knitr::include_graphics("figuras/12_Implicações_piores.jpg")
+knitr::include_graphics("figuras/12_Implicacoes_piores.jpg")
 #Proporção da área de bacias hidrográficas de 3ª ordem mais pressionadas (índice global maior que 0,6) nas fisionomias campestres.
 
 ## @knitr ImplicRef
-knitr::include_graphics("figuras/13_Implicações_referencias.jpg")
+knitr::include_graphics("figuras/13_Implicacoes_referencias.jpg")
 #Proporção da área de bacias hidrográficas de 3ª ordem de referência nas fisionomias campestres.
 
 ## @knitr ImplicInterm
-knitr::include_graphics("figuras/14_Implicações_intermediarias.jpg")
+knitr::include_graphics("figuras/14_Implicacoes_intermediarias.jpg")
 #Proporção da área de bacias hidrográficas de 3ª ordem com grau de pressão intermediária (índice global entre 0,4 e 0,6) nas fisionomias campestres.
 
 ## @knitr MapaCompl
-knitr::include_graphics("figuras/15_Implicações_mapacompleto.jpg")
+knitr::include_graphics("figuras/15_Implicacoes_mapacompleto.jpg")
 #Bacias hidrográficas de 3ª ordem classificadas conforme grau de pressão no bioma Pampa. 
