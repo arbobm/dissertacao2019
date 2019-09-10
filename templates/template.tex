@@ -92,6 +92,29 @@
 % ---
 
 % ---
+% Capa modificada
+%---
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    \ABNTEXchapterfont\Large UNIVERSIDADE QUE TORNA OS DOCUMENTOS AINDAMAIS ESTRANHOS
+    \vspace*{1cm}
+    
+    {\ABNTEXchapterfont\large\imprimirautor}
+    
+    \vfill
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+    \end{center}
+    \vfill
+    
+    \large\imprimirlocal
+    \large\imprimirdata
+    
+    \vspace*{1cm}
+  \end{capa}}
+}
+% ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{$title$}
@@ -176,6 +199,9 @@ $endif$
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.6} %Value 	Line spacing: 1.0 	single spacing, 1.3 	one-and-a-half spacing, 1.6 	double spacing.
 
 % ---
 % compila o indice

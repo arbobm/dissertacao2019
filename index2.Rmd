@@ -15,7 +15,7 @@ resumo: |
 palavraschave:
 agradecimentos: |
   `r paste(readLines("front-and-back-matter/0-agradecimentos.Rmd"), collapse = '\n  ')`
-epigrafe: Human beings are stewards of nature, whether we like it or not. Sanderson et al. (2002), Trends in Ecology & Evolution 23
+epigrafe: Human beings are stewards of nature, whether we like it or not.\\ Sanderson et al. (2002), Trends in Ecology & Evolution 23.
 bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
 bibliography-heading-in-pdf: Works Cited
 apendices: |
