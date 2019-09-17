@@ -1,0 +1,695 @@
+%% abtex2-modelo-trabalho-academico.tex, v-1.9.7 laurocesar
+%% Copyright 2012-2018 by abnTeX2 group at http://www.abntex.net.br/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://www.abntex.net.br/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em recto e verso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+%\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+%\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{}
+\autor{}
+\data{}
+\orientador{}
+\instituicao{%
+  UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL
+  \par
+  INSTITUTO DE BIOCIÊNCIAS
+  \par
+  PROGRAMA DE PÓS-GRADUAÇÃO EM ECOLOGIA}
+\tipotrabalho{}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{}
+% ---
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
+
+% ---
+% Possibilita criação de Quadros e Lista de quadros.
+% Ver https://github.com/abntex/abntex2/issues/176
+%
+% \newcommand{\quadroname}{Quadro}
+% \newcommand{\listofquadrosname}{Lista de quadros}
+% 
+% \newfloat[chapter]{quadro}{loq}{\quadroname}
+% \newlistof{listofquadros}{loq}{\listofquadrosname}
+% \newlistentry{quadro}{loq}{0}
+% 
+% % configurações para atender às regras da ABNT
+% \setfloatadjustment{quadro}{\centering}
+% \counterwithout{quadro}{chapter}
+% \renewcommand{\cftquadroname}{\quadroname\space} 
+% \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+% 
+% \setfloatlocations{quadro}{hbtp} % Ver https://github.com/abntex/abntex2/issues/176
+% % ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.6} %Value 	Line spacing: 1.0 	single spacing, 1.3 	one-and-a-half spacing, 1.6 	double spacing.
+
+% ---
+% compila o indice
+% ---
+%\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% Inserir a ficha bibliografica
+% ---
+
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+
+\begin{fichacatalografica}
+	\sffamily
+	\vspace*{\fill}					% Posição vertical
+	\begin{center}					% Minipage Centralizado
+	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
+	\small
+	\imprimirautor
+	%Sobrenome, Nome do autor
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+	
+	\hspace{0.5cm} \thelastpage p. : il. (algumas color.) ; 30 cm.\\
+	
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+	
+	\hspace{0.5cm}
+		1. Palavra-chave1.
+		2. Palavra-chave2.
+		2. Palavra-chave3.
+		I. Orientador.
+		II. Universidade xxx.
+		III. Faculdade de xxx.
+		IV. Título 			
+	\end{minipage}}
+	\end{center}
+\end{fichacatalografica}
+% ---
+
+% ---
+% % Inserir errata
+% % ---
+% \begin{errata}
+% Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
+% 
+% \vspace{\onelineskip}
+% 
+% FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
+% reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
+% rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
+% cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
+% Zootecnia, Universidade de São Paulo, São Paulo, 2011.
+% 
+% \begin{table}[htb]
+% \center
+% \footnotesize
+% \begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
+%   \hline
+%    \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê}  & \textbf{Leia-se}  \\
+%     \hline
+%     1 & 10 & auto-conclavo & autoconclavo\\
+%    \hline
+% \end{tabular}
+% \end{table}
+% 
+% \end{errata}
+% % ---
+% 
+% % ---
+% % Inserir folha de aprovação
+% % ---
+% 
+% % Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% % 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% % do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% % imagem da página assinada pela banca com o comando abaixo:
+% %
+% % \begin{folhadeaprovacao}
+% % \includepdf{folhadeaprovacao_final.pdf}
+% % \end{folhadeaprovacao}
+% %
+% \begin{folhadeaprovacao}
+% 
+%   \begin{center}
+%     {\ABNTEXchapterfont\large\imprimirautor}
+% 
+%     \vspace*{\fill}\vspace*{\fill}
+%     \begin{center}
+%       \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+%     \end{center}
+%     \vspace*{\fill}
+%     
+%     \hspace{.45\textwidth}
+%     \begin{minipage}{.5\textwidth}
+%         \imprimirpreambulo
+%     \end{minipage}%
+%     \vspace*{\fill}
+%    \end{center}
+%         
+%    Trabalho aprovado. \imprimirlocal, 24 de novembro de 2012:
+% 
+%    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+%    \assinatura{\textbf{Professor} \\ Convidado 1}
+%    \assinatura{\textbf{Professor} \\ Convidado 2}
+%    %\assinatura{\textbf{Professor} \\ Convidado 3}
+%    %\assinatura{\textbf{Professor} \\ Convidado 4}
+%       
+%    \begin{center}
+%     \vspace*{0.5cm}
+%     {\large\imprimirlocal}
+%     \par
+%     {\large\imprimirdata}
+%     \vspace*{1cm}
+%   \end{center}
+%   
+% \end{folhadeaprovacao}
+% % ---
+% 
+% % ---
+% % Dedicatória
+% % ---
+% \begin{dedicatoria}
+%    \vspace*{\fill}
+%    \centering
+%    \noindent
+%    \textit{ Este trabalho é dedicado às crianças adultas que,\\
+%    quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+% \end{dedicatoria}
+% % ---
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+
+\end{agradecimentos}
+% ---
+
+% ---
+% Epígrafe
+% ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{}
+	\end{flushright}
+\end{epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+ 
+ \textbf{Palavras-chave}: 
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+   
+
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Keywords}: 
+ \end{otherlanguage*}
+\end{resumo}
+
+% % resumo em francês 
+% \begin{resumo}[Résumé]
+%  \begin{otherlanguage*}{french}
+%     Il s'agit d'un résumé en français.
+%  
+%    \textbf{Mots-clés}: latex. abntex. publication de textes.
+%  \end{otherlanguage*}
+% \end{resumo}
+% 
+% % resumo em espanhol
+% \begin{resumo}[Resumen]
+%  \begin{otherlanguage*}{spanish}
+%    Este es el resumen en español.
+%   
+%    \textbf{Palabras clave}: latex. abntex. publicación de textos.
+%  \end{otherlanguage*}
+% \end{resumo}
+% % ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+% % ---
+% % inserir lista de quadros
+% % ---
+% \pdfbookmark[0]{\listofquadrosname}{loq}
+% \listofquadros*
+% \cleardoublepage
+% % ---
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[ABNT] Associação Brasileira de Normas Técnicas
+  \item[abnTeX] ABsurdas Normas para TeX
+\end{siglas}
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% all your chapters and appendices will appear here
+\hypertarget{metodos}{%
+\subsection{Métodos}\label{metodos}}
+
+Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas bacias hidrográficas de riachos de 3ª ordem situadas no bioma Pampa ({\textbf{???}}) com base em seis indicadores de pressão ambiental: agricultura, área urbana, mineração, espelhos d'água maiores do que 20 ha, densidade viária e densidade de gado (para detalhamento dos indicadores, ver mais abaixo). Posteriormente, investigamos a relação entre o gradiente de pressão ambiental das bacias e as riquezas e composições taxonômica e funcional de peixes, além da proporção de espécies raras e de espécies comuns. As bacias de 3ª ordem foram derivadas de um modelo digital de elevação hidrologicamente consistido (MDT-HC), para as quais foram quantificadas a presença de cada indicador de pressão ambiental. Um índice global foi elaborado para quantificar a pressão ambiental global em cada bacia através de métricas derivadas em sistema de informação geográfica (SIG).
+
+\hypertarget{area-de-estudo-e-estrutura-espacial}{%
+\subsubsection{Área de estudo e estrutura espacial}\label{area-de-estudo-e-estrutura-espacial}}
+
+As análises envolveram a área do bioma Pampa !!!IBGE, 2004!!!, que se estende por 176.476 km\textsuperscript{2} no estado do Rio Grande do Sul, sul do Brasil (Figura \ref{fig:areaestudo}).
+A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina ({\textbf{???}}). As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária ({\textbf{???}}). O Rio Grande do Sul possui o 6º efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3º maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns !!!!IBGE, 2015!!!!.
+
+\begin{figure}
+\includegraphics{figuras/01_AreaDeEstudoFisionmiascampestres_meiaA4_v2} \caption{Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa. Fisionomias campestres: CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.}\label{fig:areaestudo}
+\end{figure}
+
+A expansão da agricultura, que cobre aproximadamente 40\% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam ({\textbf{???}}); !!!!!IBGE 2015!!!!!).
+A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus ({\textbf{???}}) !!!!!(Hasenack et al., dados não publicados) (Tabela \ref{tab:fisiocamp}).
+
+Como consequência, resta 31,38\% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural ({\textbf{???}}), distribuídos em remanescentes campestres bastante fragmentados ({\textbf{???}}). As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados ({\textbf{???}}).
+
+\begin{table}[t]
+
+\caption{\label{tab:fisiocamp}Fisionomias campestres localizadas no Bioma Pampa (Hasenack et al., dados não publicados). 
+             Relevo suave corresponde a declividades entre 3 e 8\% e relevo ondulado corresponde a declividades entre 8 e 20\%.}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}p{4.19cm}>{\centering\arraybackslash}p{5.80cm}>{\centering\arraybackslash}p{2.45cm}>{\centering\arraybackslash}p{2.19cm}}
+\toprule
+Fisionomia campestre & Características principais & Área (km$^2$) & \% Pampa\\
+\midrule
+Campo Litorâneo & Terras baixas e relevo plano do litoral. Altitudes inferiores a 30 m. & 35.298,34 & 20,00\\
+Campo Misto com Andropogôneas e Compostas & Altitudes entre 30 e 400 m com relevo suave. Depressão sedimentar com extensão predominante leste-oeste. & 35.221,13 & 19,96\\
+Campo Arbustivo & Altitudes entre 30 e 400 m com relevo ondulado. Mosaico com floresta e campo onde o campo predomina. Contém áreas de solos rasos e áreas com solos profundos de baixa fertilidade. & 30.126,80 & 17,07\\
+Campo com Barba-de-Bode & Altitudes entre 30 e 1.000 m e relevo suave. Solos predominantemente profundos e de baixa fertilidade. & 21.005,35 & 11,90\\
+Campo com Espinilho & Altitudes entre 30 e 400 m sobre relevo suave. Predominam solos férteis imperfeitamente a mal drenados. & 13.927,30 & 7,89\\
+\addlinespace
+Campo de Solos Rasos & Altitudes entre 30 e 400 m com relevo suave e solos rasos. & 13.710,59 & 7,77\\
+Campo Graminoso & Altitudes entre 30 e 400 m com relevo suave. & 11.522,56 & 6,53\\
+Floresta Estacional & Altitudes entre 30 e 400 m com relevo ondulado. Mosaico com floresta e campo onde a floresta predomina. & 8.752,28 & 4,96\\
+Campo com Areais & Altitudes entre 30 e 400 m com relevo suave. Os solos são predominantemente arenosos, profundos, bem drenados e com baixa fertilidade. & 4.674,69 & 2,65\\
+Campo Misto do Cristalino Oriental & Altitudes entre 30 e 400 m e relevo suave. & 1.164,01 & 0,66\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{delimitacao-das-bacias-de-3-ordem-e-rede-de-drenagem}{%
+\subsubsection{Delimitação das bacias de 3ª ordem e rede de drenagem}\label{delimitacao-das-bacias-de-3-ordem-e-rede-de-drenagem}}
+
+As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 ({\textbf{???}}). Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM ({\textbf{???}}), disponibilizado em \url{http://earthexplorer.usgs.gov/}. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 ({\textbf{???}}). Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno ({\textbf{???}}), as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura \ref{fig:areaestudo}).
+
+As 3359 bacias resultantes desse processo (Figura \ref{fig:locbacias3ordem}) tem áreas entre 3,15 e 159,79 km\textsuperscript{2} (média = 25,94 km\textsuperscript{2}; ±18,72 km\textsuperscript{2}). Somadas, correspondem a uma área de 87.126,19 km\textsuperscript{2} (49,63\% da área do bioma Pampa), das quais 71,30\% das bacias (2395) tem área inferior a 30 km\textsuperscript{2}. Para facilitar a comparação da pressão ambiental nas bacias entre as fisionomias campestres respeitando os limites biogeográficos de distribuição das espécies de peixes no Rio Grande do Sul ({\textbf{???}}), cada bacia foi classificada quanto a fisionomia campestre e ecorregião aquática ({\textbf{???}}) onde está localizada (Figura X).
+Como algumas fisionomias campestres podem estar parcialmente contidas em mais de uma ecorregião, cada combinação de fisionomia campestre com ecorregião aquática foi chamada de subunidade regional. As fisionomias campestres analisadas neste trabalho têm áreas entre 1.164,01 e 35.221,13 km\textsuperscript{2} e representam os sistemas ecológicos que foram delimitados por similaridades em altitude, declividade, solo, vegetação e uso da terra (Tabela \ref{tab:fisiocamp})
+{[}Hasenack{]} (Hasenack et al., dados não publicados). As ecorregiões aquáticas Baixo Uruguai e Laguna dos Patos possuem 97.477,96 e 141.844,57 km\textsuperscript{2} respectivamente e foram definidas pelas similaridades na distribuição e composição de espécies de peixes de água doce, incorporando grandes padrões evolutivos e ecológicos ({\textbf{???}}). Identificar as bacias de 3ª ordem usando mais de uma classificação quanto à região em que estão melhora a capacidade de determinar indicadores de pressão agregados no espaço, seja por questões históricas de uso e ocupação da terra ou por restrição de condições ambientais, e oferece melhor detalhamento para tomada de decisão e comparação entre condições de habitat.
+
+\begin{figure}
+\includegraphics{figuras/02_AreaDeEstudoSubBacias_meiaA4_v2} \caption{Localização das bacias de 3ª ordem utilizadas nas análises. CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.}\label{fig:locbacias3ordem}
+\end{figure}
+
+\hypertarget{desenvolvimento-do-indice-global-de-pressao-ambiental}{%
+\subsubsection{Desenvolvimento do índice global de pressão ambiental}\label{desenvolvimento-do-indice-global-de-pressao-ambiental}}
+
+O índice de pressão ambiental produzido neste trabalho foi criado baseado em três premissas: 1) cada uso humano pode ter um impacto potencial diferente no habitat e nos organismos presentes, e a magnitude do impacto é definida inicialmente, através de pesos; 2) o impacto potencial do indicador de pressão em si não tem relação com a distância em relação ao rio a que ele está localizado, ou seja, duas bacias em que uma área agrícola encontra-se distante do riacho terá o mesmo valor que uma bacia com área agrícola do mesmo tamanho adjacente ao riacho como resultado no índice global de pressão ambiental; 3) o aumento do impacto potencial do indicadores resulta em prejuízo para a biota, ou seja, sempre que houver um aumento na pressão ambiental, há uma diminuição nos valores das métricas de caracterização da comunidade utilizados. Assim, o índice global de pressão ambiental calculado neste trabalho é a soma da área/densidade dos indicadores listados a seguir ponderada pela potencialidade de impacto na ictiofauna.
+
+Cada indicador poder exercer um efeito potencial de pressão ambiental diferente nos ambientes aquáticos ({\textbf{???}}; {\textbf{???}}; {\textbf{???}}), porém não é possível estabelecer uma hierarquia de importância bem definida entre esses indicadores. Por essa razão, estabelecemos cinco configurações de ponderação distintas para os indicadores, de forma a produzir cinco cenários para diagnóstico da pressão ambiental nas bacias e que sirvam como \emph{proxy} do distúrbio antropogênico.
+
+\hypertarget{variaveis-indicadoras-de-pressao-ambiental}{%
+\subsubsection{Variáveis indicadoras de pressão ambiental}\label{variaveis-indicadoras-de-pressao-ambiental}}
+
+Definimos o grau de pressão sobre as bacias como um índice global composto por seis variáveis que representam uso antrópico disponíveis para toda a extensão da área analisada, que estivessem em escalas compatíveis para comparação e consideradas potencialmente impactantes para o ambiente aquático. Este conjunto de variáveis inclui agricultura, área urbana, mineração, espelhos d'água maiores do que 20 ha, densidade viária e densidade de gado (Tabela \ref{tab:dados}.
+Todas as fontes de dados estão disponíveis publicamente, exceto a densidade de gado, que foi fornecida pelo Instituto Brasileiro de Geografia e Estatística (IBGE; Censo Agropecuário, 2006) como números absolutos por setor censitário com pelo menos 10 informantes.
+
+Os dados de áreas agrícolas e urbanas foram obtidos a partir do mapeamento da vegetação do Rio Grande do Sul realizados por ({\textbf{???}}). O mapeamento, cuja escala é de 1:50.000 e no qual somente remanescentes com um eixo maior do que 250 metros foram vetorizados, foi realizado a partir de imagens LANDSAT 5 TM e 7 ETM+ (30 m de resolução espacial), ano base 2002 e possui 32 classes de uso e cobertura de solo. Destas, cinco estão relacionadas a atividade agropecuária com potencial impacto nos ambientes aquáticos (``Agricultura sequeiro'', ``Agricultura irrigada'', ``Alagado arroz'', ``Misto campo/mato - Originalmente mata. Pastagem com domínio de campo nativo sobre área desmatada'' e ``Uso misto - cultivo em pequenas parcelas''). Estas categorias foram agrupadas em uma nova classe denominada ``Agricultura''. A rede viária disponível digitalmente na base cartográfica vetorial contínua do Rio Grande do Sul - escala 1:50.000 ({\textbf{???}}) foi digitalizada sobre as cartas do exercito de 1960 e está dividida em pavimentadas e não pavimentadas de acordo com as jurisdições responsáveis por sua construção e manutenção: municipal, estadual e federal. Conta também com as categorias caminho/trilhas e rede ferroviária. Embora os dados sejam oriundos de mapas da década de 1960, a pavimentação e a duplicação das rodovias foram as principais mudanças na rede viária, não a expansão da rede ({\textbf{???}}). Todas as classes foram consideradas como igualmente impactantes.
+
+\begin{table}[t]
+
+\caption{\label{tab:dados}Dados utilizados para obtenção dos indicadores de pressão ambiental em bacias de 3a ordem no bioma Pampa, Brasil.}
+\centering
+\begin{tabular}{lllll}
+\toprule
+Dado.original & Ameaça & Escala & Ano.base & Fonte\\
+\midrule
+Áreas agrícolas & Escoamento de pesticidas e sedimentos & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Áreas agrícolas & Remoção da mata ripária & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Áreas agrícolas & Aumento da temperatura da água & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Áreas urbanas & Aumento de superfície impermeável & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Áreas urbanas & Canalização & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+\addlinespace
+Áreas urbanas & Alteração do fluxo & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Áreas urbanas & Poluentes (esgoto doméstico, hospitalar e industrial) & 1:250.000 & 2002 & Cordeiro and Hasenack, 2009\\
+Rede viária & Cruzamentos & 1:50.000 & 1976-1984 & Hasenack and Weber, 2010\\
+Rede viária & Pontes com culvets ou pontilhões que causam barramento & 1:50.000 & 1976-1984 & Hasenack and Weber, 2010\\
+Rede viária & Remoção da mata ripária & 1:50.000 & 1976-1984 & Hasenack and Weber, 2010\\
+\addlinespace
+Rede viária & Aumento da temperatura da água & 1:50.000 & 1976-1984 & Hasenack and Weber, 2010\\
+Rede viária & Sedimentos & 1:50.000 & 1976-1984 & Hasenack and Weber, 2010\\
+Mineração & Extração do fundo & Não se aplica. & 2015 & DNPM, 2015\\
+Mineração & Poluição & Não se aplica. & 2015 & DNPM, 2015\\
+Espelhos d'água > 20 ha & Alteração do fluxo & 1:50.000 & 2003-2006 & FUNCEME, 2008\\
+\addlinespace
+Espelhos d'água > 20 ha & Barramento & 1:50.000 & 2003-2006 & FUNCEME, 2008\\
+Efetivo gado & Aumento de nutrientes & Não se aplica. & 2006 & IBGE, 2006\\
+Efetivo gado & Erosão das margens & Não se aplica. & 2006 & IBGE, 2006\\
+Efetivo gado & Sedimentação do fundo & Não se aplica. & 2006 & IBGE, 2006\\
+Efetivo gado & Homogeneização dos sedimento & Não se aplica. & 2006 & IBGE, 2006\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A variável Mineração foi obtida com base nos dados de processos minerários disponibilizados pelo Departamento Nacional de Produção Mineral ({\textbf{???}}), que possuem caráter informativo quanto aos processos de concessão para atividade mineradora cadastrados no órgão regulador. As poligonais cadastradas estão divididas em fases de licenciamento: concessão de lavra, licenciamento, lavra garimpeira, registro de extração, requerimento de lavra, requerimento de lavra garimpeira, requerimento de licenciamento, requerimento de registro de extração, requerimento de pesquisa, autorização de pesquisa e disponibilidade. Foram incluídas nas análises as fases de concessão de lavra, licenciamento, lavra garimpeira e registro de extração. Os limites dos polígonos podem não representar precisamente os limites da extração propriamente dita por serem informados pelos próprios requerentes, e a qualidade das informações depende da metodologia técnica utilizada para o cadastro. Os limites representam a área onde o minerador pode realizar sua atividade, não a área já instalada necessariamente. Mesmo assim, as poligonais dos processos minerários nas fases consideradas representam áreas em que existe a prática da atividade de mineração ou áreas onde ela pode ser implantada em um futuro próximo.
+
+Os dados dos efetivos de rebanho bovino, suíno e ovino do Rio Grande do Sul foram fornecidos pelo IBGE e contém no número de cabeças por setor censitário. Foram fornecidas apenas as informações dos setores censitários com 10 informantes ou mais. Os setores censitários possuem áreas muito variáveis, pois constituem a unidade territorial de coleta das operações censitárias, definido pelo IBGE, com limites físicos identificados com base na divisão político-administrativa do Brasil e no número de habitantes. Mesmo com essa variação, em geral tem área maior do que as bacias de 3ª ordem. Por isso, fizemos uma estimativa da densidade dos rebanhos nas bacias calculando o número de cabeças de bovino, ovino e suíno proporcionalmente a área do setor censitário dentro de cada bacia.
+
+Espelhos d'água é o indicador que corresponde aos açudes e reservatórios, utilizados para dessedentação animal ou geração de energia, por exemplo, e foi obtido a partir do Mapeamento dos Espelhos d'água do Brasil com área superficial a partir de 20 hectares ({\textbf{???}}). Originalmente, o mapeamento, que utilizou imagens dos satélites LandSAT 7 e CBERS, entre os anos 2003 e 2006, estava dividido por tipo de espelho d'água: artificial (reservatório) ou natural (lagos, lagoas, outros). Utilizamos apenas os espelhos d'água classificados com artificiais.
+
+Cada um dos indicadores abordados pode influenciar os ambientes aquáticos de diferentes formas (Tabela x). A agricultura, por exemplo, usualmente ocupa a maior fração em uma bacia hidrográfica, enquanto áreas urbanas e outros usos ocupam uma área menor. Entretanto, estes usos podem exercer uma influência desproporcional nos ambientes aquáticos, estejam eles próximos ou distantes dos corpos d'água ({\textbf{???}}). Os cinco cenários diferenciam-se em função dos pesos atribuídos a cada indicador de pressão (Tabela \ref{tab:cenarios-pesos}).
+No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). No cenário 2, tomamos por referência os pesos utilizados em ({\textbf{???}}). Em cada cenário, o somatório dos pesos de cada indicador foi sempre igual a 1. O cenário 3 representa a média dos pesos utilizados em quatro estudos: ({\textbf{???}}); ({\textbf{???}}); ({\textbf{???}}); ({\textbf{???}}). Os cenários 4 e 5 foram elaboradas com o objetivo de simular quais seriam os resultados se uma única variável recebesse um peso maior (0,50), enquanto as outras fossem ponderadas da mesma forma (0,10). A variável agricultura foi a que recebeu maior peso no cenário 4 e a variável área urbana foi a definida no cenário 5. Todos os pesos somam 1 dentro de cada cenário. Por fim, os valores calculados dos índices foram padronizados para que variassem entre 0 a 1, onde 0 representa a ausência de pressão ambiental (conforme os indicadores aqui empregados) e 1 representa pressão ambiental máxima.
+
+\begin{table}[t]
+
+\caption{\label{tab:cenarios-pesos}Cenários (configurações de pesos) utilizados na ponderação dos indicadores de pressão ambiental sobre bacias de 3a ordem no bioma Pampa .}
+\centering
+\begin{tabular}{llllll}
+\toprule
+X & Cenário.1 & Cenário.2 & Cenário.3 & Cenário.4 & Cenário.5\\
+\midrule
+Agricultura & 0,17 & 0,19 & 0,24 & 0,50 & 0,10\\
+Área urbana & 0,17 & 0,25 & 0,18 & 0,10 & 0,50\\
+Rede viária & 0,17 & 0,16 & 0,15 & 0,10 & 0,10\\
+Mineração & 0,17 & 0,15 & 0,13 & 0,10 & 0,10\\
+Espelhos d'água & 0,17 & 0,07 & 0,18 & 0,10 & 0,10\\
+\addlinespace
+Gado & 0,17 & 0,19 & 0,12 & 0,10 & 0,10\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{determinacao-das-bacias-de-referencia}{%
+\subsubsection{Determinação das bacias de referência}\label{determinacao-das-bacias-de-referencia}}
+
+Para identificar as bacias de referência, as bacias de 3ª ordem foram ranqueadas em ordem crescente quanto ao valor de cada indicador de pressão e ao valor do índice global. Em seguida, assumimos que as bacias nas quais todos os fatores de pressão medidos tiveram valor zero, foram classificadas como ``condição de distúrbio mínimo'' (MDC, abreviação para Minimum Disturbance Condition; ({\textbf{???}})), sendo essas bacias as que representam a condição de referência ideal, mais próxima da integridade biótica. A condição mais realística, no entanto, é aquela em que se usa como referência as bacias com a melhor condição possível, isto é, aquelas que apresentam a menor presença de fatores de pressão entre as bacias avaliadas. Estas bacias foram classificadas como ``condição de menor distúrbio'' (LDC, abreviação para Least disturbed condition; ({\textbf{???}})), descritas por um gradiente em que as bacias menos pressionadas se aproximam das bacias em condição de distúrbio mínimo em relação as bacias mais pressionadas. Neste trabalho, as bacias que estiveram entre as 10\% menos pressionadas segundo o índice global de pressão ao mesmo tempo em que apresentaram os menores valores para cada indicador separadamente em cada subunidade regional foram consideradas bacias em condição de menor distúrbio (LDC). LDC e MDC foram consideradas bacias de referência. As bacias com índice global entre 0,4 e 0,6 foram consideradas com pressão intermediária e as bacias com valores maiores do que 0,6 foram consideradas como as mais pressionadas.
+
+\hypertarget{relacao-entre-fatores-de-pressao-e-ictiofauna}{%
+\subsubsection{Relação entre fatores de pressão e ictiofauna}\label{relacao-entre-fatores-de-pressao-e-ictiofauna}}
+
+Para analisar se as características da ictiofauna apresentam relação com o grau de pressão ambiental na bacia, utilizamos dados de ictiofauna coletados em 52 riachos no bioma Pampa. Como indicadores de resposta da ictiofauna ao grau de pressão, utilizamos a composição e a riqueza taxonômica (riqueza rarefeita) e a riqueza funcional de espécies, além da proporção de espécies raras e comuns presentes em cada bacia amostrada. A riqueza taxonômica rarefeita foi utilizada porque o número de indivíduos amostrados por trecho de riacho foi bastante variável (de 105 a 1212 indivíduos), mesmo que a área amostrada tenha sido semelhante. As espécies raras foram definidas como as que ocorreram em menos de 10\% dos sítios (5 trechos amostrados), enquanto as espécies comuns foram aquelas que ocorreram em número de sítios igual ou superior a 50\%.
+
+A composição de peixes foi determinada através de coleta com pesca elétrica (EFKO GmbH model FEG 1500) em 52 sítios de amostragem (cada sítio representa um riacho distinto), distribuídos por diferentes sistemas campestres e por um gradiente de antropização. Cada sítio foi amostrado uma única vez, em um trecho de 150 m no sentido jusante-montante, onde as extremidades foram bloqueadas com redes para evitar a fuga dos peixes. As coletas ocorreram entre os meses de outubro e abril, de 2013 a 2015. Todos os indivíduos coletados foram anestesiados com óleo de cravo, fixados em formol 10\% e preservados em álcool 70\% para posterior identificação em laboratório (Comissão de Ética no Uso de Animais da Universidade Federal do Rio Grande do Sul. CEUA-UFRGS; \#24433). Os trechos de rio onde foram realizadas as coletas tinham entre 0,89 e 10,26 m de largura (média = 4,85 m ± 1,93) e entre 4 e 65,24 cm de profundidade média (média = 30,73 cm ± 13,74).
+
+A diversidade e a riqueza funcionais foram obtidas através de uma matriz sítio de coleta versus atributo, que foi calculada multiplicando uma matriz de espécies versus atributos por uma matriz de sítios versus espécies. Um conjunto de 13 atributos morfológicos descrevendo a função trófica, a ocupação espacial na coluna d'água e o uso do hábitat: índice de compressão corporal, altura relativa, posição do olho, posição da boca, comprimento da cabeça, comprimento do pedúnculo, compressão do pedúnculo, posição da nadadeira peitoral, área da nadadeira peitoral, área da nadadeira ventral, área da nadadeira dorsal, área da nadadeira caudal e biomassa ({\textbf{???}}) (Tabela 4).
+Um valor médio foi calculado para cada atributo de cada espécie, baseado nas medidas de cinco indivíduos representando diferentes classes de tamanho de cada espécie nas amostras, sempre que possível. A composição funcional foi descrita através do valor médio dos atributos de todas as espécies presentes na comunidade (Community Weighted Mean traits, CWM) ({\textbf{???}}). O espaço funcional preenchido pelas espécies de cada sítio foi quantificado pelo índice de riqueza funcional descrito por ({\textbf{???}}). Essa medida corresponde ao volume do mínimo polígono convexo que engloba todas as espécies em um espaço com número dimensões igual ao número de atributos medidos. Estas análises foram realizadas com o pacote FD ({\textbf{???}}) no software R (R Core Team 2016).
+
+\begin{figure}
+\includegraphics{figuras/03_medidas} \caption{Ilustração das 19 medidas morfométricas utilizadas para calcular os 13 atributos funcionais relacionados ao uso do hábitat e comportamento alimentar. SL = comprimento padrão; BD = profundidade do corpo; BW = largura do corpo; HL = comprimento da cabeça; HD = profundidade da cabeça; EH = altura do olho; MH = altura da boca; PfL = comprimento da nadadeira peitoral; PfH = atura da nadadeira peitoral; PfP = posição da nadadeira peitoral; VfL = comprimento da nadadeira ventral; VfH = altura da nadadeira ventral; DfL = comprimento da nadadeira dorsal; DfH = altura da nadadeira dorsal; CpL = comprimento do pedúnculo caudal; CpH = altura do pedúnculo caudal; CpW = largura do pedúnculo caudal; CfL = comprimento da nadadeira caudal; e CfH = altura da nadadeira caudal.}\label{fig:medidas}
+\end{figure}
+
+\hypertarget{analise-dos-dados}{%
+\subsubsection{Análise dos dados}\label{analise-dos-dados}}
+
+A influência dos indicadores de pressão na composições taxonômica e funcional foi determinada através de analises de redundância parcial (pRDA), utilizando bacia hidrográfica (Camaquã, Ibicuí etc.) como covariável para controlar a variação. Realizamos duas pRDA separadas, uma para composição taxonômica e outra para a composição funcional. Para estas análises, apenas as espécies que ocorreram em mais de 5 sítios foram consideradas.
+
+Modelos lineares generalizados (GLM) foram utilizados para avaliar a relação dos indicadores de pressão e com as riquezas taxonômica e funcional, a proporção de espécies comuns e a proporção de espécies raras encontradas em cada sítio. Além disso, foram realizados separadamente modelos em que cada cenário dos índices globais de pressão fosse a variável explicativa. Os valores de riqueza taxonômica possuem distribuição aproximadamente normal. Assim, para esta variável, modelos lineares simples foram ajustados. A família de modelos de regressão Beta foi utilizada para as análises de modelos com as demais variáveis resposta, por serem representadas por valores contínuos intervalo unitário padrão (0,1). Se a variável resposta assumir os valores extremos (0,1), a seguinte transformação foi realizada: \((y*(n-1)+0,5)/n\), onde \emph{n} é o número de riachos amostrados ({\textbf{???}}). O pacote vegan ({\textbf{???}}) foi utilizado para os modelos lineares simples e o pacote betareg ({\textbf{???}})
+foi utilizado para os modelos cujas variáveis resposta variam entre 0 e 1.
+
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{abntex2-modelo-references}
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+\begin{apendicesenv}
+
+% Imprime uma página indicando o início dos apêndices
+\partapendices
+
+\end{apendicesenv}
+% ---
+
+% 
+% % ----------------------------------------------------------
+% % Anexos
+% % ----------------------------------------------------------
+% 
+% % ---
+% % Inicia os anexos
+% % ---
+% \begin{anexosenv}
+% 
+% % Imprime uma página indicando o início dos anexos
+% \partanexos
+% 
+% % ---
+% \chapter{Morbi ultrices rutrum lorem.}
+% % ---
+% \lipsum[30]
+% 
+% % ---
+% \chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+% parturient montes nascetur ridiculus mus}
+% % ---
+% 
+% \lipsum[31]
+% 
+% % ---
+% \chapter{Fusce facilisis lacinia dui}
+% % ---
+% 
+% \lipsum[32]
+% 
+% \end{anexosenv}
+% 
+% %---------------------------------------------------------------------
+% % INDICE REMISSIVO
+% %---------------------------------------------------------------------
+% \phantompart
+% \printindex
+% %---------------------------------------------------------------------
+
+\end{document}

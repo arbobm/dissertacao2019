@@ -33,6 +33,8 @@ output:
     template: templates/template.tex
     keep_tex: true
     latex_engine: xelatex
+    includes:
+      in_header: templates/preample.tex
   bookdown::gitbook:
     config:
       sharing:
@@ -50,6 +52,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 knitr::read_chunk("figuras.R")
 knitr::read_chunk("tabelas.R")
 options(tinytex.verbose = TRUE)
+library(kableExtra)
+library(magrittr)
 ```
 
 <!-- capa -->
@@ -86,22 +90,3 @@ options(tinytex.verbose = TRUE)
 ```{r child = "2-metodos.Rmd"}
 ```
 
-<!-- resultados
-```{r child = "3-resultados.Rmd"}
-```
-
-<!-- discussão
-```{r child = "4-discussao.Rmd"}
-```
-
-<!-- consideracoes finais
-```{r child = "5-consfinais.Rmd"}
-```
-
-<!-- referencias
-# ```{r child = "99-refs.Rmd"}
-# ```
-
-<!-- Apendices
-# ```{r child = "999-apendices.Rmd"}
-# ```

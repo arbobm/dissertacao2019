@@ -1,3 +1,61 @@
+---
+title: |
+  Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna
+author: Bruna Arbo Meneses
+date: 'Porto Alegre, outubro de 2016'
+orientador: 'Fernando Gertum Becker'
+tipotrabalho: 'Dissertação de Mestrado'
+preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Ecologia, do Instituto de Biociências da Universidade Federal do Rio Grande do Sul, como parte dos requisitos para obtenção do título de Mestre em Ecologia.'
+abstractseparate: true  # include front page w/ abstract for examination schools?
+abstract: |
+  `r paste(readLines("front-and-back-matter/0-abstract.Rmd"), collapse = '\n  ')`
+keywords: 
+resumo: |
+  `r paste(readLines("front-and-back-matter/0-resumo.Rmd"), collapse = '\n  ')`
+palavraschave:
+agradecimentos: |
+  `r paste(readLines("front-and-back-matter/0-agradecimentos.Rmd"), collapse = '\n  ')`
+epigrafe: Human beings are stewards of nature, whether we like it or not.\\ Sanderson et al. (2002), Trends in Ecology & Evolution 23.
+bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
+bibliography-heading-in-pdf: Works Cited
+apendices: |
+  `r paste(readLines("front-and-back-matter/99-apendices.Rmd"), collapse = '\n  ')`
+bib-humanities: true   #set to true if you want in-text references formatted as author-year
+draft: true # add as DRAFT mark in the footer?
+page-layout: nobind #'nobind' for PDF output (equal margins), 'twoside' for two-sided binding (mirror margins and blank pages), leave blank for one-sided binding (left margin > right margin)
+toc-depth: 2 # depth of heading to include in table of contents
+lof: true # list of figures in front matter?
+lot: true # list of tables in front matter?
+params: 
+  corrections: false # set false to stop applying blue background to blocks of corrections
+output:
+  bookdown::pdf_book:
+    template: templates/template.tex
+    keep_tex: true
+    latex_engine: xelatex
+    includes:
+      in_header: templates/preample.tex
+  bookdown::gitbook:
+    config:
+      sharing:
+        facebook: false
+        twitter: yes
+        all: false
+  bookdown::word_document2:
+    toc: true   
+link-citations: true
+documentclass: book
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::read_chunk("figuras.R")
+knitr::read_chunk("tabelas.R")
+options(tinytex.verbose = TRUE)
+library(kableExtra)
+library(magrittr)
+```
+
 ## Métodos 
 
 Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas bacias hidrográficas de riachos de 3ª ordem situadas no bioma Pampa [@IBGE2004] com base em seis indicadores de pressão ambiental: agricultura, área urbana, mineração, espelhos d'água maiores do que 20 ha, densidade viária e densidade de gado (para detalhamento dos indicadores, ver mais abaixo). Posteriormente, investigamos a relação entre o gradiente de pressão ambiental das bacias e as riquezas e composições taxonômica e funcional de peixes, além da proporção de espécies raras e de espécies comuns. As bacias de 3ª ordem foram derivadas de um modelo digital de elevação hidrologicamente consistido (MDT-HC), para as quais foram quantificadas a presença de cada indicador de pressão ambiental. Um índice global foi elaborado para quantificar a pressão ambiental global em cada bacia através de métricas derivadas em sistema de informação geográfica (SIG).
@@ -7,11 +65,11 @@ Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas b
 As análises envolveram a área do bioma Pampa !!!IBGE, 2004!!!, que se estende por 176.476 km^2^ no estado do Rio Grande do Sul, sul do Brasil (Figura \@ref(fig:areaestudo)).
 A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina [@Overbeck2007a]. As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária [@Cordeiro2009a]. O Rio Grande do Sul possui o 6º efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3º maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns !!!!IBGE, 2015!!!!. <!-- %rever referencia -->
 
-```{r areaestudo, fig.cap = "Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa. Fisionomias campestres: CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=12, fig.width=10, out.extra = ""}
+```{r areaestudo, fig.cap = "Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa. Fisionomias campestres: CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=10, fig.width=15, out.extra = ""}
 ```
 
 A expansão da agricultura, que cobre aproximadamente 40% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam [@Cordeiro2009a]; !!!!!IBGE 2015!!!!!). <!-- %ref -->
-A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Hasenack] !!!!!(Hasenack et al., dados não publicados) (tabela \@ref(tab:fisiocamp)).
+A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Hasenack] !!!!!(Hasenack et al., dados não publicados) (Tabela \@ref(tab:fisiocamp)).
 <!-- (Tabela \ref{table:fisonomias]). %arrumar aqui -->
 
 Como consequência, resta 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015]. 
@@ -25,7 +83,7 @@ Como consequência, resta 31,38% de sua cobertura com características naturais 
 As unidades espaciais básicas deste trabalho foram as bacias hidrográficas a montante dos rios de 3ª ordem, ou seja, a área terrestre que drena água e sedimento para os riachos de 3ª ordem. Os limites destas bacias foram obtidos a partir do modelo digital de elevação hidrologicamente consistido (MDE-HC) gerado com os pontos cotados, curvas de nível e rede hidrográfica disponíveis na Base Cartográfica Vetorial Contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b]. Para as bacias pertencentes a bacias localizadas na fronteira com outros países (por exemplo, bacia do rio Quaraí), o MDE utilizado foi o SRTM [@Farr2007], disponibilizado em http://earthexplorer.usgs.gov/. Tanto o MDE-HC quanto os limites das bacias e a rede de drenagem foram processados através de uma série de etapas realizados em sistema de informação geográfica (SIG), utilizando a extensão ArcHydro 2.0, disponível para o software ArcGIS 10.3 [@ESRI2014]. Apenas as bacias localizadas em território brasileiro foram consideradas. Devido às dificuldades para gerar informações de topologia em áreas planas do terreno [@Nardi2008], as bacias localizadas na planície costeira (Campo Litorâneo; ver Figura \@ref(fig:areaestudo)).
 
 As 3359 bacias resultantes desse processo (Figura \@ref(fig:locbacias3ordem)) tem áreas entre 3,15 e 159,79 km^2^ (média = 25,94 km^2^; ±18,72 km^2^). Somadas, correspondem a uma área de 87.126,19 km^2^ (49,63% da área do bioma Pampa), das quais 71,30% das bacias (2395) tem área inferior a 30 km^2^. Para facilitar a comparação da pressão ambiental nas bacias entre as fisionomias campestres respeitando os limites biogeográficos de distribuição das espécies de peixes no Rio Grande do Sul [@Stoddard2005a], cada bacia foi classificada quanto a fisionomia campestre e ecorregião aquática [@Abell2008b] onde está localizada (Figura X).
-Como algumas fisionomias campestres podem estar parcialmente contidas em mais de uma ecorregião, cada combinação de fisionomia campestre com ecorregião aquática foi chamada de subunidade regional. As fisionomias campestres analisadas neste trabalho têm áreas entre 1.164,01 e 35.221,13 km^2^ e representam os sistemas ecológicos que foram delimitados por similaridades em altitude, declividade, solo, vegetação e uso da terra (Tabela \ref{table:fisonomias])
+Como algumas fisionomias campestres podem estar parcialmente contidas em mais de uma ecorregião, cada combinação de fisionomia campestre com ecorregião aquática foi chamada de subunidade regional. As fisionomias campestres analisadas neste trabalho têm áreas entre 1.164,01 e 35.221,13 km^2^ e representam os sistemas ecológicos que foram delimitados por similaridades em altitude, declividade, solo, vegetação e uso da terra (Tabela \@ref(tab:fisiocamp))
 [Hasenack] (Hasenack et al., dados não publicados). As ecorregiões aquáticas Baixo Uruguai e Laguna dos Patos possuem 97.477,96 e 141.844,57 km^2^ respectivamente e foram definidas pelas similaridades na distribuição e composição de espécies de peixes de água doce, incorporando grandes padrões evolutivos e ecológicos [@Abell2008b]. Identificar as bacias de 3ª ordem usando mais de uma classificação quanto à região em que estão melhora a capacidade de determinar indicadores de pressão agregados no espaço, seja por questões históricas de uso e ocupação da terra ou por restrição de condições ambientais, e oferece melhor detalhamento para tomada de decisão e comparação entre condições de habitat.
 
 ```{r locbacias3ordem, fig.cap = "Localização das bacias de 3ª ordem utilizadas nas análises. CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=12, fig.width=10, out.extra = ""}
@@ -33,40 +91,20 @@ Como algumas fisionomias campestres podem estar parcialmente contidas em mais de
 
 ### Desenvolvimento do índice global de pressão ambiental
 
-O índice de pressão ambiental produzido neste trabalho foi criado baseado em três premissas: 1) cada uso humano pode ter um impacto potencial diferente no habitat e nos organismos presentes, e a magnitude do impacto é definida inicialmente, através de pesos; 2) o impacto potencial do indicador de pressão não tem relação com a distância em relação ao rio a que ele está localizado, ou seja, duas bacias em que uma área agrícola encontra-se distante do riacho terá o mesmo valor que uma bacia com área agrícola do mesmo tamanho adjacente ao riacho como resultado no índice global de pressão ambiental; 3) o aumento do impacto potencial do indicadores resulta em prejuízo para a biota, ou seja, sempre que houver um aumento na pressão ambiental, há uma diminuição nos valores das métricas de caracterização da comunidade utilizados. Assim, o índice global de pressão ambiental calculado neste trabalho é a soma da área/densidade dos indicadores listados a seguir ponderada pela potencialidade de impacto na ictiofauna.
+O índice de pressão ambiental produzido neste trabalho foi criado baseado em três premissas: 1) cada uso humano pode ter um impacto potencial diferente no habitat e nos organismos presentes, e a magnitude do impacto é definida inicialmente, através de pesos; 2) o impacto potencial do indicador de pressão em si não tem relação com a distância em relação ao rio a que ele está localizado, ou seja, duas bacias em que uma área agrícola encontra-se distante do riacho terá o mesmo valor que uma bacia com área agrícola do mesmo tamanho adjacente ao riacho como resultado no índice global de pressão ambiental; 3) o aumento do impacto potencial do indicadores resulta em prejuízo para a biota, ou seja, sempre que houver um aumento na pressão ambiental, há uma diminuição nos valores das métricas de caracterização da comunidade utilizados. Assim, o índice global de pressão ambiental calculado neste trabalho é a soma da área/densidade dos indicadores listados a seguir ponderada pela potencialidade de impacto na ictiofauna.
 
 Cada indicador poder exercer um efeito potencial de pressão ambiental diferente nos ambientes aquáticos [@Stein2002a; @Allan2004a; @Falcone2010], porém não é possível estabelecer uma hierarquia de importância bem definida entre esses indicadores. Por essa razão, estabelecemos cinco configurações de ponderação distintas para os indicadores, de forma a produzir cinco cenários para diagnóstico da pressão ambiental nas bacias e que sirvam como _proxy_ do distúrbio antropogênico.
 
 ### Variáveis indicadoras de pressão ambiental
 
-Definimos o grau de pressão sobre as bacias como um índice global composto por seis variáveis que representam uso antrópico disponíveis para toda a extensão da área analisada, que estivessem em escalas compatíveis para comparação e consideradas potencialmente impactantes para o ambiente aquático. Este conjunto de variáveis inclui agricultura, área urbana, mineração, espelhos d'água maiores do que 20 ha, densidade viária e densidade de gado (Tabela \ref{tab:my_label]).
+Definimos o grau de pressão sobre as bacias como um índice global composto por seis variáveis que representam uso antrópico disponíveis para toda a extensão da área analisada, que estivessem em escalas compatíveis para comparação e consideradas potencialmente impactantes para o ambiente aquático. Este conjunto de variáveis inclui agricultura, área urbana, mineração, espelhos d'água maiores do que 20 ha, densidade viária e densidade de gado (Tabela \@ref(tab:dados).
 Todas as fontes de dados estão disponíveis publicamente, exceto a densidade de gado, que foi fornecida pelo Instituto Brasileiro de Geografia e Estatística (IBGE; Censo Agropecuário, 2006) <!-- %ref --> como números absolutos por setor censitário com pelo menos 10 informantes. 
 
 Os dados de áreas agrícolas e urbanas foram obtidos a partir do mapeamento da vegetação do Rio Grande do Sul realizados por @Cordeiro2009a. O mapeamento, cuja escala é de 1:50.000 e no qual somente remanescentes com um eixo maior do que 250 metros foram vetorizados, foi realizado a partir de imagens LANDSAT 5 TM e 7 ETM+ (30 m de resolução espacial), ano base 2002 e possui 32 classes de uso e cobertura de solo. Destas, cinco estão relacionadas a atividade agropecuária com potencial impacto nos ambientes aquáticos ("Agricultura sequeiro", "Agricultura irrigada", "Alagado arroz", "Misto campo/mato - Originalmente mata. Pastagem com domínio de campo nativo sobre área desmatada" e "Uso misto - cultivo em pequenas parcelas"). Estas categorias foram agrupadas em uma nova classe denominada "Agricultura". A rede viária disponível digitalmente na base cartográfica vetorial contínua do Rio Grande do Sul - escala 1:50.000 [@Hasenack2010b] foi digitalizada sobre as cartas do exercito de 1960 e está dividida em pavimentadas e não pavimentadas de acordo com as jurisdições responsáveis por sua construção e manutenção: municipal, estadual e federal. Conta também com as categorias caminho/trilhas e rede ferroviária. Embora os dados sejam oriundos de mapas da década de 1960, a pavimentação e a duplicação das rodovias foram as principais mudanças na rede viária, não a expansão da rede [@Teixeira2015]. Todas as classes foram consideradas como igualmente impactantes.
 
 <!-- tabela 2 -->
-
-<!--
-\begin{table][ht]
-    \centering
-    \caption{Dados utilizados para obtenção dos indicadores de pressão ambiental em bacias de 3a ordem no bioma Pampa, Brasil.]
-    
-    \begin{tabular]{p{3cm] p{3cm] p{1.5cm] p{1.5cm] p{2cm]]
-        \hline
-        Dado original & Ameaça & Escala & Ano base & Fonte \\
-        \hline
-        Áreas agrícolas	Escoamento de pesticidas e sedimentos
-        Remoção da mata ripária & Aumento da temperatura da água & 1:250.000 & 2002 & \cite{Cordeiro2009a] \\
-        Áreas urbanas & Aumento de superfície impermeável Canalização Alteração do fluxo Poluentes (esgoto doméstico, hospitalar e industrial) & 1:250.000 & 2002 & \cite{Cordeiro2009a] \\ %transformar esse texto em lista
-        Rede viária & Cruzamentos Pontes com culvets ou pontilhões que causam barramento Remoção da mata ripária Aumento da temperatura da água Sedimentos & 1:50.000 & 1976-1984 & \cite{Hasenack2010b] \\
-        Mineração & Extração do fundo Poluição & Não se aplica. & 2015 & \cite{DNPM2015] \\
-        Espelhos dágua > 20 ha & Alteração do fluxo Barramento & 1:50.000 & 2003-2006 & \cite{FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a] \\
-        Efetivo gado & Aumento de nutrientes Erosão das margens Sedimentação do fundo Homogeneização dos sedimento & Não se aplica. & 2006 & \cite{IBGE2006] \\
-        \hline
-    \end{tabular]
-    \label{tab:fatores]
-\end{table]
--->
+```{r dados}
+```
 
 A variável Mineração foi obtida com base nos dados de processos minerários disponibilizados pelo Departamento Nacional de Produção Mineral [@DNPM2015], que possuem caráter informativo quanto aos processos de concessão para atividade mineradora cadastrados no órgão regulador. As poligonais cadastradas estão divididas em fases de licenciamento: concessão de lavra, licenciamento, lavra garimpeira, registro de extração, requerimento de lavra, requerimento de lavra garimpeira, requerimento de licenciamento, requerimento de registro de extração, requerimento de pesquisa, autorização de pesquisa e disponibilidade. Foram incluídas nas análises as fases de concessão de lavra, licenciamento, lavra garimpeira e registro de extração. Os limites dos polígonos podem não representar precisamente os limites da extração propriamente dita por serem informados pelos próprios requerentes, e a qualidade das informações depende da metodologia técnica utilizada para o cadastro. Os limites representam a área onde o minerador pode realizar sua atividade, não a área já instalada necessariamente. Mesmo assim, as poligonais dos processos minerários nas fases consideradas representam áreas em que existe a prática da atividade de mineração ou áreas onde ela pode ser implantada em um futuro próximo. 
 
@@ -75,7 +113,7 @@ Os dados dos efetivos de rebanho bovino, suíno e ovino do Rio Grande do Sul for
 Espelhos d'água é o indicador que corresponde aos açudes e reservatórios, utilizados para dessedentação animal ou geração de energia, por exemplo, e foi obtido a partir do Mapeamento dos Espelhos d'água do Brasil com área superficial a partir de 20 hectares [@FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a]. Originalmente, o mapeamento, que utilizou imagens dos satélites LandSAT 7 e CBERS, entre os anos 2003 e 2006, estava dividido por tipo de espelho d'água: artificial (reservatório) ou natural (lagos, lagoas, outros). Utilizamos apenas os espelhos d'água classificados com artificiais.
 
 Cada um dos indicadores abordados pode influenciar os ambientes aquáticos de diferentes formas (Tabela x). A agricultura, por exemplo, usualmente ocupa a maior fração em uma bacia hidrográfica, enquanto áreas urbanas e outros usos ocupam uma área menor. Entretanto, estes usos podem exercer uma influência desproporcional nos ambientes aquáticos, estejam eles próximos ou distantes dos corpos d'água [@Allan2004a]. Os cinco cenários diferenciam-se em função dos pesos atribuídos a cada indicador de pressão (Tabela \@ref(tab:cenarios-pesos)).
-No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). No cenário 2, tomamos por referência os pesos utilizados em @Stein2002a. Em cada cenário, o somatório dos pesos de cada indicador foi sempre igual a 1.  O cenário 3 representa a média dos pesos utilizados em quatro estudos: @Sanderson2002; @Heiner2011a; @Turak2011c; @Zhang2014. Os cenários 4 e 5 foram elaboradas com o objetivo de simular quais seriam os resultados se uma única variável recebesse um peso maior (0,50), enquanto as outras fossem ponderadas da mesma forma (0,10). A variável agricultura foi a que recebeu maior peso no cenário 4 e a variável área urbana foi a definida no cenário 5. Todos os pesos somam 1 dentro de cada cenário. Por fim, os valores calculados dos índices foram padronizados para que variassem entre 0 a 1, onde 0 representa a ausência de pressão ambiental (conforme os indicadores aqui empregados) e 1 representa pressão ambiental máxima.
+No cenário 1, todos os indicadores de pressão receberam o mesmo peso (0,17). No cenário 2, tomamos por referência os pesos utilizados em @Stein2002a. Em cada cenário, o somatório dos pesos de cada indicador foi sempre igual a 1. O cenário 3 representa a média dos pesos utilizados em quatro estudos: @Sanderson2002; @Heiner2011a; @Turak2011c; @Zhang2014. Os cenários 4 e 5 foram elaboradas com o objetivo de simular quais seriam os resultados se uma única variável recebesse um peso maior (0,50), enquanto as outras fossem ponderadas da mesma forma (0,10). A variável agricultura foi a que recebeu maior peso no cenário 4 e a variável área urbana foi a definida no cenário 5. Todos os pesos somam 1 dentro de cada cenário. Por fim, os valores calculados dos índices foram padronizados para que variassem entre 0 a 1, onde 0 representa a ausência de pressão ambiental (conforme os indicadores aqui empregados) e 1 representa pressão ambiental máxima.
 
 <!-- tabela 3 -->
 ```{r cenarios-pesos}
@@ -93,37 +131,6 @@ A composição de peixes foi determinada através de coleta com pesca elétrica 
 
 A diversidade e a riqueza funcionais foram obtidas através de uma matriz sítio de coleta versus atributo, que foi calculada multiplicando uma matriz de espécies versus atributos por uma matriz de sítios versus espécies. Um conjunto de 13 atributos morfológicos descrevendo a função trófica, a ocupação espacial na coluna d'água e o uso do hábitat: índice de compressão corporal, altura relativa, posição do olho, posição da boca, comprimento da cabeça, comprimento do pedúnculo, compressão do pedúnculo, posição da nadadeira peitoral, área da nadadeira peitoral, área da nadadeira ventral, área da nadadeira dorsal, área da nadadeira caudal e biomassa [@Dala-Corte2016] (Tabela 4).
 Um valor médio foi calculado para cada atributo de cada espécie, baseado nas medidas de cinco indivíduos representando diferentes classes de tamanho de cada espécie nas amostras, sempre que possível. A composição funcional foi descrita através do valor médio dos atributos de todas as espécies presentes na comunidade (Community Weighted Mean traits, CWM) [@Lavorel2007a]. O espaço funcional preenchido pelas espécies de cada sítio foi quantificado pelo índice de riqueza funcional descrito por @Villeger2008. Essa medida corresponde ao volume do mínimo polígono convexo que engloba todas as espécies em um espaço com número dimensões igual ao número de atributos medidos. Estas análises foram realizadas com o pacote FD [@Laliberte2010a] no software R (R Core Team 2016). <!-- ver ref -->
-
-<!--
-\begin{table][h!]
-    \centering
-    \caption{Treze atributos funcionais indicadores de uso/ocupação do habitat e comportamento alimentar. Ver Figura \@ref(fig:medidas)
-    para abreviações.]
-    \begin{tabular]{p{3cm] p{3cm] p{5cm]]
-    \hline
-    Atributo & Equação & Função \\
-    \hline
-    Compressão do corpo & $BW/BD$ & Relacionado a mobilidade. Corpos comprimidos geralmente não encontrados em ambientes lênticos (Watson \& Balon 1984). \\
-    Profundidade relativa do corpo & $BD/SL$ & Inversamente relacionadas a velocidade do fluxo e determina a habilidade de executar movimento vertical na coluna d'água (Gatz 1979). \\
-    Tamanho relativo da cabeça & $HL/SL$ & Relacionado ao tamanho da presa (Gatz 1979). \\
-    Posição relativa do olho & $EH/HD$ & Indica preferência de habitat vertical na coluna d'água (Gatz 1979). Varia entre 0 e 1. Valores altos indicam olhos superiores. \\
-    Posição relativa da boca & $MH/HD$ & Indica posição vertical na qual o peixe forrageia (Albouy et al. 2011). Varia entre 0 e 1. Valores altos indicam boca superior. \\
-    Comprimento relativo do pedúnculo & $CpL/SL$ & Pedúnculo caudal mais longo indica boa habilidade para o nado (Gatz 1979). \\
-    Compressão do pedúnculo & $CpH/CpW$ & Pedúnculo caudal comprimidos indicam atividade de nado pouco desenvolvido (Gatz 1979). \\
-    Posição peitoral & $PfP/BD$ & Relacionado a mobilidade (Dumay et al. 2004). Valores altos indicam nadadeiras peitorais localizadas mais próximas ao dorso em relação a parte mais ventral. \\
-    Área relativa da nadadeira peitoral & $PfL*PfH/SL$ & Valores altos são indicativos de espécies com hábitos bentônicos, nas quais as nadadeiras peitorais são utilizadas como ancoras para resistirem em águas rápidas (Watson \& Balon 1984). \\
-    Área relativa da nadadeira ventral & $VfL*VfH/$ & Nadadeiras ventrais grandes são utilizadas como apoio para espécies bentônicas [Casatti2006] \\
-    Área relativa da nadadeira caudal & $VfL*VfH/$ & em ingles??? Large caudal fins are associated to high propulsion (Gatz 1979).
-    \\
-    Área relativa da nadadeira dorsal & $DfL*DfH/SL$ Peixes que preferem fluxos rápidos geralmente tem nadadeiras dorsais pequenas (Casatti \& Castro 2006). \\
-    Biomassa & Weight (g) & Indica contribuição ao sistema via metabolismo
-    (Albouy et al. 2011). \\
-    \hline
-    \end{tabular]
-    \label{tab:atribfunc]
-\end{table]
-
--->
 
 <!-- ± na dissertacao -->
 ```{r medidas, fig.cap = "Ilustração das 19 medidas morfométricas utilizadas para calcular os 13 atributos funcionais relacionados ao uso do hábitat e comportamento alimentar. SL = comprimento padrão; BD = profundidade do corpo; BW = largura do corpo; HL = comprimento da cabeça; HD = profundidade da cabeça; EH = altura do olho; MH = altura da boca; PfL = comprimento da nadadeira peitoral; PfH = atura da nadadeira peitoral; PfP = posição da nadadeira peitoral; VfL = comprimento da nadadeira ventral; VfH = altura da nadadeira ventral; DfL = comprimento da nadadeira dorsal; DfH = altura da nadadeira dorsal; CpL = comprimento do pedúnculo caudal; CpH = altura do pedúnculo caudal; CpW = largura do pedúnculo caudal; CfL = comprimento da nadadeira caudal; e CfH = altura da nadadeira caudal.", fig.height=12, fig.width=10, out.extra = ""}
