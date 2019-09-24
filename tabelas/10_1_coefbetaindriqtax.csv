@@ -1,0 +1,8 @@
+Indicadores de pressão,Beta,Erro padrão,pvalue
+Intercepto,"14,53","0,55","<0,01"
+Agricultura,"\textbf{-3,86}","2,25","\textbf{0,05}"
+Espelhos d'água,"\textbf{169,48}","70,80","\textbf{0,02}"
+Rede viária,"0,17","2,55","0,95"
+Gado,"1,46","2,13","0,50"
+Mineração,"-25,55","644,49","0,97"
+Áreas urbanas,"\textbf{1261,45}","517,67","\textbf{0,02}"

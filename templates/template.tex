@@ -32,7 +32,7 @@
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em recto e verso. Oposto a oneside
+	oneside,			% para impressão em recto e verso. Oposto a oneside - twoside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -56,6 +56,19 @@
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
 % ---
 
 % ---
@@ -67,28 +80,29 @@
 % ---
 % Pacotes de citações
 % ---
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-%\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+% \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+% \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{natbib}
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
 
 % ---
-% Configurações do pacote backref
-% Usado sem a opção hyperpageref de backref
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-% Texto padrão antes do número das páginas
-\renewcommand{\backref}{}
-% Define os textos da citação
-\renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}%
+% % Configurações do pacote backref
+% % Usado sem a opção hyperpageref de backref
+% \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% % Texto padrão antes do número das páginas
+% \renewcommand{\backref}{}
+% % Define os textos da citação
+% \renewcommand*{\backrefalt}[4]{
+% 	\ifcase #1 %
+% 		Nenhuma citação no texto.%
+% 	\or
+% 		Citado na página #2.%
+% 	\else
+% 		Citado #1 vezes nas páginas #2.%
+% 	\fi}%
 % ---
 
 % ---
@@ -130,22 +144,22 @@ $endif$
 	    pdfcreator={LaTeX with abnTeX2},
 		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
     	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
+		urlcolor=black,
 		bookmarksdepth=4
 }
 \makeatother
 % --- 
 
 % ---
-% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
-% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
-\makeatletter
-\setlength{\@fptop}{5pt} % Set distance from top of page to first float
-\makeatother
-% ---
+% % Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% % em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+% \makeatletter
+% \setlength{\@fptop}{5pt} % Set distance from top of page to first float
+% \makeatother
+% % ---
 
 % ---
 % Possibilita criação de Quadros e Lista de quadros.
@@ -382,6 +396,10 @@ $agradecimentos$
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
  $resumo$
+ 
+ \vspace{\onelineskip}
+ 
+ \noindent 
  \textbf{Palavras-chave}: $palavraschave$
 \end{resumo}
 
@@ -451,10 +469,10 @@ $agradecimentos$
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-\begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-  \item[abnTeX] ABsurdas Normas para TeX
-\end{siglas}
+% \begin{siglas}
+%   \item[ABNT] Associação Brasileira de Normas Técnicas
+%   \item[abnTeX] ABsurdas Normas para TeX
+% \end{siglas}
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
@@ -470,7 +488,13 @@ $body$
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+% Comandos para as referencias bibliográficas
+\newdimen\bibindent
+\setlength\bibindent{1.5em} % identaçao das referencias
+% Um lineskip menor neste contexto de referencias
+\baselineskip 4.3mm
+% Edite o arquivo bib.bib com as suas próprias referências 
+\bibliography{$bibliography$}
 
 % ----------------------------------------------------------
 % Glossário

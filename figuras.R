@@ -22,11 +22,11 @@ knitr::include_graphics("figuras/04_Pressoes_v2.jpg")
 knitr::include_graphics("figuras/06_Results_Bacias_cenario2.jpg")
 #Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.
 
-## @knitr hist-indpressao
+## @knitr histindpressao
 knitr::include_graphics("figuras/07_histograma_indpressao.png")
 #Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.
 
-## @knitr hist-indpressfisios
+## @knitr histindpressfisios
 knitr::include_graphics("figuras/08_histogramas_cenario2.png")
 #Frequência de bacias de 3a ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional. 
 
@@ -34,11 +34,11 @@ knitr::include_graphics("figuras/08_histogramas_cenario2.png")
 knitr::include_graphics("figuras/09_RDA_PA3.png")
 #Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela 9.
 
-## @knitr RiqRar-Agr
+## @knitr RiqRarAgr
 knitr::include_graphics("figuras/10_plot_riqrar_Agr.png")
 #Relação entre Agricultura (%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95%.
 
-## @knitr RiqFunc-Cen
+## @knitr RiqFuncCen
 knitr::include_graphics("figuras/11_plot_riquezafuncionalXcenarios.png")
 #Riqueza funcional em relação aos índices globais de pressão ambiental nos cinco cenários.
 

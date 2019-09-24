@@ -8,33 +8,31 @@ tipotrabalho: 'Dissertação de Mestrado'
 preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Ecologia, do Instituto de Biociências da Universidade Federal do Rio Grande do Sul, como parte dos requisitos para obtenção do título de Mestre em Ecologia.'
 abstractseparate: true  # include front page w/ abstract for examination schools?
 abstract: |
-  `r paste(readLines("front-and-back-matter/0-abstract.Rmd"), collapse = '\n  ')`
-keywords: 
+  `r paste(readr::read_lines("front-and-back-matter/0_abstract.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+keywords: "systematic conservation planning, campos sulinos, freshwater diversity, multicriteria analysis, fishes."
 resumo: |
-  `r paste(readLines("front-and-back-matter/0-resumo.Rmd"), collapse = '\n  ')`
-palavraschave:
+  `r paste(readr::read_lines("front-and-back-matter/0_resumo.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+palavraschave: "Planejamento sistemático de conservação, campos sulinos, biodiversidade aquática, análise multicritério, peixes"
 agradecimentos: |
-  `r paste(readLines("front-and-back-matter/0-agradecimentos.Rmd"), collapse = '\n  ')`
-epigrafe: Human beings are stewards of nature, whether we like it or not.\\ Sanderson et al. (2002), Trends in Ecology & Evolution 23.
-bibliography: C:/Users/Bruna/Documents/BibTex/dissertacao_final.bib
-bibliography-heading-in-pdf: Works Cited
-apendices: |
-  `r paste(readLines("front-and-back-matter/99-apendices.Rmd"), collapse = '\n  ')`
-bib-humanities: true   #set to true if you want in-text references formatted as author-year
-draft: true # add as DRAFT mark in the footer?
+  `r paste(readr::read_lines("front-and-back-matter/0_agradecimentos.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+epigrafe: |
+  _Human beings are stewards of nature, whether we like it or not._ \
+  Sanderson et al. (2002), Trends in Ecology & Evolution 23.
+bibliography: dissertacaofinal.bib
 page-layout: nobind #'nobind' for PDF output (equal margins), 'twoside' for two-sided binding (mirror margins and blank pages), leave blank for one-sided binding (left margin > right margin)
-toc-depth: 2 # depth of heading to include in table of contents
+geometry: margin=2.5cm
+fontsize: 12pt
+#toc-depth: 2 # depth of heading to include in table of contents
 lof: true # list of figures in front matter?
 lot: true # list of tables in front matter?
 params: 
   corrections: false # set false to stop applying blue background to blocks of corrections
 output:
   bookdown::pdf_book:
-    template: templates/template.tex
+    template: templates/teste.tex
     keep_tex: true
+    keep_md: true 
     latex_engine: xelatex
-    includes:
-      in_header: templates/preample.tex
   bookdown::gitbook:
     config:
       sharing:
@@ -44,43 +42,17 @@ output:
   bookdown::word_document2:
     toc: true   
 link-citations: true
-documentclass: book
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.pos = 'H')
 knitr::read_chunk("figuras.R")
 knitr::read_chunk("tabelas.R")
 options(tinytex.verbose = TRUE)
 library(kableExtra)
 library(magrittr)
+listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabelas/A1_listaespecies.csv")
 ```
-
-<!-- capa -->
-
-
-<!-- segunda pagina -->
-
-
-<!-- terceira pagina -->
-
-
-<!-- agradecimentos -->
-
-
-<!-- <!-- resumo --> -->
-<!-- ```{r child = "0-resumo.Rmd"} -->
-<!-- ``` -->
-
-<!-- <!-- abstract --> -->
-<!-- ```{r child = "0-abstract.Rmd"} -->
-<!-- ``` -->
-
-<!-- sumario, lista de figuras, lista de taberlas -->
-
-
-<!-- lista de figuras -->
-
 
 <!-- introducao -->
 ```{r child = "1-introducao.Rmd"}
@@ -90,3 +62,16 @@ library(magrittr)
 ```{r child = "2-metodos.Rmd"}
 ```
 
+<!-- resultados -->
+```{r child = "3-resultados.Rmd"}
+```
+
+<!-- discussao -->
+```{r child = "4-discussao.Rmd"}
+```
+
+<!-- consfinais -->
+```{r child = "5-consfinais.Rmd"}
+```
+
+## Referências {-}

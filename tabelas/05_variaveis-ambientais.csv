@@ -1,7 +1,7 @@
-,Unidade,Média,Mediana,Desvio Padrão,Mínimo,Máximo
-Agricultura,% área da bacia,"38,10","33,20","30,84","0,00","100,00"
-Espelhos d'água,% área da bacia,"1,06","0,00","2,36","0,00","31,57"
-Mineração,% área da bacia,"0,66","0,00","5,42","0,00","99,48"
-Áreas urbanas,% área da bacia,"0,31","0,00","2,80","0,00","83,32"
-Rede viária,km/km2 ,"0,59","0,54","0,32","0,00","2,65"
-Densidade de gado,Número de cabeças/km2,"0,35","0,27","0,30","0,00","1,92"
+x,Unidade,Média,Mediana,Desvio Padrão,Mínimo,Máximo
+Agricultura,\% área da bacia,"38,10","33,20","30,84","0,00","100,00"
+Espelhos d'água,\% área da bacia,"1,06","0,00","2,36","0,00","31,57"
+Mineração,\% área da bacia,"0,66","0,00","5,42","0,00","99,48"
+Áreas urbanas,\% área da bacia,"0,31","0,00","2,80","0,00","83,32"
+Rede viária,km/km$^2$ ,"0,59","0,54","0,32","0,00","2,65"
+Densidade de gado,Número de cabeças/km$^2$,"0,35","0,27","0,30","0,00","1,92"
