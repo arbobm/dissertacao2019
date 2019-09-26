@@ -57,3 +57,22 @@ knitr::include_graphics("figuras/14_Implicacoes_intermediarias.jpg")
 ## @knitr MapaCompl
 knitr::include_graphics("figuras/15_Implicacoes_mapacompleto.jpg")
 #Bacias hidrográficas de 3ª ordem classificadas conforme grau de pressão no bioma Pampa. 
+
+## @knitr distspaccen
+knitr::include_graphics("figuras/A1_os5cenarios.png")
+
+## @knitr histogramascenario1
+knitr::include_graphics("figuras/A2_histogramascenario1.png")
+
+## @knitr histogramascenario2
+knitr::include_graphics("figuras/A3_histogramascenario2_2.png")
+
+## @knitr histogramascenario3
+knitr::include_graphics("figuras/A4_histogramascenario3.png")
+
+## @knitr histogramascenario4
+knitr::include_graphics("figuras/A5_histogramascenario4.png")
+
+## @knitr histogramascenario5
+knitr::include_graphics("figuras/A6_histogramascenario5.png")
+

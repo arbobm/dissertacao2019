@@ -69,7 +69,7 @@ par(mfrow=c(5,3),mai=c(0.4,0.4,0.2,0.1))
 
 boxplot(arbustivoPatos.f ,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CArb - Patos")
 boxplot(arbustivoUruguai.f ,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CArb - Uruguai")
-boxplot(areaisPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CAre - Patos")
+boxplot(areaisPatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CAre - Uruguai")
 boxplot(barbadebodePatos.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CBDB - Patos")
 boxplot(barbadebodeUruguai.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CBDB - Uruguai")
 boxplot(espinilhoUruguai.f,boxwex=0.25,xlim=c(0.8,6.3),ylim=c(0,2.5), main = "CEsp - Uruguai")

@@ -1,0 +1,42 @@
+---
+title: "Untitled"
+author: "Bruna Arbo Meneses"
+date: "25/09/2019"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.pos = 'H')
+knitr::read_chunk("figuras.R")
+knitr::read_chunk("tabelas.R")
+options(tinytex.verbose = TRUE)
+library(kableExtra)
+library(magrittr)
+listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabelas/A1_listaespecies.csv")
+```
+
+```{r}
+listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabelas/A1_listaespecies.csv")
+knitr::kable(listaespecies,
+             format="latex",
+             booktabs = T,
+             linesep = "",
+             escape = F,
+             caption = "Lista das espécies de peixes coletadas nos 52 riachos no bioma Pampa, com indicação das famílias as
+             quais pertencem e grupo definido conforme o numero de sítios onde ocorrem. Todas as espécies são nativas.",
+             col.names = c("Família", "Espécies", "Grupo"),
+             align = "c",
+             longtable = TRUE) %>%
+  kableExtra::kable_styling(bootstrap_option = c("condensed"),
+                            latex_options = c("HOLD_position", "repeat_header"),
+                            position = "center",
+                            font_size = 10)%>%
+  kableExtra::column_spec(1:3, bold = F, border_right = F) %>%
+  kableExtra::collapse_rows(columns = 1, valign = "top", latex_hline = "major")
+
+#   kableExtra::column_spec(2, bold = F, border_right = F, width = "6.00cm") %>%
+#   kableExtra::column_spec(3, bold = F, border_right = F, width = "1.65cm")
+```

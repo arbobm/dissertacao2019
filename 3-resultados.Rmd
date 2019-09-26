@@ -1,20 +1,20 @@
-### Pressão ambiental sobre bacias de 3^a^ ordem no bioma Pampa {-}
+# Resultados {-}
+## Pressão ambiental sobre bacias de 3^a^ ordem no bioma Pampa {-}
 
 As 3359 bacias de 3^a^ ordem contêm pelo menos um indicador de pressão ambiental, sendo essas pressões distribuídas de forma desigual no bioma Pampa (Figura \@ref(fig:pressoes) e Figura \@ref(fig:boxplotsfisios)). Bacias com agricultura estão mais concentradas em partes do sudoeste onde o relevo é ondulado ou há solos rasos. As densidades de áreas urbanas e rede viária aumentam no sentido oeste-leste, ou seja, mais aglomeradas à medida que se aproximam da região metropolitana de Porto Alegre e do litoral, mais populosos do que o interior do estado. Espelhos d'água estão associados à pecuária, para dessedentação animal, e às áreas agrícolas irrigadas, encontrando-se, portando, mais concentradas no oeste do bioma. A mineração está majoritariamente localizada na região centro-sul do estado. A proporção de áreas agrícolas e a densidade de rede viária foram os fatores de pressão em média predominantes no bioma Pampa (0,38 e 0,59 respectivamente; Tabela \@ref(tab:variaveisambientais)). 
 
 Aproximadamente 20% das bacias (702) têm 70% ou mais da sua área ocupada por agricultura, e 10,39% (349) das bacias têm densidade viária maior do que 1 km/km^2^, enquanto e a porcentagem de área ocupada pelas poligonais destinadas a mineração variou entre 0 e 99,48% (média = 0,66 $\pm$ 0,05). A porcentagem de área ocupada por mineração foi menor que 10% em 98,29% das bacias (Tabela \@ref(tab:variaveisambientais)).
 
-Não há colinearidade forte entre os indicadores de pressão ambiental, sendo agricultura e densidade de gado os indicadores mais correlacionados (r = -0,26; *p* < 0,01).
+Não há colinearidade forte entre os indicadores de pressão ambiental, sendo agricultura e densidade de gado os indicadores mais correlacionados (r = -0,26; _p_ < 0,01).
 
 Agricultura, densidade viária e de gado são os indicadores predominantes em todas as subunidades regionais (Figura \@ref(fig:boxplotsfisios)). Campo de Barba-de-Bode e Floresta Estacional são as subunidades regionais com maior proporção média de área agrícola nas bacias. No Campo com Barba-de-Bode localizados no sistema da Laguna dos Patos, apenas 25% das bacias tem menos de 71% da área coberta por agricultura. Campo Misto com Andropogôneas e Compostas, Campo Arbustivo e Floresta Estacional tem as maiores densidades de rede viária.
 
-```{r pressoes, fig.cap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura \\ref{fig:areaestudo} para identificação das fisionomias campestres.", out.width = '70%', fig.align = 'center'}
+```{r pressoes, fig.cap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura \\ref{fig:areaestudo} para identificação das fisionomias campestres.", fig.scap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa.", out.width = '70%', fig.align = 'center'}
 ```
 
-```{r boxplotsfisios, code=readLines("figuras/05_boxplots.R"), fig.cap = "Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via = rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.height=7.76, fig.width=5.88, fig.align = 'center'}
+```{r boxplotsfisios, code=readLines("figuras/05_boxplots.R"), fig.cap = "Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via = rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.scap = "Variação dos indicadores de pressão ambiental por fisionomia campestre.", fig.height=7.76, fig.width=5.88, fig.align = 'center'}
 ```
 
-<!-- tabela 5 -->
 ```{r variaveisambientais}
 ```
 
@@ -26,10 +26,10 @@ Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Ca
 ```{r resultscen2, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", out.width = '70%', fig.align = 'center'}
 ```
 
-```{r histindpressao, fig.cap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.", out.width = '70%', fig.align = 'center'}
+```{r histindpressao, fig.cap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.", fig.scap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa.", out.width = '70%', fig.align = 'center'}
 ```
 
-```{r histindpressfisios, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", out.width = '70%', fig.align = 'center'}
+```{r histindpressfisios, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
 ```
 
 Somente quatro bacias foram selecionadas como bacias de referência segundo a condição de menor distúrbio (LDC) em todos os cenários, três localizadas na subunidade regional Campo Arbustivo/Patos, e uma bacia na subunidade Floresta Estacional/Patos (Tabela \@ref(tab:baciasresults)).
@@ -37,31 +37,28 @@ Somente quatro bacias foram selecionadas como bacias de referência segundo a co
 ```{r baciasresults}
 ```
 
-<!-- tabela 7. não ta referenciada no texto??? -->
 ```{r caractbaciarefcenarios}
 ```
 
-As três bacias de 3^a^ ordem mais pressionadas foram as mesmas nos cenários 1, 2 e 3, e estão situadas nas subunidades regionais CEsp-Uruguai, e CArb-Patos. Nessas bacias, a porcentagem de agricultura foi superior a 79% e a densidade viária é considerada alta, entre 0,89 e 1,45 km/km^2^ [@Forman1996a, @Ripley2005a]. No cenário 4, as três bacias mais pressionadas são compostas por um conjunto de valores altos em áreas agrícolas, gado, mineração ou rede viária, e estão localizadas nas subunidades CEsp-Uruguai e CMAC-Patos, enquanto no cenário 5 destacou as bacias dominadas por área urbana e rede viária, localizadas nas mesmas subunidades. 
+As três bacias de 3^a^ ordem mais pressionadas foram as mesmas nos cenários 1, 2 e 3, e estão situadas nas subunidades regionais CEsp-Uruguai, e CArb-Patos. Nessas bacias, a porcentagem de agricultura foi superior a 79% e a densidade viária é considerada alta, entre 0,89 e 1,45 km/km^2^ [@Forman1996a; @Ripley2005a]. No cenário 4, as três bacias mais pressionadas são compostas por um conjunto de valores altos em áreas agrícolas, gado, mineração ou rede viária, e estão localizadas nas subunidades CEsp-Uruguai e CMAC-Patos, enquanto no cenário 5 destacou as bacias dominadas por área urbana e rede viária, localizadas nas mesmas subunidades. 
 
-### Relações entre pressão ambiental e peixes {-}
+## Relações entre pressão ambiental e peixes {-}
 
 Foram amostradas `r nrow(listaespecies)` espécies (Tabela \@ref(tab:listaespecies)) pertencentes a 16 famílias, sendo as famílias mais ricas Characidae, Loricariidae e Cichlidae, com 38, 21 e 14 espécies respectivamente (65,17% do número total de espécies). O número médio de espécies por riacho foi de 18,83 (max = 32, min = 6). As cinco espécies mais frequentes foram _Heptapterus mustelinus_ (96,15% dos sítios), _Bryconamericus iheringii_ (88,46%), _Characidium pterostictum_ (73,08%), _Rineloricaria stellata_ (63,46%) e _Astyanax laticeps_ (56,68%). Sessenta e cinco espécies foram consideradas raras (pouco frequentes, ocorrendo em 5 riachos ou menos; 57,52%), enquanto 10 espécies foram consideradas comuns (ocorreram em mais da metade dos riachos; 8,85%). Cinquenta e quatro espécies (47,79%) foram coletadas exclusivamente na ecorregião do baixo Uruguai, 17 espécies foram coletadas exclusivamente na ecorregião da Laguna dos Patos (15,04%) e 42 espécies foram coletadas nas duas ecorregiões (37,17%).
 
-Os resultados da pRDA mostraram que a composição taxonômica está relacionada principalmente com agricultura e espelhos d'água. A relação entre composição taxonômica das espécies de peixes e indicadores de pressão explicou 48,77% da variação dos dados, sendo que a maior parte dessa explicação (37,84%) foi atribuída às bacias hidrográficas utilizadas como covariáveis. O primeiro eixo de ordenação explicou 34,37% da variação da composição taxonômica, e o segundo eixo explicou 20% dessa variação, os quais estão mais correlacionados com espelhos d'água (r = 0,66) e áreas agrícolas (r = -0,53) respectivamente (Figura \@ref(fig:RDAtax); Tabela \@ref(tab:correlindipRDA)). Estes resultados foram considerados significativos de acordo com o teste de permutação de Monte Carlo (*p* = 0,018; 999 permutações) e, portanto, permitem estabelecer correlações entre os indicadores de pressão e a ictiofauna.
+Os resultados da pRDA mostraram que a composição taxonômica está relacionada principalmente com agricultura e espelhos d'água. A relação entre composição taxonômica das espécies de peixes e indicadores de pressão explicou 48,77% da variação dos dados, sendo que a maior parte dessa explicação (37,84%) foi atribuída às bacias hidrográficas utilizadas como covariáveis. O primeiro eixo de ordenação explicou 34,37% da variação da composição taxonômica, e o segundo eixo explicou 20% dessa variação, os quais estão mais correlacionados com espelhos d'água (r = 0,66) e áreas agrícolas (r = -0,53) respectivamente (Figura \@ref(fig:RDAtax); Tabela \@ref(tab:correlindipRDA)). Estes resultados foram considerados significativos de acordo com o teste de permutação de Monte Carlo (_p_ = 0,018; 999 permutações) e, portanto, permitem estabelecer correlações entre os indicadores de pressão e a ictiofauna.
 
 O primeiro eixo de ordenação (RDA1) apresenta um gradiente associado a presença de espelhos d'água, enquanto o segundo eixo (RDA2) apresenta um gradiente associado principalmente a agricultura e mineração, mostrando uma relação inversa quanto a composição de espécies nos trechos amostrados cujas bacias apresentaram estes indicadores.
 
-Os resultados da pRDA para composição funcional não foram considerados significativos pelo mesmo teste de permutação mencionado anteriormente (*p* = 0,958; 999 permutações), não permitindo uma interpretação confiável sobre as relações entre as variáveis.
+Os resultados da pRDA para composição funcional não foram considerados significativos pelo mesmo teste de permutação mencionado anteriormente (_p_ = 0,958; 999 permutações), não permitindo uma interpretação confiável sobre as relações entre as variáveis.
 
-<!-- tabela 8. não ta referenciada no texto??? -->
 ```{r pRDAcomptax}
 ```
 
-<!-- %tabela 9 -->
 ```{r correlindipRDA}
 ```
 
-```{r RDAtax, fig.cap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela \\ref{tab:correlindipRDA}.", out.width = '70%', fig.align = 'center'}
+```{r RDAtax, fig.cap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela \\ref{tab:correlindipRDA}.", fig.scap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão.", out.width = '70%', fig.align = 'center'}
 ``` 
 
 Três indicadores de pressão apresentaram relação com a riqueza taxonômica: áreas urbanas, espelhos d'água e agricultura (Tabela \@ref(tab:coefbetaindriqtax)). O modelo explicou 26,90% da variação da variável resposta, mas as estimativas para espelhos d'água e áreas urbanas foram inverossímeis devido à baixa quantidade de bacias amostradas com presença desses indicadores (sobreajuste). Assim, não consideramos estas relações interpretáveis. A agricultura está relacionada negativamente com riqueza taxonômica (Figura \@ref(fig:RiqRarAgr)).
@@ -71,7 +68,7 @@ Nenhum indicador de pressão ou cenário teve relação significativa com riquez
 ```{r coefbetaindriqtax} 
 ```
 
-```{r RiqRarAgr, fig.cap = "Relação entre Agricultura (\\%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95\\%.", out.width = '70%', fig.align = 'center'}
+```{r RiqRarAgr, fig.cap = "Relação entre Agricultura (\\%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95\\%.", fig.scap = "Relação entre Agricultura (\\%) e riqueza taxonômica.", out.width = '70%', fig.align = 'center'}
 ```
 
 ```{r coefbetaindriqfunc}

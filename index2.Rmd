@@ -8,20 +8,17 @@ tipotrabalho: 'Dissertação de Mestrado'
 preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Ecologia, do Instituto de Biociências da Universidade Federal do Rio Grande do Sul, como parte dos requisitos para obtenção do título de Mestre em Ecologia.'
 abstractseparate: true  # include front page w/ abstract for examination schools?
 abstract: |
-  `r paste(readr::read_lines("front-and-back-matter/0_abstract.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+  `r paste(readr::read_lines("front-and-back-matter/0_abstract.Rmd"), collapse = '\n  ')`
 keywords: "systematic conservation planning, campos sulinos, freshwater diversity, multicriteria analysis, fishes."
 resumo: |
-  `r paste(readr::read_lines("front-and-back-matter/0_resumo.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+  `r paste(readr::read_lines("front-and-back-matter/0_resumo.Rmd"), collapse = '\n  ')`
 palavraschave: "Planejamento sistemático de conservação, campos sulinos, biodiversidade aquática, análise multicritério, peixes"
 agradecimentos: |
-  `r paste(readr::read_lines("front-and-back-matter/0_agradecimentos.Rmd"), collapse = '\n  ', encoding = "UTF-8")`
+  `r paste(readr::read_lines("front-and-back-matter/0_agradecimentos.Rmd"), collapse = '\n  ')`
 epigrafe: |
   _Human beings are stewards of nature, whether we like it or not._ \
   Sanderson et al. (2002), Trends in Ecology & Evolution 23.
 bibliography: dissertacaofinal.bib
-page-layout: nobind #'nobind' for PDF output (equal margins), 'twoside' for two-sided binding (mirror margins and blank pages), leave blank for one-sided binding (left margin > right margin)
-geometry: margin=2.5cm
-fontsize: 12pt
 #toc-depth: 2 # depth of heading to include in table of contents
 lof: true # list of figures in front matter?
 lot: true # list of tables in front matter?
@@ -29,7 +26,7 @@ params:
   corrections: false # set false to stop applying blue background to blocks of corrections
 output:
   bookdown::pdf_book:
-    template: templates/teste.tex
+    template: templates/template.tex
     keep_tex: true
     keep_md: true 
     latex_engine: xelatex
@@ -43,7 +40,6 @@ output:
     toc: true   
 link-citations: true
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.pos = 'H')
 knitr::read_chunk("figuras.R")
@@ -74,4 +70,7 @@ listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabela
 ```{r child = "5-consfinais.Rmd"}
 ```
 
-## Referências {-}
+\newpage
+# Referências {-}
+
+<!-- apendice -->

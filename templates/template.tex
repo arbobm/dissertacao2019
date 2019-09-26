@@ -32,7 +32,7 @@
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	oneside,			% para impressão em recto e verso. Oposto a oneside - twoside
+	oneside,			% para impressão em recto e verso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -69,41 +69,58 @@
 \usepackage{threeparttablex}
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
-% ---
+\usepackage{mathtools}
+\usepackage[left=2.5cm, top=2.5cm, bottom=2.5cm, right=2.5cm]{geometry}
+\usepackage{alltt}
 
+
+
+
+% ---
+		
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
-%\usepackage{lipsum}				% para geração de dummy text
+\usepackage{lipsum}				% para geração de dummy text
 % ---
 
 % ---
 % Pacotes de citações
 % ---
-% \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-% \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-\usepackage{natbib}
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
 
 % ---
-% % Configurações do pacote backref
-% % Usado sem a opção hyperpageref de backref
-% \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-% % Texto padrão antes do número das páginas
-% \renewcommand{\backref}{}
-% % Define os textos da citação
-% \renewcommand*{\backrefalt}[4]{
-% 	\ifcase #1 %
-% 		Nenhuma citação no texto.%
-% 	\or
-% 		Citado na página #2.%
-% 	\else
-% 		Citado #1 vezes nas páginas #2.%
-% 	\fi}%
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
 % ---
+
+% ---
+% Configurações do apendice
+% ---
+\newcommand{\beginsupplement}{
+  \setcounter{table}{0}  
+  \renewcommand{\thetable}{A\arabic{table}} 
+  \setcounter{figure}{0} 
+  \renewcommand{\thefigure}{A\arabic{figure}}
+}
+
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
@@ -154,12 +171,12 @@ $endif$
 % --- 
 
 % ---
-% % Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
-% % em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
-% \makeatletter
-% \setlength{\@fptop}{5pt} % Set distance from top of page to first float
-% \makeatother
-% % ---
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
 
 % ---
 % Possibilita criação de Quadros e Lista de quadros.
@@ -189,7 +206,7 @@ $endif$
 \setlength{\parindent}{1.3cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
-\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip \parskip{0.2cm}
 
 %Line spacing
 \renewcommand{\baselinestretch}{1.6} %Value 	Line spacing: 1.0 	single spacing, 1.3 	one-and-a-half spacing, 1.6 	double spacing.
@@ -200,11 +217,30 @@ $endif$
 %\makeindex
 % ---
 
+%\usepackage{geometry} %já tem lá em cima
+\usepackage{kantlipsum}
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\fancyfoot[RE,RO]{\thepage} % Left side on Even pages; Right side on Odd pages
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf[lef,rof]{\thepage}%
+}
+
 % ----
 % Início do documento
 % ----
 \begin{document}
-
+%\pagestyle{plain}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf[lef,rof]{\thepage}%
+}
 % Seleciona o idioma do documento (conforme pacotes do babel)
 %\selectlanguage{english}
 \selectlanguage{brazil}
@@ -220,14 +256,14 @@ $endif$
 % ---
 % Capa
 % ---
-\imprimircapa
+%\imprimircapa
 % ---
 
 % ---
 % Folha de rosto
 % (o * indica que haverá a ficha bibliográfica)
 % ---
-\imprimirfolhaderosto*
+%\imprimirfolhaderosto*
 % ---
 
 % ---
@@ -245,37 +281,37 @@ $endif$
 %     \includepdf{fig_ficha_catalografica.pdf}
 % \end{fichacatalografica}
 
-\begin{fichacatalografica}
-	\sffamily
-	\vspace*{\fill}					% Posição vertical
-	\begin{center}					% Minipage Centralizado
-	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
-	\small
-	\imprimirautor
-	%Sobrenome, Nome do autor
-	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
-	
-	\hspace{0.5cm} \thelastpage p. : il. (algumas color.) ; 30 cm.\\
-	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
-	\hspace{0.5cm}
-	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-	\imprimirdata.}\\
-	
-	\hspace{0.5cm}
-		1. Palavra-chave1.
-		2. Palavra-chave2.
-		2. Palavra-chave3.
-		I. Orientador.
-		II. Universidade xxx.
-		III. Faculdade de xxx.
-		IV. Título 			
-	\end{minipage}}
-	\end{center}
-\end{fichacatalografica}
+% \begin{fichacatalografica}
+% 	\sffamily
+% 	\vspace*{\fill}					% Posição vertical
+% 	\begin{center}					% Minipage Centralizado
+% 	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
+% 	\small
+% 	\imprimirautor
+% 	%Sobrenome, Nome do autor
+% 	
+% 	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+% 	\imprimirlocal, \imprimirdata-
+% 	
+% 	\hspace{0.5cm} \thelastpage p. : il. (algumas color.) ; 30 cm.\\
+% 	m
+% 	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+% 	
+% 	\hspace{0.5cm}
+% 	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+% 	\imprimirdata.}\\
+% 	
+% 	\hspace{0.5cm}
+% 		1. Palavra-chave1.
+% 		2. Palavra-chave2.
+% 		2. Palavra-chave3.
+% 		I. Orientador.
+% 		II. Universidade xxx.
+% 		III. Faculdade de xxx.
+% 		IV. Título 			
+% 	\end{minipage}}
+% 	\end{center}
+% \end{fichacatalografica}
 % ---
 
 % ---
@@ -306,7 +342,7 @@ $endif$
 % 
 % \end{errata}
 % % ---
-% 
+
 % % ---
 % % Inserir folha de aprovação
 % % ---
@@ -356,7 +392,7 @@ $endif$
 %   
 % \end{folhadeaprovacao}
 % % ---
-% 
+
 % % ---
 % % Dedicatória
 % % ---
@@ -372,6 +408,8 @@ $endif$
 % ---
 % Agradecimentos
 % ---
+\pagestyle{empty} %get rid of header/footer for toc page
+
 \begin{agradecimentos}
 $agradecimentos$
 \end{agradecimentos}
@@ -383,7 +421,7 @@ $agradecimentos$
 \begin{epigrafe}
     \vspace*{\fill}
 	\begin{flushright}
-		\textit{$epigrafe$}
+		{$epigrafe$}
 	\end{flushright}
 \end{epigrafe}
 % ---
@@ -415,7 +453,7 @@ $agradecimentos$
  \end{otherlanguage*}
 \end{resumo}
 
-% % resumo em francês 
+% resumo em francês 
 % \begin{resumo}[Résumé]
 %  \begin{otherlanguage*}{french}
 %     Il s'agit d'un résumé en français.
@@ -439,7 +477,8 @@ $agradecimentos$
 % ---
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
-\cleardoublepage
+%\cleardoublepage
+\newpage
 % ---
 
 % % ---
@@ -453,49 +492,59 @@ $agradecimentos$
 % ---
 % inserir lista de ilustrações
 % ---
+\renewcommand{\baselinestretch}{1}
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
-\cleardoublepage
+%\cleardoublepage
+\newpage
 % ---
 
 % ---
 % inserir lista de tabelas
 % ---
+\renewcommand{\baselinestretch}{1}
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
-\cleardoublepage
+%\cleardoublepage
+\newpage
+
+\renewcommand{\baselinestretch}{1.6}
 % ---
 
+%% ---
+%% inserir lista de abreviaturas e siglas
+%% ---
+%\begin{siglas}
+%  \item[ABNT] Associação Brasileira de Normas Técnicas
+%  \item[abnTeX] ABsurdas Normas para TeX
+%\end{siglas}
 % ---
-% inserir lista de abreviaturas e siglas
-% ---
-% \begin{siglas}
-%   \item[ABNT] Associação Brasileira de Normas Técnicas
-%   \item[abnTeX] ABsurdas Normas para TeX
-% \end{siglas}
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
 \textual
+%\pagestyle{plain}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf[lef,rof]{\thepage}%
+}
 
-% all your chapters and appendices will appear here
 $body$
 
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
 \postextual
+
 % ----------------------------------------------------------
 
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-% Comandos para as referencias bibliográficas
-\newdimen\bibindent
-\setlength\bibindent{1.5em} % identaçao das referencias
-% Um lineskip menor neste contexto de referencias
-\baselineskip 4.3mm
-% Edite o arquivo bib.bib com as suas próprias referências 
-\bibliography{$bibliography$}
-
+%\bibliography{dissertacaofinal}
 % ----------------------------------------------------------
 % Glossário
 % ----------------------------------------------------------
@@ -511,12 +560,12 @@ $body$
 % ---
 % Inicia os apêndices
 % ---
-\begin{apendicesenv}
-
+\beginsupplement
+\input{C:/SIG/laboratorio/01_mestrado/dissertacao2019/front-and-back-matter/99_apendices.tex}
 % Imprime uma página indicando o início dos apêndices
-\partapendices
-$apendices$
-\end{apendicesenv}
+%\partapendices
+
+
 % ---
 
 % 

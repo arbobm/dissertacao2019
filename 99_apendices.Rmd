@@ -1,0 +1,44 @@
+---
+output:
+  pdf_document:
+    keep_tex: true
+  html_document: default
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.pos = 'H')
+knitr::read_chunk("figuras.R")
+knitr::read_chunk("tabelas.R")
+options(tinytex.verbose = TRUE)
+library(kableExtra)
+library(magrittr)
+listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabelas/A1_listaespecies.csv")
+```
+
+# Apêndice {-}
+
+```{r listaespecies}
+```
+
+<!-- fig A1 -->
+```{r distspaccen, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante dos cinco cenários propostos.", out.width = '70%', fig.align = 'center'}
+```
+
+<!-- fig A2 -->
+```{r histogramascenario1, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 1, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 1, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```
+
+<!-- fig A3 -->
+```{r histogramascenario2, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```
+
+<!-- fig A4 -->
+```{r histogramascenario3, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 3, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 33$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 3, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```
+
+<!-- fig A5 -->
+```{r histogramascenario4, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 4, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 4, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```
+
+<!-- fig A6 -->
+```{r histogramascenario5, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 5, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 5, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```

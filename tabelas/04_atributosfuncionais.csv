@@ -1,14 +1,14 @@
 Atributo,Equação,Função
-Compressão do corpo,$\frac {BW} {BD}$,Relacionado a mobilidade. Corpos comprimidos geralmente não encontrados em ambientes lênticos (Watson and Balon 1984).
-Profundidade relativa do corpo,$\frac {BW} {SL}$,Inversamente relacionadas a velocidade do fluxo e determina a habilidade de executar movimento vertical na coluna d'água (Gatz 1979).
-Tamanho relativo da cabeça,$\frac {HL} {SL}$,Relacionado ao tamanho da presa (Gatz 1979).
-Posição relativa do olho,$\frac {EH} {HD}$,Indica preferência de habitat vertical na coluna d'água (Gatz 1979). Varia entre 0 e 1. Valores altos indicam olhos superiores.
-Posição relativa da boca,$\frac {MH} {HD}$,Indica posição vertical na qual o peixe forrageia (Albouy et al. 2011). Varia entre 0 e 1. Valores altos indicam boca superior.
-Comprimento relativo do pedúnculo,$\frac {CpL} {SL}$,Pedúnculo caudal mais longo indica boa habilidade para o nado (Gatz 1979).
-Compressão do pedúnculo,$\frac {CpH} {CpW}$,Pedúnculo caudal comprimidos indicam atividade de nado pouco desenvolvido (Gatz 1979).
-Posição peitoral,$\frac {PfP} {BD}$,Relacionado a mobilidade (Dumay et al. 2004). Valores altos indicam nadadeiras peitorais localizadas mais próximas ao dorso em relação a parte mais ventral.
-Área relativa da nadadeira peitoral,$\frac {PfL*PfH} {SL}$,"Valores altos são indicativos de espécies com hábitos bentônicos, nas quais as nadadeiras peitorais são utilizadas como ancoras para resistirem em águas rápidas (Watson and Balon 1984)."
-Área relativa da nadadeira ventral,$\frac {VfL * VfH} {SL}$,Nadadeiras ventrais grandes são utilizadas como apoio para espécies bentônicas (Casatti and Castro 2006).
-Área relativa da nadadeira caudal,$\frac {VfL * VfH} {SL}$,Large caudal fins are associated to high propulsion (Gatz 1979).
-Área relativa da nadadeira dorsal,$\frac {DfL * DfH} {SL}$,Peixes que preferem fluxos rápidos geralmente tem nadadeiras dorsais pequenas (Casatti and Castro 2006).
+Compressão do corpo,$\dfrac {BW} {BD}$,Relacionado a mobilidade. Corpos comprimidos geralmente não encontrados em ambientes lênticos (Watson and Balon 1984).
+Profundidade relativa do corpo,$\dfrac {BW} {SL}$,Inversamente relacionadas a velocidade do fluxo e determina a habilidade de executar movimento vertical na coluna d'água (Gatz 1979).
+Tamanho relativo da cabeça,$\dfrac {HL} {SL}$,Relacionado ao tamanho da presa (Gatz 1979).
+Posição relativa do olho,$\dfrac {EH} {HD}$,Indica preferência de habitat vertical na coluna d'água (Gatz 1979). Varia entre 0 e 1. Valores altos indicam olhos superiores.
+Posição relativa da boca,$\dfrac {MH} {HD}$,Indica posição vertical na qual o peixe forrageia (Albouy et al. 2011). Varia entre 0 e 1. Valores altos indicam boca superior.
+Comprimento relativo do pedúnculo,$\dfrac {CpL} {SL}$,Pedúnculo caudal mais longo indica boa habilidade para o nado (Gatz 1979).
+Compressão do pedúnculo,$\dfrac {CpH} {CpW}$,Pedúnculo caudal comprimidos indicam atividade de nado pouco desenvolvido (Gatz 1979).
+Posição peitoral,$\dfrac {PfP} {BD}$,Relacionado a mobilidade (Dumay et al. 2004). Valores altos indicam nadadeiras peitorais localizadas mais próximas ao dorso em relação a parte mais ventral.
+Área relativa da nadadeira peitoral,$\dfrac {PfL*PfH} {SL}$,"Valores altos são indicativos de espécies com hábitos bentônicos, nas quais as nadadeiras peitorais são utilizadas como ancoras para resistirem em águas rápidas (Watson and Balon 1984)."
+Área relativa da nadadeira ventral,$\dfrac {VfL * VfH} {SL}$,Nadadeiras ventrais grandes são utilizadas como apoio para espécies bentônicas (Casatti and Castro 2006).
+Área relativa da nadadeira caudal,$\dfrac {VfL * VfH} {SL}$,Large caudal fins are associated to high propulsion (Gatz 1979).
+Área relativa da nadadeira dorsal,$\dfrac {DfL * DfH} {SL}$,Peixes que preferem fluxos rápidos geralmente tem nadadeiras dorsais pequenas (Casatti and Castro 2006).
 Biomassa,$Weight (g)$,Indica contribuição ao sistema via metabolismo (Albouy et al. 2011).

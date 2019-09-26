@@ -1,27 +1,32 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 Durante o período do mestrado, contei com uma grande rede de apoio agindo direta e indiretamente no desenvolvimento desta dissertação. Pessoas e instituições que, ao fazerem parte dessa incrível experiência de compartilhamento que é a vida, contribuíram com um pedacinho de si na construção da profissional que me torno a cada novo encontro neste caminho. Gostaria de agradecer especialmente:
 
-- ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pela bolsa de mestrado; e ao Programa de Pesquisa em Biodiversidade (PPBio);
+-- ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pela bolsa de mestrado; e ao Programa de Pesquisa em Biodiversidade (PPBio);
 
-- Bioma Campos Sulinos (proc. 457503/2012-2.) do CNPq que financiou grande parte desta pesquisa; 
+-- Bioma Campos Sulinos (proc. 457503/2012-2.) do CNPq que financiou grande parte desta pesquisa; 
 
-- ao meu orientador, Fernando Gertum Becker, pela amizade e incentivo, por compartilhar seus conhecimentos, pela desorientação eventual - no melhor sentido possível -, por me lembrar sempre como são empolgantes os meandros da ecologia e da pesquisa; 
+-- ao meu orientador, Fernando Gertum Becker, pela amizade e incentivo, por compartilhar seus conhecimentos, pela desorientação eventual - no melhor sentido possível -, por me lembrar sempre como são empolgantes os meandros da ecologia e da pesquisa; 
 
-- a todos os amigos e colegas do Laboratório de Ecologia de Paisagens, pelas discussões, chimarrões da alegria, abraços calmantes, guloseimas pilhantes e insights motivadores durante o trabalho;
+-- a todos os amigos e colegas do Laboratório de Ecologia de Paisagens, pelas discussões, chimarrões da alegria, abraços calmantes, guloseimas pilhantes e insights motivadores durante o trabalho;
 
-- a Caroline Hartmann, ao Fernando Becker, a Taís Ramos Guimarães e, principalmente, ao Renato Bolson Dala Corte pelos ensinamentos de campo, de direção off-road e de mecânica básica; ao Renato também pela paciência, parceria e ajuda estatístico-terapêutica;
+-- a Caroline Hartmann, ao Fernando Becker, a Taís Ramos Guimarães e, principalmente, ao Renato Bolson Dala Corte pelos ensinamentos de campo, de direção off-road e de mecânica básica; ao Renato também pela paciência, parceria e ajuda estatístico-terapêutica;
 
-- Mateus Camana, Matheus Dalmolin, Lucas de Fries, Luciana Podgaiski, Vinicius Bastazini, Vinicius Lampert, Miguel Santos, Karine Bonato, Rafael A. Silveira, Angelo Meneses, Luiz Henrique e Bento Collares por terem embarcado nessa pra ajudar nos campos; e a todos os proprietários que receberam as equipes de peixes PPBio durante os trabalhos de campo.  A disponibilidade de vocês foi fundamental;
+-- Mateus Camana, Matheus Dalmolin, Lucas de Fries, Luciana Podgaiski, Vinicius Bastazini, Vinicius Lampert, Miguel Santos, Karine Bonato, Rafael A. Silveira, Angelo Meneses, Luiz Henrique e Bento Collares por terem embarcado nessa pra ajudar nos campos; e a todos os proprietários que receberam as equipes de peixes PPBio durante os trabalhos de campo.  A disponibilidade de vocês foi fundamental;
 
-- aos amigos Larissa Gonçalves, Ismael Brack, Fernanda Zimmermann, Andreas Kindel, Igor Coelho, Julia Beduschi, Juan Rodriguez e Paula Pinheiro (NERF, muito obrigada pelos abrigos!!), mais Luis Fernando Marin, Michelle Abadie, Vinícius Bastazini, Anita Macedo, Isadora Neumann e Danielle Calegari por, pra dizer o mínimo, ajudarem a manter meu ambiente interno estável... que alegria é ter vocês na vida, sabe?
+-- aos amigos Larissa Gonçalves, Ismael Brack, Fernanda Zimmermann, Andreas Kindel, Igor Coelho, Julia Beduschi, Juan Rodriguez e Paula Pinheiro (NERF, muito obrigada pelos abrigos!!), mais Luis Fernando Marin, Michelle Abadie, Vinícius Bastazini, Anita Macedo, Isadora Neumann e Danielle Calegari por, pra dizer o mínimo, ajudarem a manter meu ambiente interno estável... que alegria é ter vocês na vida, sabe?
 
-- ao Juliano Ferrer dos Santos, do Laboratório de Ictiologia da UFRGS, por ajudar na identificação das espécies de peixes;
+-- ao Juliano Ferrer dos Santos, do Laboratório de Ictiologia da UFRGS, por ajudar na identificação das espécies de peixes;
 
-- ao Prof. Dr. Luis R. Malabarba, por coordenar do projeto associado Peixes – PPBio pelo apoio operacional; 
+-- ao Prof. Dr. Luis R. Malabarba, por coordenar do projeto associado Peixes – PPBio pelo apoio operacional; 
 
-- ao Prof. Dr. Valério de Patta Pillar, por coordenar o PPBio Campos Sulinos e ao Eduardo Velez, pela disponibilidade e apoio operacional; 
+-- ao Prof. Dr. Valério de Patta Pillar, por coordenar o PPBio Campos Sulinos e ao Eduardo Velez, pela disponibilidade e apoio operacional; 
 
-- ao Programa de Pós-Graduação em Ecologia da UFRGS por todo o suporte, pelas disciplinas e resolução das questões administrativas. 
+-- ao Programa de Pós-Graduação em Ecologia da UFRGS por todo o suporte, pelas disciplinas e resolução das questões administrativas. 
 
-- aos membros da banca avaliadora, Prof. Dr. Demetrio Luis Guadagnin, Prof. Dra. Fernanda Thiesen Brum e Prof. Dr. Uwe H. Schulz, por terem aceitado avaliar a minha dissertação e pelas contribuições que serão tão bem vindas.
+-- aos membros da banca avaliadora, Prof. Dr. Demetrio Luis Guadagnin, Prof. Dra. Fernanda Thiesen Brum e Prof. Dr. Uwe H. Schulz, por terem aceitado avaliar a minha dissertação e pelas contribuições que serão tão bem vindas.
 
-- e por último, mas mais importante, à minha mãe, Beth, ao meu pai, Angelo e à ermãzita Renata, simplesmente por existirem, por estarem junto, por ficarem do meu lado mesmo quando discordaram. Pelo apoio logístico, gastronômico, emocional e financeiro sempre que foi preciso (e olha que foi preciso muito!). Sem vocês, tudo teria sido incrivelmente mais difícil. Amo vocês demais da conta.
+-- e por último, mas mais importante, à minha mãe, Beth, ao meu pai, Angelo e à ermãzita Renata, simplesmente por existirem, por estarem junto, por ficarem do meu lado mesmo quando discordaram. Pelo apoio logístico, gastronômico, emocional e financeiro sempre que foi preciso (e olha que foi preciso muito!). Sem vocês, tudo teria sido incrivelmente mais difícil. Amo vocês demais da conta.

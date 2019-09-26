@@ -1,21 +1,21 @@
-Dado original,Amea�a,Escala,Ano base,Fonte
-�reas agr�colas,Escoamento de pesticidas e sedimentos,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas agr�colas,Remo��o da mata rip�ria,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas agr�colas,     Aumento da temperatura da �gua,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas urbanas,Aumento de superf�cie imperme�vel,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas urbanas,Canaliza��o ,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas urbanas,Altera��o do fluxo,1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-�reas urbanas,"Poluentes (esgoto dom�stico, hospitalar e industrial)",1$\colon$250.000,2002,"Cordeiro and Hasenack, 2009"
-Rede vi�ria,Cruzamentos,1$\colon$50.000,1976-1984,"Hasenack and Weber, 2010"
-Rede vi�ria,   Pontes com \textit{culvets} ou pontilh�es que causam barramento,1$\colon$50.000,1976-1984,"Hasenack and Weber, 2010"
-Rede vi�ria,   Remo��o da mata rip�ria,1$\colon$50.000,1976-1984,"Hasenack and Weber, 2010"
-Rede vi�ria,        Aumento da temperatura da �gua,1$\colon$50.000,1976-1984,"Hasenack and Weber, 2010"
-Rede vi�ria,Sedimentos,1$\colon$50.000,1976-1984,"Hasenack and Weber, 2010"
-Minera��o,Extra��o do fundo,N�o se aplica.,2015,"DNPM, 2015"
-Minera��o,Polui��o,N�o se aplica.,2015,"DNPM, 2015"
-Espelhos d'�gua $>$ 20 ha,Altera��o do fluxo,1$\colon$50.000,2003-2006,"FUNCEME, 2008"
-Espelhos d'�gua $>$ 20 ha,Barramento,1$\colon$50.000,2003-2006,"FUNCEME, 2008"
-Efetivo gado,Aumento de nutrientes,N�o se aplica.,2006,"IBGE, 2006"
-Efetivo gado,Eros�o das margens,N�o se aplica.,2006,"IBGE, 2006"
-Efetivo gado,Sedimenta��o do fundo,N�o se aplica.,2006,"IBGE, 2006"
-Efetivo gado,Homogeneiza��o dos sedimento,N�o se aplica.,2006,"IBGE, 2006"
+﻿Dado original,Ameaça,Escala,Ano base,Fonte
+Áreas agrícolas,Escoamento de pesticidas e sedimentos,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas agrícolas,Remoção da mata ripária,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas agrícolas,     Aumento da temperatura da água,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas urbanas,Aumento de superfície impermeável,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas urbanas,Canalização ,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas urbanas,Alteração do fluxo,1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Áreas urbanas,"Poluentes (esgoto doméstico, hospitalar e industrial)",1$\colon$250.000,2002,Cordeiro and Hasenack \protect\hyperlink{ref-Cordeiro2009a}{2009}
+Rede viária,Cruzamentos,1$\colon$50.000,1976-1984,Hasenack and Weber \protect\hyperlink{ref-Hasenack2010b}{2010}
+Rede viária,   Pontes com \textit{culvets} ou pontilhões que causam barramento,1$\colon$50.000,1976-1984,Hasenack and Weber \protect\hyperlink{ref-Hasenack2010b}{2010}
+Rede viária,   Remoção da mata ripária,1$\colon$50.000,1976-1984,Hasenack and Weber \protect\hyperlink{ref-Hasenack2010b}{2010}
+Rede viária,        Aumento da temperatura da água,1$\colon$50.000,1976-1984,Hasenack and Weber \protect\hyperlink{ref-Hasenack2010b}{2010}
+Rede viária,Sedimentos,1$\colon$50.000,1976-1984,Hasenack and Weber \protect\hyperlink{ref-Hasenack2010b}{2010}
+Mineração,Extração do fundo,Não se aplica.,2015,DNPM \protect\hyperlink{ref-DNPM2015}{2015}
+Mineração,Poluição,Não se aplica.,2015,DNPM \protect\hyperlink{ref-DNPM2015}{2015}
+Espelhos \linebreak d'água $>$ 20 ha,Alteração do fluxo,1$\colon$50.000,2003-2006,FUNCEME \protect\hyperlink{ref-FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a}{2008}
+Espelhos \linebreak d'água $>$ 20 ha,Barramento,1$\colon$50.000,2003-2006,FUNCEME \protect\hyperlink{ref-FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a}{2008}
+Efetivo gado,Aumento de nutrientes,Não se aplica.,2006,IBGE \protect\hyperlink{ref-IBGE2006}{2006}
+Efetivo gado,Erosão das margens,Não se aplica.,2006,IBGE \protect\hyperlink{ref-IBGE2006}{2006}
+Efetivo gado,Sedimentação do fundo,Não se aplica.,2006,IBGE \protect\hyperlink{ref-IBGE2006}{2006}
+Efetivo gado,Homogeneização dos sedimentos,Não se aplica.,2006,IBGE \protect\hyperlink{ref-IBGE2006}{2006}
