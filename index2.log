@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  25 SEP 2019 21:45
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  25 SEP 2019 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,12 +1332,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: figuras/02_AreaDeEstudoSubBacias_meiaA4_v2.jpg Graphic file (type bmp)
 <figuras/02_AreaDeEstudoSubBacias_meiaA4_v2.jpg>
 [21] [22]
-Overfull \hbox (31.5472pt too wide) in paragraph at lines 681--726
+Overfull \hbox (31.5472pt too wide) in paragraph at lines 680--725
  [][] 
  []
 
 [23] [24] [25] [26] [27]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 769.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 768.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1352,15 +1352,15 @@ File: figuras/03_medidas.jpg Graphic file (type bmp)
 [29] [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 821.
+(hyperref)                removing `\mathsurround' on input line 820.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 821.
+(hyperref)                removing `\z@' on input line 820.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 821.
+(hyperref)                removing `superscript' on input line 820.
 
 [31]
 File: figuras/04_Pressoes_v2.jpg Graphic file (type bmp)
@@ -1371,17 +1371,17 @@ File: index2_files/figure-latex/boxplotsfisios-1.pdf Graphic file (type pdf)
 Overfull \vbox (2.30807pt too high) has occurred while \output is active []
 
 [33]
-Overfull \hbox (9.0475pt too wide) in paragraph at lines 856--856
+Overfull \hbox (9.0475pt too wide) in paragraph at lines 855--855
  []|\T1/lmr/m/n/10 Mediana| 
  []
 
 
-Overfull \hbox (5.15825pt too wide) in paragraph at lines 856--856
+Overfull \hbox (5.15825pt too wide) in paragraph at lines 855--855
  []|\T1/lmr/m/n/10 Mínimo| 
  []
 
 
-Overfull \hbox (7.10298pt too wide) in paragraph at lines 856--857
+Overfull \hbox (7.10298pt too wide) in paragraph at lines 855--856
  []|\T1/lmr/m/n/10 Máximo| 
  []
 
@@ -1393,14 +1393,14 @@ File: figuras/07_histograma_indpressao.png Graphic file (type bmp)
 File: figuras/08_histogramas_cenario2.png Graphic file (type bmp)
 <figuras/08_histogramas_cenario2.png>
 [35] [36] [37] [38]
-Overfull \hbox (3.33713pt too wide) in paragraph at lines 997--1048
+Overfull \hbox (3.33713pt too wide) in paragraph at lines 996--1047
  [][] 
  []
 
 File: figuras/09_RDA_PA3.png Graphic file (type bmp)
 <figuras/09_RDA_PA3.png>
 [39]
-Overfull \hbox (1.55942pt too wide) in paragraph at lines 1080--1080
+Overfull \hbox (1.55942pt too wide) in paragraph at lines 1079--1079
  []|\T1/lmr/bx/n/10 1261,45| 
  []
 
@@ -1421,13 +1421,13 @@ File: figuras/14_Implicacoes_intermediarias.jpg Graphic file (type bmp)
 File: figuras/15_Implicacoes_mapacompleto.jpg Graphic file (type bmp)
 <figuras/15_Implicacoes_mapacompleto.jpg>
 [49] [50] [51] [52] [53] [54]
-Overfull \hbox (24.95528pt too wide) in paragraph at lines 1390--1392
+Overfull \hbox (24.95528pt too wide) in paragraph at lines 1392--1394
 [][]\T1/lmr/m/n/12 IBGE. 2004. ``Mapa de Bi-o-mas do Bra-sil.'' [][]$<[]http : 
 / / www . ibge . gov . br / home / presidencia /
  []
 
 [55]
-Overfull \hbox (2.29321pt too wide) in paragraph at lines 1417--1419
+Overfull \hbox (2.29321pt too wide) in paragraph at lines 1419--1421
 \T1/lmr/m/n/12 Pan-ta-nal we-tland.'' \T1/lmr/m/it/12 Di-vers. Dis-trib. \T1/lm
 r/m/n/12 17 (2): 297--310. [][]$<[]https : / / doi . org / 10 . 1111 / j . 1472
 -[]4642 .
@@ -1436,21 +1436,20 @@ r/m/n/12 17 (2): 297--310. [][]$<[]https : / / doi . org / 10 . 1111 / j . 1472
 [56]
 Missing character: There is no ‐ in font ec-lmr12!
 Missing character: There is no ‐ in font ec-lmr12!
-[57]
+[57] [58]
 Missing character: There is no ő in font ec-lmr12!
 
-Overfull \hbox (90.44554pt too wide) in paragraph at lines 1480--1482
+Overfull \hbox (90.44554pt too wide) in paragraph at lines 1482--1484
 \T1/lmr/m/n/12 and the Mis-me-a-sure of In-te-grity of Fish As-sem-bla-ges.'' \
 T1/lmr/m/it/12 Fishe-ries \T1/lmr/m/n/12 26 (11): 6--15. [][]https://doi.org/10
 .1577/1548-
  []
 
-[58] [59]
+[59] [60]
 (c:/SIG/laboratorio/01_mestrado/dissertacao2019/front-and-back-matter/99_apendi
-ces.tex [60] [61] [62] [63]
+ces.tex [61] [62] [63] [64]
 File: figuras/A1_os5cenarios.jpg Graphic file (type bmp)
 <figuras/A1_os5cenarios.jpg>
-[64]
 File: figuras/A2_histogramascenario1.png Graphic file (type bmp)
 <figuras/A2_histogramascenario1.png>
 [65]
