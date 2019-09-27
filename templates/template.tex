@@ -55,6 +55,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{xcolor}       % permite que as figuras com fundo transparente fiquem assim :)
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -258,12 +259,92 @@ $endif$
 % ---
 %\imprimircapa
 % ---
+\begin{titlingpage} 
+
+\begin{center}
+\begin{tabular}{ l c r }
+
+\multirow{3}{4em}{\includegraphics[height=2.5cm,keepaspectratio,]{figuras/ufrgs-logo-antigo.png}} & \normalsize{UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL} & \multirow{3}{4em}{\includegraphics[height=2.5cm,keepaspectratio,]{figuras/logoeco.png}} \\ 
+& \normalsize{INSTITUTO DE BIOCIÊNCIAS} &  \\ 
+& \normalsize{PROGRAMA DE PÓS-GRADUAÇÃO EM ECOLOGIA} &  \\ 
+\end{tabular}
+\end{center}
+
+\centering
+\vspace{\stretch{1}}
+\large{Dissertação de Mestrado}
+
+\vspace{\stretch{1}}
+\Large{\textbf{Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna}}
+
+\vspace{\stretch{1}}
+\normalsize{BRUNA ARBO MENESES}
+
+\vspace{\stretch{2}}
+\normalsize{Porto Alegre, outubro de 2016}
+\end{titlingpage}
 
 % ---
 % Folha de rosto
 % (o * indica que haverá a ficha bibliográfica)
 % ---
-%\imprimirfolhaderosto*
+%\imprimirfolhaderosto
+\makeatletter
+%\folhaderostocontent{
+  \begin{center}
+  
+  {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+  
+  \vspace*{\fill}\vspace*{\fill}
+  {\ABNTEXchapterfont\large\imprimirautor}
+  \vspace*{\fill}
+  
+  \abntex@ifnotempty{\imprimirpreambulo}{%
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+      \SingleSpacing
+      \imprimirpreambulo
+    \end{minipage}%
+    \vspace{\stretch{1}
+  }%
+    
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+      \SingleSpacing
+      {\normalsize\imprimirorientadorRotulo~\imprimirorientador\par}
+    \abntex@ifnotempty{\imprimircoorientador}{%
+      {\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}%
+    }%
+    \end{minipage}%
+    \vspace{\stretch{0.5}
+  }%
+    
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+      \SingleSpacing
+    \normalsize{Comissão Examinadora:
+    \par
+    Prof. Dr. Demetrio Luis Guadagnin
+    \par
+    Prof. Dra. Fernanda Thiesen Brum
+    \par
+    Prof. Dr. Uwe H. Schulz}
+    \end{minipage}%
+    \vspace*{\fill}
+  }%
+  
+%  {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao
+%\vspace*{\fill}}}
+
+    \vspace*{\fill}
+  
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{center}
+  %} % fecha \folhaderostocontent
+\makeatother
 % ---
 
 % ---

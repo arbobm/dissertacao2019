@@ -9,7 +9,7 @@ preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduaçã
 abstractseparate: true  # include front page w/ abstract for examination schools?
 abstract: |
   Watershed classification using spatial representations of biodiversity threatening factors are useful as proxies of disturbance gradients. However, this is an assumption that should be tested in order to effectively link conservation objectives to biodiversity outcomes. In this study, we test whether stream fish community attributes are related to environmental pressure in small watersheds of the Brazilian Pampa grassland biome. Firstly, we estimated and mapped environmental pressure in 3359 third-order watersheds, then we tested whether environmental pressure predicted fish community attributes in 150-m stream segments from 52 watersheds representing the gradient of environmental pressure. Environmental pressure was defined by an index based on six indicators (cropland, mining, urbanization, road density, dams and cattle density). We defined reference watersheds as those where all the indicators were equal to zero or which were ranked among the 10% less disturbed in each subregional Pampa unit (aquatic ecorregions and regional grassland types). All watersheds had the influence of at least one disturbance factor, and reference watersheds were indentified in only one subregional unit. An elevated fraction of the watersheds (over 50%) showed intermediate to high pressure. Redundancy Analysis (RDA) indicated that that taxonomic composition was related to cropland area and dams. GLM results indicated that taxonomic richness is negatively related to cropland area. Functional richness and composition, and proportion of rare and common species were not related to the environmental pressure gradient. Our results show that response of fish communities to environmental pressure gradient may vary from positive, to negative or no response, depending on the selected attribute. Concerning the use in scientifically defensible conservation strategies, mapping pressure indicators could be enhanced by testing their relationship with conservation biodiversity outcomes.
-keywords: "systematic conservation planning, campos sulinos, freshwater diversity, multicriteria analysis, fishes."
+keywords: "systematic conservation planning, _campos sulinos_, freshwater diversity, multicriteria analysis, fishes."
 resumo: |
   Classificações de bacias hidrográficas baseadas em indicadores de pressão ambiental permitem caracterizar gradientes de degradação potencial que podem estar relacionados à conservação da biota. Por exemplo, é plausível assumir que existe uma relação negativa entre diversidade de espécies e pressão ambiental como fundamento para uso de mapas de pressão na priorização de bacias para conservação, mas esse é um pressuposto que deve ser validado, sob pena de o objetivo de conservação (como diversidade) não ser efetivamente afetado por ações de conservação baseadas nos fatores de pressão. Neste trabalho, apresentamos um diagnóstico de pressão ambiental em 3359 bacias de 3^a^ ordem no bioma Pampa e utilizamos estes resultados para testar a existência de relação com características da ictiofauna. Definimos o grau de pressão sobre as bacias como um índice global composto por seis indicadores e realizamos projeções considerando cinco diferentes configurações de pesos para esses indicadores. Consideramos como bacias de referência aquelas que atenderam a uma das seguintes condições: 1) apresentarem valor zero para todos os fatores de pressão, ou 2) estarem entre as 10% menos pressionadas em cada subunidade regional. O dados de ictiofauna foram obtidos em 52 bacias hidrográficas de 3^a^ ordem, sendo cada bacia representada com amostragem por pesca elétrica em 150 m de riacho. Foram ainda discriminadas 13 subunidades regionais definidas pela combinação de ecorregiões aquáticas e fisionomias campestres. Todas as bacias mostraram a presença de pelo menos um indicador de pressão, sendo que bacias de referência foram identificadas somente em duas subunidades regionais. Há uma proporção elevada de bacias (acima de 50%) com níveis intermediários a altos de pressão no bioma Pampa, sendo tais proporções variáveis entre subunidades fisionômicas de campo e subunidades ecorregionais aquáticas. Ao buscar relações entre os fatores de pressão e características da ictiofauna, verificamos que a composição taxonômica está relacionada com agricultura e espelhos d'água (representados principalmente por açudes). Verificamos ainda que a riqueza taxonômica está relacionada negativamente com agricultura. Riqueza funcional, composição funcional e porcentagens de espécies raras e comuns não apresentaram relação com o gradiente de pressão. Os resultados mostram que apenas parte das características ecológicas da ictiofauna possui relação direta com grau de pressão ambiental em bacias hidrográficas, indicando que a validade do uso de fatores de pressão como proxies depende de quais características de ictiofauna são consideradas. Portanto, para que os resultados de estratégias regionais de conservação de ictiofauna sejam eficientes, o mapeamento de fatores de pressão deve ser baseado na definição adequada de alvos e complementado por testes sobre sua relação com os alvos de conservação.
 palavraschave: "Planejamento sistemático de conservação, campos sulinos, biodiversidade aquática, análise multicritério, peixes"
@@ -112,18 +112,18 @@ Neste trabalho, realizamos um diagnóstico do estado de pressão ambiental nas b
 ## Área de estudo e estrutura espacial {-}
 
 As análises envolveram a área do bioma Pampa [@IBGE2004], que se estende por 176.476 km^2^ no estado do Rio Grande do Sul, sul do Brasil (Figura \@ref(fig:areaestudo)).
-A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina [@Overbeck2007a]. As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária [@Cordeiro2009a]. O Rio Grande do Sul possui o 6º efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3º maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns [@IBGE2015].
+A cobertura vegetal desta região, zona de transição entre os climas temperado e tropical, corresponde a um mosaico de campos nativos, arbustos e manchas florestais que, desconsiderando os limites políticos, estendem-se pelo Uruguai e parte da Argentina [@Overbeck2007a]. As áreas campestres e florestais no Rio Grande do Sul sem qualquer intervenção antrópica são muito pequenas, porque mesmo as áreas sob algum tipo de proteção, como as unidades de conservação, apresentam algum tipo de pressão antrópica, especialmente por pecuária [@Cordeiro2009a]. O Rio Grande do Sul possui o 6$^o$ efetivo bovino no país, com números estáveis nas últimas décadas (1980-2014), embora este rebanho esteja em franco crescimento no Brasil. Suínos (3$^o$ maior efetivo no Brasil) e ovinos (estado com maior número de cabeças) são os outros rebanhos mais comuns [@IBGE2015].
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/01_AreaDeEstudoFisionmiascampestres_meiaA4_v2} 
+{\centering \includegraphics[width=1\linewidth]{figuras/01_AreaDeEstudoFisionmiascampestres_meiaA4_v2} 
 
 }
 
 \caption[Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa.]{Área de estudo abordada no diagnóstico de pressão ambiental no bioma Pampa. Fisionomias campestres: CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.}(\#fig:areaestudo)
 \end{figure}
 
-A expansão da agricultura, que cobre aproximadamente 40% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam [@Cordeiro2009a]; [@IBGE2015]). A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Guadagnin2010] que servem de matéria-prima para indústrias de papel e celulose, madeira para a construção civil e setor moveleiro, carvão vegetal e lenha para produção de energia. A distribuição espacial das intervenções humanas na paisagem é fruto de uma ocupação desigual nas nove fisionomias campestres encontradas no bioma [@Hasenack] (Tabela \@ref(tab:fisiocamp)). Como consequência, restam 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015].
+A expansão da agricultura, que cobre aproximadamente 40% da área do bioma Pampa, representada especialmente pelas lavouras temporárias de grãos como soja, trigo e arroz, compreende uma das principais ameaças à conservação dos campos pelas intensas conversões no uso do solo que acarretam [@Cordeiro2009a; @IBGE2015]). A silvicultura também constitui atividade em expansão no Rio Grande do Sul, com a plantação de eucalipto, acácia-negra e pinus [@Guadagnin2010] que servem de matéria-prima para indústrias de papel e celulose, madeira para a construção civil e setor moveleiro, carvão vegetal e lenha para produção de energia. A distribuição espacial das intervenções humanas na paisagem é fruto de uma ocupação desigual nas nove fisionomias campestres encontradas no bioma [@Hasenack] (Tabela \@ref(tab:fisiocamp)). Como consequência, restam 31,38% de sua cobertura com características naturais ou seminaturais, se considerarmos o uso pecuário sobre o campo nativo como fisionomia seminatural [@Cordeiro2009a], distribuídos em remanescentes campestres bastante fragmentados [@ContrerasOsorio2014]. As conversões anteriormente citadas e a malha viária, responsável pelo transporte de grãos, madeiras e outros bens produzidos no Rio Grande do Sul, são as principais responsáveis pela fragmentação do habitat, e podem funcionar como barreiras para certos organismos, aumentando o status de fragmentação dos remanescentes já pressionados [@Teixeira2015].
 
 
 <!-- tabela 1 -->
@@ -160,7 +160,7 @@ As ecorregiões aquáticas Baixo Uruguai e Laguna dos Patos possuem 97.477,96 e 
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/02_AreaDeEstudoSubBacias_meiaA4_v2} 
+{\centering \includegraphics[width=1\linewidth]{figuras/02_AreaDeEstudoSubBacias_meiaA4_v2} 
 
 }
 
@@ -302,7 +302,7 @@ Biomassa & $Weight (g)$ & Indica contribuição ao sistema via metabolismo (Albo
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/03_medidas} 
+{\centering \includegraphics[width=1\linewidth]{figuras/03_medidas} 
 
 }
 
@@ -330,7 +330,7 @@ Agricultura, densidade viária e de gado são os indicadores predominantes em to
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/04_Pressoes_v2} 
+{\centering \includegraphics[width=1\linewidth]{figuras/04_Pressoes_v2} 
 
 }
 
@@ -372,7 +372,7 @@ Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Ca
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/06_Results_Bacias_cenario2} 
+{\centering \includegraphics[width=1\linewidth]{figuras/06_Results_Bacias_cenario2} 
 
 }
 
@@ -381,7 +381,7 @@ Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Ca
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/07_histograma_indpressao} 
+{\centering \includegraphics[width=1\linewidth]{figuras/07_histograma_indpressao} 
 
 }
 
@@ -390,7 +390,7 @@ Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Ca
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/08_histogramas_cenario2} 
+{\centering \includegraphics[width=1\linewidth]{figuras/08_histogramas_cenario2} 
 
 }
 
@@ -547,7 +547,7 @@ Correlações espécies-habitat & 0,84 & 0,80 & 0,69\\
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/09_RDA_PA3} 
+{\centering \includegraphics[width=1\linewidth]{figuras/09_RDA_PA3} 
 
 }
 
@@ -594,7 +594,7 @@ Cenários & Beta & Erro padrão & \textit{p-value}\\
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/10_plot_riqrar_Agr} 
+{\centering \includegraphics[width=1\linewidth]{figuras/10_plot_riqrar_Agr} 
 
 }
 
@@ -638,7 +638,7 @@ Cenários & Beta & Erro padrão & \textit{p-value}\\
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/11_plot_riquezafuncionalXcenarios} 
+{\centering \includegraphics[width=1\linewidth]{figuras/11_plot_riquezafuncionalXcenarios} 
 
 }
 
@@ -723,10 +723,10 @@ O diagnóstico de pressão ambiental mostrou que o bioma Pampa contém uma porç
 
 A comparação entre as cinco configurações de pesos não resultou em diagnósticos com diferenças notáveis quanto a condição de pressão das fisionomias campestres (com exceção do cenário 5; Figura \@ref(fig:histogramascenario5)), implicando em baixa sensibilidade dos resultados à atribuição de pesos dos fatores. Mudar a importância relativa de um indicador, entretanto, pode mudar a identificação das bacias em condição intermediária, especialmente aquelas que não apresentam um único indicador de pressão predominante, fragilizando o processo de destinação do investimento para conservação. Agricultura, espelhos d'água e densidade da rede viária foram os direcionadores de pressão nos três sistemas ecológicos mais pressionados: Campo com Espinilho, Floresta Estacional e Campo com barba-de-bode, mas o gradiente de pressão ambiental como um todo foi determinado principalmente pela presença da agricultura, cuja grande magnitude fez com que as bacias menos pressionadas tendessem a ser aquelas localizadas nas fisionomias com menor vocação para atividades agrícolas.
 
-A riqueza taxonômica foi mais fortemente relacionada com agricultura, uma relação com resultados que, como neste trabalho, tipicamente indicam efeitos negativos sobre a ictiofauna [@Roth1996; @Sala2000a, @Allan2004a], mas que também pode apresentar efeitos positivos sobre a riqueza de peixes [@Harding1998]. A remoção da cobertura vegetal ripária e o aumento da entrada de nutrientes oriunda dos resíduos agrícolas e urbanos causam alterações no ambiente, como o aparecimento de macrófitas [@Burrell2014], e cria condições para que espécies nativas tipicamente encontradas em rios maiores e espécies mais tolerantes a qualidade, temperatura e modificações na estrutura do habitat ocupem esses ambientes [@Scott2001; @Dala-Corte2016]. O que parece ser um efeito positivo de aumento da riqueza em primeira instância, pode resultar em subsequente diminuição no número de espécies causado pelo desaparecimento das espécies mais sensíveis a essas novas condições [@Daga2012a]. A agricultura e os espelhos d'água também estiveram relacionados com a composição taxonômica, evidenciando que espécies mais tolerantes, como _Synbranchus marmoratus_ e _Characidium zebra_ estão positivamente relacionadas com a presença de espelhos d'água, diferentemente de _Characidim pterostictum_, geralmente encontrada em arroios e rios com correnteza, fundo rochoso e águas claras [@Buckup1997], no extremo oposto deste gradiente. 
+A riqueza taxonômica foi mais fortemente relacionada com agricultura, uma relação com resultados que, como neste trabalho, tipicamente indicam efeitos negativos sobre a ictiofauna [@Roth1996; @Sala2000a; @Allan2004a], mas que também pode apresentar efeitos positivos sobre a riqueza de peixes [@Harding1998]. A remoção da cobertura vegetal ripária e o aumento da entrada de nutrientes oriunda dos resíduos agrícolas e urbanos causam alterações no ambiente, como o aparecimento de macrófitas [@Burrell2014], e cria condições para que espécies nativas tipicamente encontradas em rios maiores e espécies mais tolerantes a qualidade, temperatura e modificações na estrutura do habitat ocupem esses ambientes [@Scott2001; @Dala-Corte2016]. O que parece ser um efeito positivo de aumento da riqueza em primeira instância, pode resultar em subsequente diminuição no número de espécies causado pelo desaparecimento das espécies mais sensíveis a essas novas condições [@Daga2012a]. A agricultura e os espelhos d'água também estiveram relacionados com a composição taxonômica, evidenciando que espécies mais tolerantes, como _Synbranchus marmoratus_ e _Characidium zebra_ estão positivamente relacionadas com a presença de espelhos d'água, diferentemente de _Characidim pterostictum_, geralmente encontrada em arroios e rios com correnteza, fundo rochoso e águas claras [@Buckup1997], no extremo oposto deste gradiente. 
 Embora os outros indicadores de pressão não tenham sido relacionados com as características da ictiofauna, o aumento da área urbanizada pode promover diferenças na composição e estrutura das assembleias de peixe, onde apenas as espécies tolerantes e não-nativas tendem a ocorrer [@Daga2012a]. Além da fragmentação promovida pelo barramento da água, os espelhos d'água promovem um novo ambiente tipicamente lêntico [@Clavero2011], que ocupa uma grande área (144.836,220 ha em 2407 reservatórios; @FunacaoCearencedeMeteorologiaeRecursosHidricos-FUNCEME2008a). @Clavero2011 não encontraram diferença na riqueza de espécies em riachos livres ou com reservatórios, mas os riachos diferenciaram-se quanto à composição das espécies: os riachos barrados abrigavam mais espécies invasoras e menos espécies nativas. Os efeitos da agricultura e dos barramentos por reservatórios lentamente eliminam a heterogeneidade natural dos riachos, agindo como reguladores artificiais da vazão [@Poff2007; @Dala-Corte2016]. Nestes locais predominam as espécies cujas características indicam ocuparem e se alimentarem na coluna d'água, em habitats mais tipicamente com pouca correnteza (espécies com corpo e pedúnculo caudal comprimidos, olhos grandes, posição da boca terminal a superior e cabeça grande).
 
-A necessidade de dados que cobrissem toda a área do bioma Pampa foi um limitante na determinação dos indicadores que seriam usados neste trabalho devido a disponibilidade dos dados. Apesar disso, o conjunto de indicadores utilizados neste trabalho contempla as principais atividades causadoras de pressão nas bacias do bioma Pampa. Uma abordagem alternativa poderia diferenciar pressões causadas por diferentes tipos de culturas agrícolas, de produção mineral ou estradas com diferentes fluxos de veículos, que, somados, comporiam um novo indicador mais complexo (p.ex. @Stein2002a). O uso de abordagens não-lineares, de outros indicadores de pressão (nutrientes, como nitrogênio e fósforo, porcentagem de conversão e presença do gado especificamente na zona ripária), de outras variáveis resposta (grau de tolerância das espécies @Esselman2011b), ou avaliação multi-escala [@Roth1996; @Saly2009; @Dala-Corte2016] podem ser pontos a serem considerados para compreender e caracterizar melhor as relações entre as alterações antropogênicas em bacias hidrográficas e seus efeitos sobre biodiversidade, de forma melhor sustentar medidas de conservação ou restauração.
+A necessidade de dados que cobrissem toda a área do bioma Pampa foi um limitante na determinação dos indicadores que seriam usados neste trabalho devido a disponibilidade dos dados. Apesar disso, o conjunto de indicadores utilizados neste trabalho contempla as principais atividades causadoras de pressão nas bacias do bioma Pampa. Uma abordagem alternativa poderia diferenciar pressões causadas por diferentes tipos de culturas agrícolas, de produção mineral ou estradas com diferentes fluxos de veículos, que, somados, comporiam um novo indicador mais complexo (p.ex. @Stein2002a). O uso de abordagens não-lineares, de outros indicadores de pressão (nutrientes, como nitrogênio e fósforo, porcentagem de conversão e presença do gado especificamente na zona ripária), de outras variáveis resposta (grau de tolerância das espécies [@Esselman2011b]), ou avaliação multi-escala [@Roth1996; @Saly2009; @Dala-Corte2016] podem ser pontos a serem considerados para compreender e caracterizar melhor as relações entre as alterações antropogênicas em bacias hidrográficas e seus efeitos sobre biodiversidade, de forma melhor sustentar medidas de conservação ou restauração.
 
 A ausência de relação entre o índice global de pressão ambiental e os descritores da comunidade de peixes, assim como entre a riqueza funcional e os indicadores de pressão mostraram que nem sempre as relações entre a biodiversidade e os fatores de pressão são lineares e diretas. Ainda assim, podemos inferir um padrão de diminuição da riqueza funcional com o aumento da pressão em todos os cenários, determinado especialmente pela agricultura e pela densidade de gado (Figura \@ref(fig:RiqFuncCen)). @Herbst2012, utilizando diferentes abordagens para medir o efeito do pastoreio, encontraram uma relação de diminuição da riqueza de invertebrados aquáticos em riachos com o aumento nos níveis dessa atividade. O efeito da agricultura sobre a riqueza de espécies de peixe é variável, dependente de escala e pode ser dar por diferentes mecanismos.
 
@@ -747,7 +747,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/12_Implicacoes_piores} 
+{\centering \includegraphics[width=1\linewidth]{figuras/12_Implicacoes_piores} 
 
 }
 
@@ -756,7 +756,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/13_Implicacoes_referencias} 
+{\centering \includegraphics[width=1\linewidth]{figuras/13_Implicacoes_referencias} 
 
 }
 
@@ -765,7 +765,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/14_Implicacoes_intermediarias} 
+{\centering \includegraphics[width=1\linewidth]{figuras/14_Implicacoes_intermediarias} 
 
 }
 
@@ -774,7 +774,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.7\linewidth]{figuras/15_Implicacoes_mapacompleto} 
+{\centering \includegraphics[width=1\linewidth]{figuras/15_Implicacoes_mapacompleto} 
 
 }
 

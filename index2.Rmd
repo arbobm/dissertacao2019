@@ -9,7 +9,7 @@ preambulo: 'Dissertação de Mestrado apresentada ao Programa de Pós-Graduaçã
 abstractseparate: true  # include front page w/ abstract for examination schools?
 abstract: |
   `r paste(readr::read_lines("front-and-back-matter/0_abstract.Rmd"), collapse = '\n  ')`
-keywords: "systematic conservation planning, campos sulinos, freshwater diversity, multicriteria analysis, fishes."
+keywords: "systematic conservation planning, _campos sulinos_, freshwater diversity, multicriteria analysis, fishes."
 resumo: |
   `r paste(readr::read_lines("front-and-back-matter/0_resumo.Rmd"), collapse = '\n  ')`
 palavraschave: "Planejamento sistemático de conservação, campos sulinos, biodiversidade aquática, análise multicritério, peixes"
@@ -46,6 +46,7 @@ knitr::read_chunk("figuras.R")
 knitr::read_chunk("tabelas.R")
 options(tinytex.verbose = TRUE)
 library(kableExtra)
+#options(kableExtra.html.bsTable = T) #pro gitbook
 library(magrittr)
 listaespecies <- read.csv("C:/SIG/laboratorio/01_mestrado/dissertacao2019/tabelas/A1_listaespecies.csv")
 ```

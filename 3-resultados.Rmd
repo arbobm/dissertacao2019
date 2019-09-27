@@ -9,7 +9,7 @@ Não há colinearidade forte entre os indicadores de pressão ambiental, sendo a
 
 Agricultura, densidade viária e de gado são os indicadores predominantes em todas as subunidades regionais (Figura \@ref(fig:boxplotsfisios)). Campo de Barba-de-Bode e Floresta Estacional são as subunidades regionais com maior proporção média de área agrícola nas bacias. No Campo com Barba-de-Bode localizados no sistema da Laguna dos Patos, apenas 25% das bacias tem menos de 71% da área coberta por agricultura. Campo Misto com Andropogôneas e Compostas, Campo Arbustivo e Floresta Estacional tem as maiores densidades de rede viária.
 
-```{r pressoes, fig.cap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura \\ref{fig:areaestudo} para identificação das fisionomias campestres.", fig.scap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```{r pressoes, fig.cap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa. Ver Figura \\ref{fig:areaestudo} para identificação das fisionomias campestres.", fig.scap = "Distribuição espacial dos indicadores de pressão ambiental com os limites das fisionomias campestres encontradas no bioma Pampa.", out.width = '100%', fig.align = 'center'}
 ```
 
 ```{r boxplotsfisios, code=readLines("figuras/05_boxplots.R"), fig.cap = "Variação dos indicadores de pressão ambiental por fisionomia campestre. Todas as variáveis variam entre 0 e 1, exceto Via (cujo valor máximo é 2,65) e Gado (cujo valor máximo é 1,92). Agr = áreas agrícolas; Urb = áreas urbanas; EA = espelhos d'água; Min = mineração; Via = rede viária; Gado = pecuária; CArb = Campo Arbustivo; CAre = Campo com Areais; CBDB = Campo com Barba-de-Bode; CEsp = Campo com Espinilho; CSR = Campo com Solos Rasos; CGra = Campo Graminoso; CMAC = Campo Misto com Andropogôneas e Compostas; CMCO = Campo Misto do Cristalino Oriental; FE = Floresta Estacional.", fig.scap = "Variação dos indicadores de pressão ambiental por fisionomia campestre.", fig.height=7.76, fig.width=5.88, fig.align = 'center'}
@@ -23,13 +23,13 @@ A distribuição da frequência das bacias ao longo do gradiente de pressão nã
 podendo chegar a 85% de bacias com nível intermediário a alto de pressão no Campo com Barba de Bode/Uruguai e na Floresta Estacional (Tabela \@ref(tab:baciasresults)).
 Figuram também entre as subunidades mais pressionadas o Campo com Espinilho, Campo Graminoso/Patos e Campo Misto com Andropogôneas e Compostas. Campo Arbustivo, Campo com Areais e Campos com Solos Rasos são as fisionomias menos pressionadas. Considerando que os cenários não têm variações significativas quanto ao diagnóstico global, apenas o cenário 2 foi utilizado para a descrição dos resultados deste ponto em diante, por ser o cenário com pesos variados que não tem agricultura com a maior penalidade. As figuras e histogramas referentes a todos os cenários estão no Apêndice. 
 
-```{r resultscen2, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", out.width = '70%', fig.align = 'center'}
+```{r resultscen2, fig.cap = "Distribuição espacial do índice global de pressão ambiental resultante do cenário 2.", out.width = '100%', fig.align = 'center'}
 ```
 
-```{r histindpressao, fig.cap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.", fig.scap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```{r histindpressao, fig.cap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias.", fig.scap = "Distribuição dos índices de pressão ambiental nos cinco cenários para o bioma Pampa.", out.width = '100%', fig.align = 'center'}
 ```
 
-```{r histindpressfisios, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa.", out.width = '70%', fig.align = 'center'}
+```{r histindpressfisios, fig.cap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa. A linha cinza representa a porcentagem acumulada de bacias. CArb = Campo arbustivo, CAre = campo com areais, CBDB = Campo com Barba-de-bode, CEsp = Campo com espinilho, CSR = campo com solos rasos, CGra = Campo Graminoso, CMAC = Campo misto com Andropogôneas e Compostas, CMCO = Campo misto do cristalino oriental, FE = Floresta Estacional.", fig.scap = "Frequência de bacias de 3$^a$ ordem ao longo do gradiente de pressão ambiental, de acordo com o cenário 2, em cada subunidade regional do bioma Pampa.", out.width = '100%', fig.align = 'center'}
 ```
 
 Somente quatro bacias foram selecionadas como bacias de referência segundo a condição de menor distúrbio (LDC) em todos os cenários, três localizadas na subunidade regional Campo Arbustivo/Patos, e uma bacia na subunidade Floresta Estacional/Patos (Tabela \@ref(tab:baciasresults)).
@@ -58,7 +58,7 @@ Os resultados da pRDA para composição funcional não foram considerados signif
 ```{r correlindipRDA}
 ```
 
-```{r RDAtax, fig.cap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela \\ref{tab:correlindipRDA}.", fig.scap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão.", out.width = '70%', fig.align = 'center'}
+```{r RDAtax, fig.cap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão. Os nomes das espécies estão abreviados e suas correspondências encontram-se na Tabela \\ref{tab:correlindipRDA}.", fig.scap = "Análise de redundância realizada entre a composição taxonômica de espécies de peixes e os indicadores de pressão.", out.width = '100%', fig.align = 'center'}
 ``` 
 
 Três indicadores de pressão apresentaram relação com a riqueza taxonômica: áreas urbanas, espelhos d'água e agricultura (Tabela \@ref(tab:coefbetaindriqtax)). O modelo explicou 26,90% da variação da variável resposta, mas as estimativas para espelhos d'água e áreas urbanas foram inverossímeis devido à baixa quantidade de bacias amostradas com presença desses indicadores (sobreajuste). Assim, não consideramos estas relações interpretáveis. A agricultura está relacionada negativamente com riqueza taxonômica (Figura \@ref(fig:RiqRarAgr)).
@@ -68,13 +68,13 @@ Nenhum indicador de pressão ou cenário teve relação significativa com riquez
 ```{r coefbetaindriqtax} 
 ```
 
-```{r RiqRarAgr, fig.cap = "Relação entre Agricultura (\\%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95\\%.", fig.scap = "Relação entre Agricultura (\\%) e riqueza taxonômica.", out.width = '70%', fig.align = 'center'}
+```{r RiqRarAgr, fig.cap = "Relação entre Agricultura (\\%) e riqueza taxonômica. As linhas pontilhadas representam o intervalo de confiança 95\\%.", fig.scap = "Relação entre Agricultura (\\%) e riqueza taxonômica.", out.width = '100%', fig.align = 'center'}
 ```
 
 ```{r coefbetaindriqfunc}
 ```
 
-```{r RiqFuncCen, fig.cap = "Riqueza funcional em relação aos índices globais de pressão ambiental nos cinco cenários.", out.width = '70%', fig.align = 'center'}
+```{r RiqFuncCen, fig.cap = "Riqueza funcional em relação aos índices globais de pressão ambiental nos cinco cenários.", out.width = '100%', fig.align = 'center'}
 ```
 
 Nenhum indicador de pressão ou cenário apresentou relação com a proporção de espécies comuns (Tabela \@ref(tab:coefbetaindespcom)) e raras (Tabela \@ref(tab:coefbetaindesprar)).
