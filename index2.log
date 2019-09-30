@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  26 SEP 2019 21:11
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  30 SEP 2019 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,26 +1459,25 @@ File: figuras/13_Implicacoes_referencias.jpg Graphic file (type bmp)
 [51]
 File: figuras/14_Implicacoes_intermediarias.jpg Graphic file (type bmp)
 <figuras/14_Implicacoes_intermediarias.jpg>
-[52]
 File: figuras/15_Implicacoes_mapacompleto.jpg Graphic file (type bmp)
 <figuras/15_Implicacoes_mapacompleto.jpg>
-[53] [54] [55] [56] [57] [58]
+[52] [53] [54] [55] [56] [57]
 Overfull \hbox (24.95528pt too wide) in paragraph at lines 1473--1475
 [][]\T1/lmr/m/n/12 IBGE. 2004. ``Mapa de Bi-o-mas do Bra-sil.'' [][]$<[]http : 
 / / www . ibge . gov . br / home / presidencia /
  []
 
-[59]
+[58]
 Overfull \hbox (2.29321pt too wide) in paragraph at lines 1500--1502
 \T1/lmr/m/n/12 Pan-ta-nal we-tland.'' \T1/lmr/m/it/12 Di-vers. Dis-trib. \T1/lm
 r/m/n/12 17 (2): 297--310. [][]$<[]https : / / doi . org / 10 . 1111 / j . 1472
 -[]4642 .
  []
 
-[60]
+[59]
 Missing character: There is no ‐ in font ec-lmr12!
 Missing character: There is no ‐ in font ec-lmr12!
-[61] [62]
+[60] [61]
 Missing character: There is no ő in font ec-lmr12!
 
 Overfull \hbox (90.44554pt too wide) in paragraph at lines 1563--1565
@@ -1487,26 +1486,26 @@ T1/lmr/m/it/12 Fishe-ries \T1/lmr/m/n/12 26 (11): 6--15. [][]https://doi.org/10
 .1577/1548-
  []
 
-[63] [64]
+[62] [63]
 (c:/SIG/laboratorio/01_mestrado/dissertacao2019/front-and-back-matter/99_apendi
-ces.tex [65] [66] [67] [68]
+ces.tex [64] [65] [66] [67]
 File: figuras/A1_os5cenarios.jpg Graphic file (type bmp)
 <figuras/A1_os5cenarios.jpg>
 File: figuras/A2_histogramascenario1.png Graphic file (type bmp)
 <figuras/A2_histogramascenario1.png>
-[69]
+[68]
 File: figuras/A3_histogramascenario2_2.png Graphic file (type bmp)
 <figuras/A3_histogramascenario2_2.png>
-[70]
+[69]
 File: figuras/A4_histogramascenario3.png Graphic file (type bmp)
 <figuras/A4_histogramascenario3.png>
-[71]
+[70]
 File: figuras/A5_histogramascenario4.png Graphic file (type bmp)
 <figuras/A5_histogramascenario4.png>
-[72]
+[71]
 File: figuras/A6_histogramascenario5.png Graphic file (type bmp)
 <figuras/A6_histogramascenario5.png>
-[73] [74]
+[72] [73]
 \tf@toc=\write4
 \openout4 = `index2.toc'.
 
@@ -1532,4 +1531,4 @@ Here is how much of TeX's memory you used:
  16 hyphenation exceptions out of 8191
  38i,14n,43p,2986b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index2.pdf (75 pages).
+Output written on index2.pdf (74 pages).

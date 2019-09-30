@@ -29,10 +29,10 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 ```{r ImplicPior, fig.cap="Proporção da área de bacias hidrográficas de 3$^a$ ordem mais pressionadas (índice global maior que 0,6) nas fisionomias campestres.", out.width = '100%', fig.align = 'center'}
 ```
 
-```{r ImplicRef, fig.cap = "Proporção da área de bacias hidrográficas de 3$^a$ ordem de referência nas fisionomias campestres.", out.width = '100%', fig.align = 'center'}
+```{r ImplicRef, fig.cap = "Proporção da área de bacias hidrográficas de 3$^a$ ordem de referência nas fisionomias campestres.", out.width = '90%', fig.align = 'center'}
 ```
 
-```{r ImplicInterm, fig.cap = "Proporção da área de bacias hidrográficas de 3$^a$ ordem com grau de pressão intermediária (índice global entre 0,4 e 0,6) nas fisionomias campestres.",out.width = '100%', fig.align = 'center'}
+```{r ImplicInterm, fig.cap = "Proporção da área de bacias hidrográficas de 3$^a$ ordem com grau de pressão intermediária (índice global entre 0,4 e 0,6) nas fisionomias campestres.",out.width = '90%', fig.align = 'center'}
 ```
 
 ```{r MapaCompl, fig.cap = "Bacias hidrográficas de 3$^a$ ordem classificadas conforme grau de pressão no bioma Pampa. ", out.width = '100%', fig.align = 'center'}

@@ -756,7 +756,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{figuras/13_Implicacoes_referencias} 
+{\centering \includegraphics[width=0.9\linewidth]{figuras/13_Implicacoes_referencias} 
 
 }
 
@@ -765,7 +765,7 @@ as ações são limitadas pela proporção de áreas alvo para conservação dis
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{figuras/14_Implicacoes_intermediarias} 
+{\centering \includegraphics[width=0.9\linewidth]{figuras/14_Implicacoes_intermediarias} 
 
 }
 

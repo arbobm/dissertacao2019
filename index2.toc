@@ -21,7 +21,7 @@
 \contentsline {subsection}{Relações entre pressão ambiental e peixes}{41}{section*.19}% 
 \contentsline {section}{Discussão}{46}{section*.20}% 
 \contentsline {subsection}{Implicações para gestão: conservação e recuperação}{50}{section*.21}% 
-\contentsline {section}{Considerações finais}{54}{section*.22}% 
-\contentsline {section}{Referências}{56}{section*.23}% 
+\contentsline {section}{Considerações finais}{53}{section*.22}% 
+\contentsline {section}{Referências}{55}{section*.23}% 
 \vspace {\cftbeforechapterskip }
-\contentsline {section}{Apêndice}{65}{section*.25}% 
+\contentsline {section}{Apêndice}{64}{section*.25}% 
