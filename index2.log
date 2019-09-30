@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  30 SEP 2019 09:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.9.6)  30 SEP 2019 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,6 +710,27 @@ Package microtype Info: Loading configuration file microtype.cfg.
 e.cfg
 File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
 ))
+(c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.
+sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.st
+y
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen158
+\AM@pageheight=\dimen159
+
+(c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/ppxetex.d
+ef
+File: ppxetex.def 2017/10/31 v0.5l Pdfpages driver for XeTeX (AM)
+)
+\AM@pagebox=\box34
+\AM@global@opts=\toks27
+\AM@toc@title=\toks28
+\c@AM@survey=\count170
+\AM@templatesizebox=\box35
+)
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
@@ -717,46 +738,46 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTright=\skip258
 \LTpre=\skip259
 \LTpost=\skip260
-\LTchunksize=\count170
-\LTcapwidth=\dimen158
-\LT@head=\box34
-\LT@firsthead=\box35
-\LT@foot=\box36
-\LT@lastfoot=\box37
-\LT@cols=\count171
-\LT@rows=\count172
-\c@LT@tables=\count173
-\c@LT@chunks=\count174
-\LT@p@ftn=\toks27
+\LTchunksize=\count171
+\LTcapwidth=\dimen160
+\LT@head=\box36
+\LT@firsthead=\box37
+\LT@foot=\box38
+\LT@lastfoot=\box39
+\LT@cols=\count172
+\LT@rows=\count173
+\c@LT@tables=\count174
+\c@LT@chunks=\count175
+\LT@p@ftn=\toks29
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip261
-\multirow@cntb=\count175
+\multirow@cntb=\count176
 \multirow@dima=\skip262
-\bigstrutjot=\dimen159
+\bigstrutjot=\dimen161
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.st
 y
-\wrapoverhang=\dimen160
-\WF@size=\dimen161
-\c@WF@wrappedlines=\count176
-\WF@box=\box38
-\WF@everypar=\toks28
+\wrapoverhang=\dimen162
+\WF@size=\dimen163
+\c@WF@wrappedlines=\count177
+\WF@box=\box40
+\WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count177
-\float@exts=\toks29
-\float@box=\box39
-\@float@everytoks=\toks30
-\@floatcapt=\box40
+\c@float@type=\count178
+\float@exts=\toks31
+\float@box=\box41
+\@float@everytoks=\toks32
+\@floatcapt=\box42
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.
 sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-\everycr=\toks31
+\everycr=\toks33
 \minrowclearance=\skip263
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/pdflscape
@@ -775,38 +796,38 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
 sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box41
-\sift@deathcycles=\count178
-\@vwid@loff=\dimen162
-\@vwid@roff=\dimen163
+\@vwid@box=\box43
+\sift@deathcycles=\count179
+\@vwid@loff=\dimen164
+\@vwid@roff=\dimen165
 )
-\c@taburow=\count179
-\tabu@nbcols=\count180
-\tabu@cnt=\count181
-\tabu@Xcol=\count182
-\tabu@alloc=\count183
-\tabu@nested=\count184
-\tabu@target=\dimen164
-\tabu@spreadtarget=\dimen165
-\tabu@naturalX=\dimen166
-\tabucolX=\dimen167
-\tabu@Xsum=\dimen168
-\extrarowdepth=\dimen169
-\abovetabulinesep=\dimen170
-\belowtabulinesep=\dimen171
-\tabustrutrule=\dimen172
-\tabu@thebody=\toks32
-\tabu@footnotes=\toks33
-\tabu@box=\box42
-\tabu@arstrutbox=\box43
-\tabu@hleads=\box44
-\tabu@vleads=\box45
+\c@taburow=\count180
+\tabu@nbcols=\count181
+\tabu@cnt=\count182
+\tabu@Xcol=\count183
+\tabu@alloc=\count184
+\tabu@nested=\count185
+\tabu@target=\dimen166
+\tabu@spreadtarget=\dimen167
+\tabu@naturalX=\dimen168
+\tabucolX=\dimen169
+\tabu@Xsum=\dimen170
+\extrarowdepth=\dimen171
+\abovetabulinesep=\dimen172
+\belowtabulinesep=\dimen173
+\tabustrutrule=\dimen174
+\tabu@thebody=\toks34
+\tabu@footnotes=\toks35
+\tabu@box=\box44
+\tabu@arstrutbox=\box45
+\tabu@hleads=\box46
+\tabu@vleads=\box47
 \tabu@cellskip=\skip264
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
 eeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box46
+\@tempboxb=\box48
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
 reeparttablex.sty
@@ -820,27 +841,27 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks34
+\@envbody=\toks36
 )
 \TPTL@width=\skip265
 ) (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box47
-\UL@hyphenbox=\box48
+\UL@box=\box49
+\UL@hyphenbox=\box50
 \UL@skip=\skip266
-\UL@hook=\toks35
-\UL@height=\dimen173
-\UL@pe=\count185
-\UL@pixel=\dimen174
-\ULC@box=\box49
+\UL@hook=\toks37
+\UL@height=\dimen175
+\UL@pe=\count186
+\UL@pixel=\dimen176
+\ULC@box=\box51
 Package: ulem 2012/05/18
-\ULdepth=\dimen175
+\ULdepth=\dimen177
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.
 sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen176
-\c@nlinenum=\count186
-\TeXr@lab=\toks36
+\rotheadsize=\dimen178
+\c@nlinenum=\count187
+\TeXr@lab=\toks38
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mathtool
 s.sty
@@ -862,51 +883,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks37
-\ex@=\dimen177
+\@emptytoks=\toks39
+\ex@=\dimen179
 ))
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen178
+\pmbraise@=\dimen180
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count187
+\inf@bad=\count188
 LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count188
-\leftroot@=\count189
+\uproot@=\count189
+\leftroot@=\count190
 LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count190
-\DOTSCASE@=\count191
+\classnum@=\count191
+\DOTSCASE@=\count192
 LaTeX Info: Redefining \ldots on input line 482.
 LaTeX Info: Redefining \dots on input line 485.
 LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
-\big@size=\dimen179
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count192
-\c@MaxMatrixCols=\count193
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
 \dotsspace@=\muskip11
-\c@parentequation=\count194
-\dspbrk@lvl=\count266
-\tag@help=\toks38
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
-\andhelp@=\toks39
-\eqnshift@=\dimen180
-\alignsep@=\dimen181
-\tagshift@=\dimen182
-\tagwidth@=\dimen183
-\totwidth@=\dimen184
-\lineht@=\dimen185
-\@envbody=\toks40
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks40
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks41
+\eqnshift@=\dimen182
+\alignsep@=\dimen183
+\tagshift@=\dimen184
+\tagwidth@=\dimen185
+\totwidth@=\dimen186
+\lineht@=\dimen187
+\@envbody=\toks42
 \multlinegap=\skip268
 \multlinetaggap=\skip269
-\mathdisplay@stack=\toks41
+\mathdisplay@stack=\toks43
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
@@ -914,31 +935,31 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count270
-\l_MT_multwidth_dim=\dimen186
+\g_MT_multlinerow_int=\count271
+\l_MT_multwidth_dim=\dimen188
 \origjot=\skip270
-\l_MT_shortvdotswithinadjustabove_dim=\dimen187
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen188
-\l_MT_above_intertext_sep=\dimen189
-\l_MT_below_intertext_sep=\dimen190
-\l_MT_above_shortintertext_sep=\dimen191
-\l_MT_below_shortintertext_sep=\dimen192
+\l_MT_shortvdotswithinadjustabove_dim=\dimen189
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen190
+\l_MT_above_intertext_sep=\dimen191
+\l_MT_below_intertext_sep=\dimen192
+\l_MT_above_shortintertext_sep=\dimen193
+\l_MT_below_shortintertext_sep=\dimen194
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
 sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen193
-\Gm@wd@mp=\dimen194
-\Gm@odd@mp=\dimen256
-\Gm@even@mp=\dimen257
-\Gm@layoutwidth=\dimen258
-\Gm@layoutheight=\dimen259
-\Gm@layouthoffset=\dimen260
-\Gm@layoutvoffset=\dimen261
-\Gm@dimlist=\toks42
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks44
 ) (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 ) (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.st
@@ -949,24 +970,24 @@ Package: expl3 2019-07-01 L3 programming layer (loader)
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-cod
 e.tex
 Package: expl3 2019-07-01 L3 programming layer (code)
-\c_max_int=\count274
-\l_tmpa_int=\count275
-\l_tmpb_int=\count276
-\g_tmpa_int=\count277
-\g_tmpb_int=\count278
-\g__kernel_prg_map_int=\count279
-\c__ior_term_ior=\count280
-\c_log_iow=\count281
-\l_iow_line_count_int=\count282
-\l__iow_line_target_int=\count283
-\l__iow_one_indent_int=\count284
-\l__iow_indent_int=\count285
-\c_zero_dim=\dimen262
-\c_max_dim=\dimen263
-\l_tmpa_dim=\dimen264
-\l_tmpb_dim=\dimen265
-\g_tmpa_dim=\dimen266
-\g_tmpb_dim=\dimen267
+\c_max_int=\count275
+\l_tmpa_int=\count276
+\l_tmpb_int=\count277
+\g_tmpa_int=\count278
+\g_tmpb_int=\count279
+\g__kernel_prg_map_int=\count280
+\c__ior_term_ior=\count281
+\c_log_iow=\count282
+\l_iow_line_count_int=\count283
+\l__iow_line_target_int=\count284
+\l__iow_one_indent_int=\count285
+\l__iow_indent_int=\count286
+\c_zero_dim=\dimen264
+\c_max_dim=\dimen265
+\l_tmpa_dim=\dimen266
+\l_tmpb_dim=\dimen267
+\g_tmpa_dim=\dimen268
+\g_tmpb_dim=\dimen269
 \c_zero_skip=\skip271
 \c_max_skip=\skip272
 \l_tmpa_skip=\skip273
@@ -979,140 +1000,140 @@ Package: expl3 2019-07-01 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count286
-\l__intarray_loop_int=\count287
-\c__intarray_sp_dim=\dimen268
-\g__intarray_font_int=\count288
-\c__fp_leading_shift_int=\count289
-\c__fp_middle_shift_int=\count290
-\c__fp_trailing_shift_int=\count291
-\c__fp_big_leading_shift_int=\count292
-\c__fp_big_middle_shift_int=\count293
-\c__fp_big_trailing_shift_int=\count294
-\c__fp_Bigg_leading_shift_int=\count295
-\c__fp_Bigg_middle_shift_int=\count296
-\c__fp_Bigg_trailing_shift_int=\count297
-\g__fp_array_int=\count298
-\l__fp_array_loop_int=\count299
-\l__sort_length_int=\count300
-\l__sort_min_int=\count301
-\l__sort_top_int=\count302
-\l__sort_max_int=\count303
-\l__sort_true_max_int=\count304
-\l__sort_block_int=\count305
-\l__sort_begin_int=\count306
-\l__sort_end_int=\count307
-\l__sort_A_int=\count308
-\l__sort_B_int=\count309
-\l__sort_C_int=\count310
-\l__str_internal_int=\count311
-\l__tl_analysis_normal_int=\count312
-\l__tl_analysis_index_int=\count313
-\l__tl_analysis_nesting_int=\count314
-\l__tl_analysis_type_int=\count315
-\l__regex_internal_a_int=\count316
-\l__regex_internal_b_int=\count317
-\l__regex_internal_c_int=\count318
-\l__regex_balance_int=\count319
-\l__regex_group_level_int=\count320
-\l__regex_mode_int=\count321
-\c__regex_cs_in_class_mode_int=\count322
-\c__regex_cs_mode_int=\count323
-\l__regex_catcodes_int=\count324
-\l__regex_default_catcodes_int=\count325
-\c__regex_catcode_L_int=\count326
-\c__regex_catcode_O_int=\count327
-\c__regex_catcode_A_int=\count328
-\c__regex_all_catcodes_int=\count329
-\l__regex_show_lines_int=\count330
-\l__regex_min_state_int=\count331
-\l__regex_max_state_int=\count332
-\l__regex_left_state_int=\count333
-\l__regex_right_state_int=\count334
-\l__regex_capturing_group_int=\count335
-\l__regex_min_pos_int=\count336
-\l__regex_max_pos_int=\count337
-\l__regex_curr_pos_int=\count338
-\l__regex_start_pos_int=\count339
-\l__regex_success_pos_int=\count340
-\l__regex_curr_char_int=\count341
-\l__regex_curr_catcode_int=\count342
-\l__regex_last_char_int=\count343
-\l__regex_case_changed_char_int=\count344
-\l__regex_curr_state_int=\count345
-\l__regex_step_int=\count346
-\l__regex_min_active_int=\count347
-\l__regex_max_active_int=\count348
-\l__regex_replacement_csnames_int=\count349
-\l__regex_match_count_int=\count350
-\l__regex_min_submatch_int=\count351
-\l__regex_submatch_int=\count352
-\l__regex_zeroth_submatch_int=\count353
-\g__regex_trace_regex_int=\count354
-\c_empty_box=\box52
-\l_tmpa_box=\box53
-\l_tmpb_box=\box54
-\g_tmpa_box=\box55
-\g_tmpb_box=\box56
-\l__box_top_dim=\dimen269
-\l__box_bottom_dim=\dimen270
-\l__box_left_dim=\dimen271
-\l__box_right_dim=\dimen272
-\l__box_top_new_dim=\dimen273
-\l__box_bottom_new_dim=\dimen274
-\l__box_left_new_dim=\dimen275
-\l__box_right_new_dim=\dimen276
-\l__box_internal_box=\box57
-\l__coffin_internal_box=\box58
-\l__coffin_internal_dim=\dimen277
-\l__coffin_offset_x_dim=\dimen278
-\l__coffin_offset_y_dim=\dimen279
-\l__coffin_x_dim=\dimen280
-\l__coffin_y_dim=\dimen281
-\l__coffin_x_prime_dim=\dimen282
-\l__coffin_y_prime_dim=\dimen283
-\c_empty_coffin=\box59
-\l__coffin_aligned_coffin=\box60
-\l__coffin_aligned_internal_coffin=\box61
-\l_tmpa_coffin=\box62
-\l_tmpb_coffin=\box63
-\g_tmpa_coffin=\box64
-\g_tmpb_coffin=\box65
-\l__coffin_bounding_shift_dim=\dimen284
-\l__coffin_left_corner_dim=\dimen285
-\l__coffin_right_corner_dim=\dimen286
-\l__coffin_bottom_corner_dim=\dimen287
-\l__coffin_top_corner_dim=\dimen288
-\l__coffin_scaled_total_height_dim=\dimen289
-\l__coffin_scaled_width_dim=\dimen290
-\c__coffin_empty_coffin=\box66
-\l__coffin_display_coffin=\box67
-\l__coffin_display_coord_coffin=\box68
-\l__coffin_display_pole_coffin=\box69
-\l__coffin_display_offset_dim=\dimen291
-\l__coffin_display_x_dim=\dimen292
-\l__coffin_display_y_dim=\dimen293
+\l_keys_choice_int=\count287
+\l__intarray_loop_int=\count288
+\c__intarray_sp_dim=\dimen270
+\g__intarray_font_int=\count289
+\c__fp_leading_shift_int=\count290
+\c__fp_middle_shift_int=\count291
+\c__fp_trailing_shift_int=\count292
+\c__fp_big_leading_shift_int=\count293
+\c__fp_big_middle_shift_int=\count294
+\c__fp_big_trailing_shift_int=\count295
+\c__fp_Bigg_leading_shift_int=\count296
+\c__fp_Bigg_middle_shift_int=\count297
+\c__fp_Bigg_trailing_shift_int=\count298
+\g__fp_array_int=\count299
+\l__fp_array_loop_int=\count300
+\l__sort_length_int=\count301
+\l__sort_min_int=\count302
+\l__sort_top_int=\count303
+\l__sort_max_int=\count304
+\l__sort_true_max_int=\count305
+\l__sort_block_int=\count306
+\l__sort_begin_int=\count307
+\l__sort_end_int=\count308
+\l__sort_A_int=\count309
+\l__sort_B_int=\count310
+\l__sort_C_int=\count311
+\l__str_internal_int=\count312
+\l__tl_analysis_normal_int=\count313
+\l__tl_analysis_index_int=\count314
+\l__tl_analysis_nesting_int=\count315
+\l__tl_analysis_type_int=\count316
+\l__regex_internal_a_int=\count317
+\l__regex_internal_b_int=\count318
+\l__regex_internal_c_int=\count319
+\l__regex_balance_int=\count320
+\l__regex_group_level_int=\count321
+\l__regex_mode_int=\count322
+\c__regex_cs_in_class_mode_int=\count323
+\c__regex_cs_mode_int=\count324
+\l__regex_catcodes_int=\count325
+\l__regex_default_catcodes_int=\count326
+\c__regex_catcode_L_int=\count327
+\c__regex_catcode_O_int=\count328
+\c__regex_catcode_A_int=\count329
+\c__regex_all_catcodes_int=\count330
+\l__regex_show_lines_int=\count331
+\l__regex_min_state_int=\count332
+\l__regex_max_state_int=\count333
+\l__regex_left_state_int=\count334
+\l__regex_right_state_int=\count335
+\l__regex_capturing_group_int=\count336
+\l__regex_min_pos_int=\count337
+\l__regex_max_pos_int=\count338
+\l__regex_curr_pos_int=\count339
+\l__regex_start_pos_int=\count340
+\l__regex_success_pos_int=\count341
+\l__regex_curr_char_int=\count342
+\l__regex_curr_catcode_int=\count343
+\l__regex_last_char_int=\count344
+\l__regex_case_changed_char_int=\count345
+\l__regex_curr_state_int=\count346
+\l__regex_step_int=\count347
+\l__regex_min_active_int=\count348
+\l__regex_max_active_int=\count349
+\l__regex_replacement_csnames_int=\count350
+\l__regex_match_count_int=\count351
+\l__regex_min_submatch_int=\count352
+\l__regex_submatch_int=\count353
+\l__regex_zeroth_submatch_int=\count354
+\g__regex_trace_regex_int=\count355
+\c_empty_box=\box54
+\l_tmpa_box=\box55
+\l_tmpb_box=\box56
+\g_tmpa_box=\box57
+\g_tmpb_box=\box58
+\l__box_top_dim=\dimen271
+\l__box_bottom_dim=\dimen272
+\l__box_left_dim=\dimen273
+\l__box_right_dim=\dimen274
+\l__box_top_new_dim=\dimen275
+\l__box_bottom_new_dim=\dimen276
+\l__box_left_new_dim=\dimen277
+\l__box_right_new_dim=\dimen278
+\l__box_internal_box=\box59
+\l__coffin_internal_box=\box60
+\l__coffin_internal_dim=\dimen279
+\l__coffin_offset_x_dim=\dimen280
+\l__coffin_offset_y_dim=\dimen281
+\l__coffin_x_dim=\dimen282
+\l__coffin_y_dim=\dimen283
+\l__coffin_x_prime_dim=\dimen284
+\l__coffin_y_prime_dim=\dimen285
+\c_empty_coffin=\box61
+\l__coffin_aligned_coffin=\box62
+\l__coffin_aligned_internal_coffin=\box63
+\l_tmpa_coffin=\box64
+\l_tmpb_coffin=\box65
+\g_tmpa_coffin=\box66
+\g_tmpb_coffin=\box67
+\l__coffin_bounding_shift_dim=\dimen286
+\l__coffin_left_corner_dim=\dimen287
+\l__coffin_right_corner_dim=\dimen288
+\l__coffin_bottom_corner_dim=\dimen289
+\l__coffin_top_corner_dim=\dimen290
+\l__coffin_scaled_total_height_dim=\dimen291
+\l__coffin_scaled_width_dim=\dimen292
+\c__coffin_empty_coffin=\box68
+\l__coffin_display_coffin=\box69
+\l__coffin_display_coord_coffin=\box70
+\l__coffin_display_pole_coffin=\box71
+\l__coffin_display_offset_dim=\dimen293
+\l__coffin_display_x_dim=\dimen294
+\l__coffin_display_y_dim=\dimen295
 \g__file_internal_ior=\read2
-\l__seq_internal_a_int=\count355
-\l__seq_internal_b_int=\count356
-\c__deprecation_minus_one=\count357
+\l__seq_internal_a_int=\count356
+\l__seq_internal_b_int=\count357
+\c__deprecation_minus_one=\count358
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-xdvipdfmx.def
 File: l3backend-xdvipdfmx.def 2019-04-06 v L3 Experimental backend support: xdv
 ipdfmx
-\g__graphics_track_int=\count358
-\l__pdf_internal_box=\box70
-\g__pdf_backend_object_int=\count359
-\g__pdf_backend_annotation_int=\count360
+\g__graphics_track_int=\count359
+\l__pdf_internal_box=\box72
+\g__pdf_backend_object_int=\count360
+\g__pdf_backend_annotation_int=\count361
 ))
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
 Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count361
-\g__xparse_grabber_int=\count362
-\l__xparse_m_args_int=\count363
-\l__xparse_v_nesting_int=\count364
+\l__xparse_current_arg_int=\count362
+\g__xparse_grabber_int=\count363
+\l__xparse_m_args_int=\count364
+\l__xparse_v_nesting_int=\count365
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -1132,25 +1153,25 @@ Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 ev.sty)
 \minimumbiblabelwidth=\skip277
 \ABCIauxlen=\skip278
-\c@ABCIaux=\count365
-\c@ABCImax=\count366
+\c@ABCIaux=\count366
+\c@ABCImax=\count367
 \biblabelsep=\skip279
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks43
+\ABCItoken=\toks45
 )
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/se-asci
 i-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 167.
+Package hyperref Info: Option `colorlinks' set `true' on input line 168.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kantlipsum/kantlip
 sum.sty
 Package: kantlipsum 2019/07/23 v0.8 Generate text in Kantian style
-\l__kgl_start_int=\count367
-\l__kgl_end_int=\count368
+\l__kgl_start_int=\count368
+\l__kgl_end_int=\count369
 
 Package kantlipsum Info: The package provides paragraphs 1 to 164. Values
 (kantlipsum)             outside this range will be ignored.
@@ -1172,31 +1193,31 @@ s
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 223.
+less on input line 224.
 
 (./index2.aux)
 \openout1 = `index2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 234.
-LaTeX Font Info:    ... okay on input line 234.
-\AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring ON on input line 234.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 235.
+LaTeX Font Info:    ... okay on input line 235.
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring ON on input line 235.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -1206,17 +1227,17 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count369
+\c@section@level=\count370
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 234.
-LaTeX Info: Redefining \ref on input line 234.
-LaTeX Info: Redefining \pageref on input line 234.
-LaTeX Info: Redefining \nameref on input line 234.
-\myptabbox=\box72
+LaTeX Info: Redefining \nameref on input line 235.
+LaTeX Info: Redefining \ref on input line 235.
+LaTeX Info: Redefining \pageref on input line 235.
+LaTeX Info: Redefining \nameref on input line 235.
+\myptabbox=\box74
 \myptabboxwidth=\skip289
-LaTeX Info: Redefining \microtypecontext on input line 234.
+LaTeX Info: Redefining \microtypecontext on input line 235.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1262,53 +1283,53 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 262.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 263.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 262.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 263.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 262
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 263
 .
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 262
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 263
 .
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 262.
+(Font)              <12> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 262.
+(Font)              <8> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 262.
+(Font)              <6> on input line 263.
 File: figuras/ufrgs-logo-antigo.png Graphic file (type bmp)
 <figuras/ufrgs-logo-antigo.png>
 
-Overfull \vbox (8.49174pt too high) detected at line 264
+Overfull \vbox (8.49174pt too high) detected at line 265
  []
 
 File: figuras/logoeco.png Graphic file (type bmp)
 <figuras/logoeco.png>
 
-Overfull \hbox (22.36536pt too wide) in paragraph at lines 264--264
+Overfull \hbox (22.36536pt too wide) in paragraph at lines 265--265
 []|[]|  
  []
 
 
-Overfull \vbox (8.49174pt too high) detected at line 264
+Overfull \vbox (8.49174pt too high) detected at line 265
  []
 
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 293.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 294.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1317,15 +1338,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
 [1
 
-] [2
+]
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+[2] [3
 
-] [3] [4
+] [4] [5
 
-] [5
+] [6
 
-] [6]
+] [7]
 
 Package babel Warning: Unknown language `english'. Either you have
 (babel)                misspelled its name, it has not been installed,
@@ -1333,49 +1369,49 @@ Package babel Warning: Unknown language `english'. Either you have
 (babel)                install it or just rerun the file, respectively. In
 (babel)                some cases, you may need to remove the aux file.
 (babel)                I'll proceed, but expect wrong results.
-(babel)                Reported on input line 551.
+(babel)                Reported on input line 552.
 
-[7
+[8
 
-] (./index2.toc) [8
+] (./index2.toc) [9
 
-] (./index2.lof [9]) [10] (./index2.lot [11]) [12] [13] [14] [15] [16] [17] [18
-]
+] (./index2.lof [10]) [11] (./index2.lot [12]) [13] [14] [15] [16] [17] [18] [1
+9]
 File: figuras/01_AreaDeEstudoFisionmiascampestres_meiaA4_v2.jpg Graphic file (t
 ype bmp)
 <figuras/01_AreaDeEstudoFisionmiascampestres_meiaA4_v2.jpg>
-[19]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 703.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 703.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 703.
 [20]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 722.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 723.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 723.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 723.
-
+(Font)              <10> on input line 704.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 704.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 704.
 [21]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 723.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 724.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 724.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 724.
+
+[22]
 File: figuras/02_AreaDeEstudoSubBacias_meiaA4_v2.jpg Graphic file (type bmp)
 <figuras/02_AreaDeEstudoSubBacias_meiaA4_v2.jpg>
-[22] [23] [24]
-Overfull \hbox (31.5472pt too wide) in paragraph at lines 761--806
+[23] [24] [25]
+Overfull \hbox (31.5472pt too wide) in paragraph at lines 762--807
  [][] 
  []
 
-[25] [26] [27] [28] [29]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 849.
+[26] [27] [28] [29] [30]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 850.
 
 (c:/Users/Bruna/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1384,128 +1420,128 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[30]
+[31]
 File: figuras/03_medidas.jpg Graphic file (type bmp)
 <figuras/03_medidas.jpg>
-[31] [32]
+[32] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 901.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 901.
+(hyperref)                removing `\mathsurround' on input line 902.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 901.
+(hyperref)                removing `\z@' on input line 902.
 
-[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 902.
+
+[34]
 File: figuras/04_Pressoes_v2.jpg Graphic file (type bmp)
 <figuras/04_Pressoes_v2.jpg>
-[34]
+[35]
 Overfull \vbox (2.24898pt too high) has occurred while \output is active []
 
-[35]
+[36]
 File: index2_files/figure-latex/boxplotsfisios-1.pdf Graphic file (type pdf)
 <use index2_files/figure-latex/boxplotsfisios-1.pdf>
 
 Overfull \vbox (2.30807pt too high) has occurred while \output is active []
 
-[36]
-Overfull \hbox (9.0475pt too wide) in paragraph at lines 936--936
+[37]
+Overfull \hbox (9.0475pt too wide) in paragraph at lines 937--937
  []|\T1/lmr/m/n/10 Mediana| 
  []
 
 
-Overfull \hbox (5.15825pt too wide) in paragraph at lines 936--936
+Overfull \hbox (5.15825pt too wide) in paragraph at lines 937--937
  []|\T1/lmr/m/n/10 Mínimo| 
  []
 
 
-Overfull \hbox (7.10298pt too wide) in paragraph at lines 936--937
+Overfull \hbox (7.10298pt too wide) in paragraph at lines 937--938
  []|\T1/lmr/m/n/10 Máximo| 
  []
 
 File: figuras/06_Results_Bacias_cenario2.jpg Graphic file (type bmp)
 <figuras/06_Results_Bacias_cenario2.jpg>
-[37]
+[38]
 File: figuras/07_histograma_indpressao.png Graphic file (type bmp)
 <figuras/07_histograma_indpressao.png>
 File: figuras/08_histogramas_cenario2.png Graphic file (type bmp)
 <figuras/08_histogramas_cenario2.png>
-[38] [39] [40] [41]
-Overfull \hbox (3.33713pt too wide) in paragraph at lines 1077--1128
+[39] [40] [41] [42]
+Overfull \hbox (3.33713pt too wide) in paragraph at lines 1078--1129
  [][] 
  []
 
 File: figuras/09_RDA_PA3.png Graphic file (type bmp)
 <figuras/09_RDA_PA3.png>
-[42] [43]
-Overfull \hbox (1.55942pt too wide) in paragraph at lines 1160--1160
+[43] [44]
+Overfull \hbox (1.55942pt too wide) in paragraph at lines 1161--1161
  []|\T1/lmr/bx/n/10 1261,45| 
  []
 
 File: figuras/10_plot_riqrar_Agr.png Graphic file (type bmp)
 <figuras/10_plot_riqrar_Agr.png>
-[44]
+[45]
 File: figuras/11_plot_riquezafuncionalXcenarios.png Graphic file (type bmp)
 <figuras/11_plot_riquezafuncionalXcenarios.png>
-[45] [46] [47] [48] [49] [50]
+[46] [47] [48] [49] [50] [51]
 File: figuras/12_Implicacoes_piores.jpg Graphic file (type bmp)
 <figuras/12_Implicacoes_piores.jpg>
 File: figuras/13_Implicacoes_referencias.jpg Graphic file (type bmp)
 <figuras/13_Implicacoes_referencias.jpg>
-[51]
+[52]
 File: figuras/14_Implicacoes_intermediarias.jpg Graphic file (type bmp)
 <figuras/14_Implicacoes_intermediarias.jpg>
 File: figuras/15_Implicacoes_mapacompleto.jpg Graphic file (type bmp)
 <figuras/15_Implicacoes_mapacompleto.jpg>
-[52] [53] [54] [55] [56] [57]
-Overfull \hbox (24.95528pt too wide) in paragraph at lines 1473--1475
+[53] [54] [55] [56] [57] [58]
+Overfull \hbox (24.95528pt too wide) in paragraph at lines 1474--1476
 [][]\T1/lmr/m/n/12 IBGE. 2004. ``Mapa de Bi-o-mas do Bra-sil.'' [][]$<[]http : 
 / / www . ibge . gov . br / home / presidencia /
  []
 
-[58]
-Overfull \hbox (2.29321pt too wide) in paragraph at lines 1500--1502
+[59]
+Overfull \hbox (2.29321pt too wide) in paragraph at lines 1501--1503
 \T1/lmr/m/n/12 Pan-ta-nal we-tland.'' \T1/lmr/m/it/12 Di-vers. Dis-trib. \T1/lm
 r/m/n/12 17 (2): 297--310. [][]$<[]https : / / doi . org / 10 . 1111 / j . 1472
 -[]4642 .
  []
 
-[59]
+[60]
 Missing character: There is no ‐ in font ec-lmr12!
 Missing character: There is no ‐ in font ec-lmr12!
-[60] [61]
+[61] [62]
 Missing character: There is no ő in font ec-lmr12!
 
-Overfull \hbox (90.44554pt too wide) in paragraph at lines 1563--1565
+Overfull \hbox (90.44554pt too wide) in paragraph at lines 1564--1566
 \T1/lmr/m/n/12 and the Mis-me-a-sure of In-te-grity of Fish As-sem-bla-ges.'' \
 T1/lmr/m/it/12 Fishe-ries \T1/lmr/m/n/12 26 (11): 6--15. [][]https://doi.org/10
 .1577/1548-
  []
 
-[62] [63]
+[63] [64]
 (c:/SIG/laboratorio/01_mestrado/dissertacao2019/front-and-back-matter/99_apendi
-ces.tex [64] [65] [66] [67]
+ces.tex [65] [66] [67] [68]
 File: figuras/A1_os5cenarios.jpg Graphic file (type bmp)
 <figuras/A1_os5cenarios.jpg>
 File: figuras/A2_histogramascenario1.png Graphic file (type bmp)
 <figuras/A2_histogramascenario1.png>
-[68]
+[69]
 File: figuras/A3_histogramascenario2_2.png Graphic file (type bmp)
 <figuras/A3_histogramascenario2_2.png>
-[69]
+[70]
 File: figuras/A4_histogramascenario3.png Graphic file (type bmp)
 <figuras/A4_histogramascenario3.png>
-[70]
+[71]
 File: figuras/A5_histogramascenario4.png Graphic file (type bmp)
 <figuras/A5_histogramascenario4.png>
-[71]
+[72]
 File: figuras/A6_histogramascenario5.png Graphic file (type bmp)
 <figuras/A6_histogramascenario5.png>
-[72] [73]
+[73] [74]
 \tf@toc=\write4
 \openout4 = `index2.toc'.
 
@@ -1523,12 +1559,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) ) 
 Here is how much of TeX's memory you used:
- 28683 strings out of 494878
- 480471 string characters out of 6174999
- 1044101 words of memory out of 5000000
- 32268 multiletter control sequences out of 15000+600000
+ 29272 strings out of 494878
+ 490235 string characters out of 6174999
+ 1056490 words of memory out of 5000000
+ 32843 multiletter control sequences out of 15000+600000
  616292 words of font info for 71 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 38i,14n,43p,2986b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,43p,2986b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index2.pdf (74 pages).
+Output written on index2.pdf (75 pages).

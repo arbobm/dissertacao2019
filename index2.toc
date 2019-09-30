@@ -5,23 +5,23 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {section}{Introdução}{13}{section*.6}% 
-\contentsline {subsection}{A conservação de riachos nos campos do Pampa}{15}{section*.7}% 
-\contentsline {subsection}{Degradação e conservação de ambientes aquáticos}{16}{section*.8}% 
-\contentsline {section}{Métodos}{18}{section*.9}% 
-\contentsline {subsection}{Área de estudo e estrutura espacial}{18}{section*.10}% 
-\contentsline {subsection}{Delimitação das bacias de 3\textsuperscript {a} ordem e rede de drenagem}{21}{section*.11}% 
-\contentsline {subsection}{Desenvolvimento do índice global de pressão ambiental}{23}{section*.12}% 
-\contentsline {subsection}{Variáveis indicadoras de pressão ambiental}{24}{section*.13}% 
-\contentsline {subsection}{Determinação das bacias de referência}{28}{section*.14}% 
-\contentsline {subsection}{Relação entre fatores de pressão e ictiofauna}{29}{section*.15}% 
-\contentsline {subsection}{Análise dos dados}{32}{section*.16}% 
-\contentsline {section}{Resultados}{33}{section*.17}% 
-\contentsline {subsection}{Pressão ambiental sobre bacias de 3\textsuperscript {a} ordem no bioma Pampa}{33}{section*.18}% 
-\contentsline {subsection}{Relações entre pressão ambiental e peixes}{41}{section*.19}% 
-\contentsline {section}{Discussão}{46}{section*.20}% 
-\contentsline {subsection}{Implicações para gestão: conservação e recuperação}{50}{section*.21}% 
-\contentsline {section}{Considerações finais}{53}{section*.22}% 
-\contentsline {section}{Referências}{55}{section*.23}% 
+\contentsline {section}{Introdução}{14}{section*.6}% 
+\contentsline {subsection}{A conservação de riachos nos campos do Pampa}{16}{section*.7}% 
+\contentsline {subsection}{Degradação e conservação de ambientes aquáticos}{17}{section*.8}% 
+\contentsline {section}{Métodos}{19}{section*.9}% 
+\contentsline {subsection}{Área de estudo e estrutura espacial}{19}{section*.10}% 
+\contentsline {subsection}{Delimitação das bacias de 3\textsuperscript {a} ordem e rede de drenagem}{22}{section*.11}% 
+\contentsline {subsection}{Desenvolvimento do índice global de pressão ambiental}{24}{section*.12}% 
+\contentsline {subsection}{Variáveis indicadoras de pressão ambiental}{25}{section*.13}% 
+\contentsline {subsection}{Determinação das bacias de referência}{29}{section*.14}% 
+\contentsline {subsection}{Relação entre fatores de pressão e ictiofauna}{30}{section*.15}% 
+\contentsline {subsection}{Análise dos dados}{33}{section*.16}% 
+\contentsline {section}{Resultados}{34}{section*.17}% 
+\contentsline {subsection}{Pressão ambiental sobre bacias de 3\textsuperscript {a} ordem no bioma Pampa}{34}{section*.18}% 
+\contentsline {subsection}{Relações entre pressão ambiental e peixes}{42}{section*.19}% 
+\contentsline {section}{Discussão}{47}{section*.20}% 
+\contentsline {subsection}{Implicações para gestão: conservação e recuperação}{51}{section*.21}% 
+\contentsline {section}{Considerações finais}{54}{section*.22}% 
+\contentsline {section}{Referências}{56}{section*.23}% 
 \vspace {\cftbeforechapterskip }
-\contentsline {section}{Apêndice}{64}{section*.25}% 
+\contentsline {section}{Apêndice}{65}{section*.25}% 

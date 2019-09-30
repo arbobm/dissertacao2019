@@ -57,6 +57,7 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{xcolor}       % permite que as figuras com fundo transparente fiquem assim :)
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{pdfpages}     % para inserir pdf como o da ficha catalografica
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -278,7 +279,7 @@ $endif$
 \Large{\textbf{Pressão ambiental em bacias hidrográficas do Pampa e sua relação com ictiofauna}}
 
 \vspace{\stretch{1}}
-\normalsize{BRUNA ARBO MENESES}
+\large{$author$}
 
 \vspace{\stretch{2}}
 \normalsize{Porto Alegre, outubro de 2016}
@@ -358,9 +359,9 @@ $endif$
 % com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
 % o conteúdo de implementação deste arquivo pelo comando abaixo:
 %
-% \begin{fichacatalografica}
-%     \includepdf{fig_ficha_catalografica.pdf}
-% \end{fichacatalografica}
+ \begin{fichacatalografica}
+     \includepdf{ficha_catalografica.pdf}
+ \end{fichacatalografica}
 
 % \begin{fichacatalografica}
 % 	\sffamily
